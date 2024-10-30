@@ -1,0 +1,115 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3800,        105]
+NotebookOptionsPosition[      2992,         86]
+NotebookOutlinePosition[      3389,        102]
+CellTagsIndexPosition[      3346,         99]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"rs01", "=", 
+  RowBox[{"FromReducedRankIndex", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.9392892566671963`*^9, 3.939289257960169*^9}, 
+   3.939289435253861*^9},ExpressionUUID->"0020d252-b8ec-442d-b2b6-\
+9f889fdd2e8a"],
+
+Cell[BoxData[
+ RowBox[{"rs01", "[", 
+  RowBox[{"[", "\"\<RuleSet\>\"", "]"}], "]"}]], "Input",
+ CellLabel->"",ExpressionUUID->"a614268c-48a5-44bb-8dda-35c8daaff05c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sss01", "=", 
+   RowBox[{"SSS", "[", 
+    RowBox[{
+     RowBox[{"rs01", "[", 
+      RowBox[{"[", "\"\<RuleSet\>\"", "]"}], "]"}], ",", " ", "\"\<B\>\"", 
+     ",", "500", ",", "\[IndentingNewLine]", " ", 
+     RowBox[{"SSSMax", "\[Rule]", "75"}], ",", 
+     RowBox[{"NetMax", "\[Rule]", "100"}], ",", 
+     RowBox[{"NetSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"600", ",", "Automatic"}], "}"}]}], ",", 
+     RowBox[{"SSSSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Automatic", ",", "380"}], "}"}]}], ",", 
+     RowBox[{"HighlightMethod", "\[Rule]", "None"}], ",", 
+     RowBox[{"RulePlacement", "\[Rule]", "Left"}], ",", 
+     RowBox[{"VertexLabels", "\[Rule]", 
+      RowBox[{"Placed", "[", 
+       RowBox[{"Automatic", ",", "Tooltip"}], "]"}]}], ",", 
+     RowBox[{"DirectedEdges", "\[Rule]", "True"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "304.`"}], ",", 
+     RowBox[{"NetSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Automatic", ",", "338.`"}], "}"}]}], ",", 
+     RowBox[{"SSSSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Automatic", ",", "486.`"}], "}"}]}], ",", 
+     RowBox[{"IconSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Automatic", ",", "31.8`"}], "}"}]}], ",", 
+     RowBox[{"VertexSize", "\[Rule]", "Automatic"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellLabel->"",ExpressionUUID->"4b4a50a3-2d8c-44f1-8cd7-691f6cc9de6a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sss01", "[", 
+   RowBox[{"[", "\"\<Net\>\"", "]"}], "]"}], "//", "Short"}]], "Input",
+ CellLabel->"",ExpressionUUID->"7550b1ac-70ff-425c-ab9e-323682236d08"],
+
+Cell[BoxData[
+ RowBox[{"nds01", "=", 
+  RowBox[{"ToNetDifferenceSets", "[", 
+   RowBox[{"sss01", "[", 
+    RowBox[{"[", "\"\<Net\>\"", "]"}], "]"}], "]"}]}]], "Input",
+ CellLabel->"",ExpressionUUID->"4922ac8d-d4a5-4499-8718-2466a726a820"],
+
+Cell[BoxData[
+ RowBox[{"rslo1", "=", 
+  RowBox[{"ReduceSetList", "[", "nds01", "]"}]}]], "Input",ExpressionUUID->\
+"4eff0af2-40ea-4bce-b2cf-16ad94268570"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 50}, {Automatic, 28}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9e8b089d-8097-433a-9414-4ad89b62ccfb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 245, 5, 30, "Input",ExpressionUUID->"0020d252-b8ec-442d-b2b6-9f889fdd2e8a"],
+Cell[806, 27, 165, 3, 30, "Input",ExpressionUUID->"a614268c-48a5-44bb-8dda-35c8daaff05c"],
+Cell[974, 32, 1422, 34, 115, "Input",ExpressionUUID->"4b4a50a3-2d8c-44f1-8cd7-691f6cc9de6a"],
+Cell[2399, 68, 191, 4, 30, "Input",ExpressionUUID->"7550b1ac-70ff-425c-ab9e-323682236d08"],
+Cell[2593, 74, 238, 5, 30, "Input",ExpressionUUID->"4922ac8d-d4a5-4499-8718-2466a726a820"],
+Cell[2834, 81, 154, 3, 30, "Input",ExpressionUUID->"4eff0af2-40ea-4bce-b2cf-16ad94268570"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
