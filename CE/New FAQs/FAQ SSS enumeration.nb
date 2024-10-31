@@ -1,0 +1,1155 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45971,       1147]
+NotebookOptionsPosition[     43854,       1111]
+NotebookOutlinePosition[     44267,       1127]
+CellTagsIndexPosition[     44224,       1124]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
+ CellLabel->"In[1]:=",ExpressionUUID->"38e34190-b4e8-d847-b020-b017e24d64d9"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Coltonedelbach\\\\Documents\\\\Wolfram \
+Mathematica\\\\CE Research\"\>"], "Output",
+ CellChangeTimes->{3.938607735249151*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"1af2f682-00c2-3340-a8e5-59cdbd4df6db"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SSS`\>\"", "]"}]], "Input",
+ CellLabel->"In[2]:=",ExpressionUUID->"730d3acb-dcc6-7c4b-98ef-874158a22418"],
+
+Cell[TextData[StyleBox["FAQ: SSS enumeration",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 
+  3.9386078160942593`*^9}},ExpressionUUID->"a85634d6-0d83-0349-abca-\
+7c94b89e2b4f"],
+
+Cell[TextData[StyleBox["Original Sessie Enumeration",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 
+  3.9386078234522743`*^9}},ExpressionUUID->"7de7bb53-7b63-9c4c-a567-\
+c9c502fd73fa"],
+
+Cell["\<\
+The first attempt to enumerate sessies was published here This has now been \
+replaced by enumerations allowing better predictions based on simpler \
+mathematical relationships.\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
+  3.938609219772644*^9, 
+  3.9386092204075623`*^9}},ExpressionUUID->"c65f00c2-5dcc-f447-b593-\
+cb3cc37b746d"],
+
+Cell[TextData[StyleBox["Updated Sessie Enumeration",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
+  3.938609219772644*^9, 
+  3.9386092230548973`*^9}},ExpressionUUID->"201a5103-bafb-6747-8d6b-\
+4b5bdcab6842"],
+
+Cell["\<\
+Since then we have simplified and generalized the enumeration algorithm (the \
+subject of a paper by Caviness, Case, Morrow & Kratzke)(2020). A new fully \
+general algorithm based on base-5 operation codes was used in the code \
+everywhere for several years.\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
+  3.938609219772644*^9, 
+  3.9386092226449223`*^9}},ExpressionUUID->"5a4753e1-a863-3742-b5ba-\
+7c9f7a9ae2f7"],
+
+Cell[TextData[{
+ "For example, ",
+ StyleBox["fromReducedRank[n] ",
+  FontSlant->"Italic"],
+ "gives the n-th ruleset in the reduced quinary (base-5) enumeration. The \
+first 62 rulesets are listed below. If we define the weight of a ruleset as \
+the sum of the individual letters, with A=1, B=2, C=3, \[Ellipsis], it is \
+clear that in this list, weight 1 rulesets (containing only 1 letter, an A) \
+all appear before weight 2 rulesets (containing either 2 As or 1 B), and \
+weight 2 rulesets before those of weight 3, etc. "
+}], "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079338445625`*^9}, {
+  3.938609081225607*^9, 3.938609093793503*^9}, {3.9386091694447746`*^9, 
+  3.9386091747886124`*^9}},ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-\
+a6659e93b944"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"#", "[", 
+       RowBox[{"[", "\"\<Index\>\"", "]"}], "]"}], ",", "\"\<: \>\"", ",", 
+      RowBox[{"Subscript", "[", " ", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "\"\<QCode\>\"", "]"}], "]"}], ",", "5"}], "]"}], ",", 
+      "\"\<: \>\"", ",", " ", 
+      RowBox[{"InputForm", "[", 
+       RowBox[{"#", "[", 
+        RowBox[{"[", "\"\<RuleSet\>\"", "]"}], "]"}], "]"}]}], "}"}], "&"}], "/@", 
+   RowBox[{"FromReducedRankIndex", "/@", " ", 
+    RowBox[{"Range", "[", "62", "]"}]}]}], "//", " ", 
+  RowBox[{
+   RowBox[{"Grid", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"Alignment", "->", "Left"}], ",", " ", 
+     RowBox[{"Spacings", "->", "0"}]}], "]"}], "&"}]}]], "Input",
+ CellChangeTimes->{{3.9386080441185665`*^9, 3.938608109842596*^9}, 
+   3.9386081824043083`*^9, {3.9386083886461143`*^9, 3.938608653742567*^9}, {
+   3.9386087154360447`*^9, 3.938608737979229*^9}, {3.938608801715063*^9, 
+   3.9386088190410786`*^9}, {3.938608852190481*^9, 3.938608936165283*^9}, {
+   3.938608971516979*^9, 3.938609000079418*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"0521ee7a-7701-bf48-b428-782099279bb5"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"1", "\<\": \"\>", 
+     SubscriptBox["\<\"\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"2", "\<\": \"\>", 
+     SubscriptBox["\<\"0\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"3", "\<\": \"\>", 
+     SubscriptBox["\<\"1\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"4", "\<\": \"\>", 
+     SubscriptBox["\<\"2\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<A\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"5", "\<\": \"\>", 
+     SubscriptBox["\<\"3\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<AA\>\"", " ", "->", " ", "\"\<\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"AA" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"6", "\<\": \"\>", 
+     SubscriptBox["\<\"4\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<B\>\"", " ", "->", " ", "\"\<\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"B" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"7", "\<\": \"\>", 
+     SubscriptBox["\<\"00\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"8", "\<\": \"\>", 
+     SubscriptBox["\<\"01\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"9", "\<\": \"\>", 
+     SubscriptBox["\<\"02\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"10", "\<\": \"\>", 
+     SubscriptBox["\<\"03\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AA\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "AA"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"11", "\<\": \"\>", 
+     SubscriptBox["\<\"04\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<B\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "B"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"12", "\<\": \"\>", 
+     SubscriptBox["\<\"10\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"13", "\<\": \"\>", 
+     SubscriptBox["\<\"11\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"14", "\<\": \"\>", 
+     SubscriptBox["\<\"12\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"15", "\<\": \"\>", 
+     SubscriptBox["\<\"13\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<AA\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "AA" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"16", "\<\": \"\>", 
+     SubscriptBox["\<\"14\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<B\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "B" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"17", "\<\": \"\>", 
+     SubscriptBox["\<\"20\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "A", "" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"18", "\<\": \"\>", 
+     SubscriptBox["\<\"21\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "A", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"19", "\<\": \"\>", 
+     SubscriptBox["\<\"22\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "A", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"20", "\<\": \"\>", 
+     SubscriptBox["\<\"23\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<AA\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "AA"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"21", "\<\": \"\>", 
+     SubscriptBox["\<\"24\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<B\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "B"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"22", "\<\": \"\>", 
+     SubscriptBox["\<\"30\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<AA\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"AA" -> "", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"23", "\<\": \"\>", 
+     SubscriptBox["\<\"31\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<AA\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"AA" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"24", "\<\": \"\>", 
+     SubscriptBox["\<\"32\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<AA\>\"", " ", "->", " ", "\"\<A\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"AA" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"25", "\<\": \"\>", 
+     SubscriptBox["\<\"33\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<AAA\>\"", " ", "->", " ", "\"\<\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"AAA" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"26", "\<\": \"\>", 
+     SubscriptBox["\<\"34\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<AB\>\"", " ", "->", " ", "\"\<\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"AB" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"27", "\<\": \"\>", 
+     SubscriptBox["\<\"40\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<B\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"B" -> "", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"28", "\<\": \"\>", 
+     SubscriptBox["\<\"41\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<B\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"B" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"29", "\<\": \"\>", 
+     SubscriptBox["\<\"42\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<B\>\"", " ", "->", " ", "\"\<A\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"B" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"30", "\<\": \"\>", 
+     SubscriptBox["\<\"43\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<BA\>\"", " ", "->", " ", "\"\<\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"BA" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"31", "\<\": \"\>", 
+     SubscriptBox["\<\"44\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{"\"\<C\>\"", " ", "->", " ", "\"\<\>\""}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"C" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"32", "\<\": \"\>", 
+     SubscriptBox["\<\"000\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "", "A" -> "", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"33", "\<\": \"\>", 
+     SubscriptBox["\<\"001\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "", "A" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"34", "\<\": \"\>", 
+     SubscriptBox["\<\"002\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "", "A" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"35", "\<\": \"\>", 
+     SubscriptBox["\<\"003\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<AA\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "", "AA" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"36", "\<\": \"\>", 
+     SubscriptBox["\<\"004\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<B\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "", "B" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"37", "\<\": \"\>", 
+     SubscriptBox["\<\"010\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "A", "" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"38", "\<\": \"\>", 
+     SubscriptBox["\<\"011\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "A", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"39", "\<\": \"\>", 
+     SubscriptBox["\<\"012\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "A", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"40", "\<\": \"\>", 
+     SubscriptBox["\<\"013\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AA\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "AA"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"41", "\<\": \"\>", 
+     SubscriptBox["\<\"014\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<B\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "" -> "B"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"42", "\<\": \"\>", 
+     SubscriptBox["\<\"020\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "A" -> "", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"43", "\<\": \"\>", 
+     SubscriptBox["\<\"021\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "A" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"44", "\<\": \"\>", 
+     SubscriptBox["\<\"022\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "A" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"45", "\<\": \"\>", 
+     SubscriptBox["\<\"023\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<AA\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "AA" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"46", "\<\": \"\>", 
+     SubscriptBox["\<\"024\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<B\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "A", "B" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"47", "\<\": \"\>", 
+     SubscriptBox["\<\"030\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AA\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "AA", "" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"48", "\<\": \"\>", 
+     SubscriptBox["\<\"031\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AA\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "AA", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"49", "\<\": \"\>", 
+     SubscriptBox["\<\"032\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AA\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "AA", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"50", "\<\": \"\>", 
+     SubscriptBox["\<\"033\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AAA\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "AAA"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"51", "\<\": \"\>", 
+     SubscriptBox["\<\"034\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AB\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "AB"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"52", "\<\": \"\>", 
+     SubscriptBox["\<\"040\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<B\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "B", "" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"53", "\<\": \"\>", 
+     SubscriptBox["\<\"041\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<B\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "B", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"54", "\<\": \"\>", 
+     SubscriptBox["\<\"042\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<B\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "B", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"55", "\<\": \"\>", 
+     SubscriptBox["\<\"043\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<BA\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "BA"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"56", "\<\": \"\>", 
+     SubscriptBox["\<\"044\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<C\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "" -> "C"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"57", "\<\": \"\>", 
+     SubscriptBox["\<\"100\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "" -> "A", "" -> "", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"58", "\<\": \"\>", 
+     SubscriptBox["\<\"101\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "" -> "A", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"59", "\<\": \"\>", 
+     SubscriptBox["\<\"102\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "" -> "A", "A" -> ""}],
+      AutoDelete->True,
+      Editable->True]},
+    {"60", "\<\": \"\>", 
+     SubscriptBox["\<\"103\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<AA\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "" -> "AA"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"61", "\<\": \"\>", 
+     SubscriptBox["\<\"104\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<B\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "" -> "B"}],
+      AutoDelete->True,
+      Editable->True]},
+    {"62", "\<\": \"\>", 
+     SubscriptBox["\<\"110\"\>", "5"], "\<\": \"\>", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<A\>\"", " ", "->", " ", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<\>\"", " ", "->", " ", "\"\<A\>\""}]}], "}"}],
+       ShowStringCharacters->True,
+       NumberMarks->True],
+      InputForm[{"A" -> "", "A" -> "", "A" -> "", "" -> "A"}],
+      AutoDelete->True,
+      Editable->True]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{0}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.938608553816368*^9, 3.938608577627905*^9}, 
+   3.9386086417128353`*^9, 3.938608740628174*^9, 3.9386088238605022`*^9, {
+   3.9386088766867657`*^9, 3.938608937352661*^9}, 3.938609009622305*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"06913b4a-a447-4e4a-80fc-46e60087c66b"]
+}, {2}]],
+
+Cell["\<\
+Within any given weight, advancing through the enumeration tends to compact \
+the weight into fewer characters, moving it gradually towards the left. So \
+the most spread out ruleset of weight 3, {\[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\
+\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]} \
+is the first of this weight in the list, {\[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\
+\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote]} appears further down, and {\[OpenCurlyDoubleQuote]C\
+\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]} \
+is the last of this weight, with the entire weight compacted to the left.\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 
+  3.9386080186467*^9}},ExpressionUUID->"a5998614-67a9-694f-891c-733ead3577d1"],
+
+Cell["\<\
+Note: The \[OpenCurlyDoubleQuote]most spread out\[CloseCurlyDoubleQuote] \
+rulesets have exactly 2 empty strings between single \[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote] strings, since we want to include the possibility of \
+deletion rules (where the replacement string is \[OpenCurlyDoubleQuote]\
+\[CloseCurlyDoubleQuote]) and insertion rules (where the search string is \
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]), and the possibility that an \
+insertion might follow right after a deletion, thus putting 2 empty strings \
+in sequence. E.g., {\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\
+\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]\
+\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]}. \
+But we will never need more than 2 consecutive empty strings, and this \
+algorithm also produces \[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\
+\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote] rules. More on that problem \
+below.\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, 
+   3.9386082120747185`*^9},ExpressionUUID->"53a68df3-21ea-2641-872e-\
+15508eda4e4a"],
+
+Cell["\<\
+The algorithm is guaranteed to produce all valid rulesets somewhere in the \
+list, if one goes far enough. It can easily be seen that there is no limit on \
+the number of rules in the ruleset, all cases eventually occurring, and all \
+combinations of all letters will eventually appear everywhere in the ruleset.\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, 
+   3.9386082142183266`*^9},ExpressionUUID->"1a933d5e-6161-b443-9f40-\
+e71b9baf0e4a"],
+
+Cell["\<\
+As already mentioned, this does generate some unneeded cases, e.g., with \
+empty strings at too many positions in the ruleset, such as \
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\
+\[CloseCurlyDoubleQuote] rules, or multiple \[OpenCurlyDoubleQuote]\
+\[CloseCurlyDoubleQuote]->something rules -- only the first one could ever be \
+used, or indeed any case where an insertion rule appears before the final \
+position in the ruleset. But the most important thing is that all cases we \
+want to study are included, and there is no repetition at all in the \
+enumeration. It is also worth noting that this enumeration never produces \
+invalid rulesets.\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
+  3.9386082350548935`*^9, 
+  3.938608271495035*^9}},ExpressionUUID->"32c8b98f-7e92-af4d-b450-\
+749c65828672"],
+
+Cell[TextData[StyleBox["Ruleset tests:",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
+  3.9386082350548935`*^9, 
+  3.938608270448229*^9}},ExpressionUUID->"5184138c-136d-b44c-9fdc-\
+2b02344918df"],
+
+Cell["\<\
+Any ruleset that contains a problem can be skipped without generating the \
+sessie and its network, to save time. In addition, the pattern and order of \
+the enumeration lets us skip over multiple cases at once. If such a \
+\[OpenCurlyDoubleQuote]long-jump\[CloseCurlyDoubleQuote] is possible, the \
+test returns the first ruleset in the enumeration that does not have that \
+particular problem, the target of the long-jump. The main tests are:\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
+  3.9386082350548935`*^9, 
+  3.938608274224966*^9}},ExpressionUUID->"c0a1ef9d-4aef-a042-b109-\
+88f487fb68b2"],
+
+Cell["Test that eliminate the ruleset, but don\[CloseCurlyQuote]t allow \
+long-jumps:", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
+  3.9386082350548935`*^9, 
+  3.9386083129436016`*^9}},ExpressionUUID->"638331d6-c528-ef44-8c03-\
+9777dddf3b15"],
+
+Cell["\<\
+Command\tTest Description
+(* Two rules conflict if the second rule never has a chance to be used \
+because the first rule preempts it. Ex/ {\[OpenCurlyDoubleQuote]C\
+\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]AA\[CloseCurlyDoubleQuote]->\
+\[CloseCurlyDoubleQuote]C\[CloseCurlyDoubleQuote]} : rule 3 conflicts with \
+rule 2, so the ruleset is equivalent to {\[OpenCurlyDoubleQuote]C\
+\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote]}, omitting rule 3 *)
+(* an identity rule is a rule in which a string is replaced by itself, no \
+further rules will be used if the identity rule ever matches *)
+(or 
+)\t(* if solo identity rules are treated separately *)
+(* Ex/ {\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\
+\[CloseCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote], \[Ellipsis]} If 1st rule \
+matches, it will never fail again. *)
+(* If the characters used in the strings of the ruleset are permuted or \
+replaced by other characters, the SSS will look the same up to a permutation \
+of colors, and the causal network will be identical. Ex/ {\
+\[OpenCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote]\[RightArrow]\
+\[CloseCurlyDoubleQuote]ABA\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]\[RightArrow]\[CloseCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\
+\[RightArrow]\[CloseCurlyDoubleQuote]AA\[CloseCurlyDoubleQuote]} is \
+indistinguishable from {\[OpenCurlyDoubleQuote]ABA\[CloseCurlyDoubleQuote]\
+\[RightArrow]\[CloseCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote],\
+\[CloseCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\[RightArrow]\
+\[CloseCurlyDoubleQuote]A\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]\[RightArrow]\[CloseCurlyDoubleQuote]BB\
+\[CloseCurlyDoubleQuote]}
+(* Still under construction: the idea is that if a rule is never used, it \
+could be omitted without affecting the results. The difficulty is in being \
+sure that the rule will never be used, rather than only rarely. *)
+Tests that eliminate the ruleset, but don\[CloseCurlyQuote]t allow long-jumps\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
+  3.9386082350548925`*^9, 3.938608312490452*^9}, {3.93860933701322*^9, 
+  3.9386093378691654`*^9}},ExpressionUUID->"5895f51b-5412-be42-bfae-\
+3c71c5fcba65"]
+},
+WindowSize->{569.25, 609.75},
+WindowMargins->{{Automatic, -729.75}, {12, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3ffc0c55-281c-ab46-b941-549132a817c7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 182, 3, 28, "Input",ExpressionUUID->"38e34190-b4e8-d847-b020-b017e24d64d9"],
+Cell[765, 27, 237, 3, 52, "Output",ExpressionUUID->"1af2f682-00c2-3340-a8e5-59cdbd4df6db"]
+}, Open  ]],
+Cell[1017, 33, 147, 2, 28, "Input",ExpressionUUID->"730d3acb-dcc6-7c4b-98ef-874158a22418"],
+Cell[1167, 37, 205, 4, 35, "Text",ExpressionUUID->"a85634d6-0d83-0349-abca-7c94b89e2b4f"],
+Cell[1375, 43, 212, 4, 35, "Text",ExpressionUUID->"7de7bb53-7b63-9c4c-a567-c9c502fd73fa"],
+Cell[1590, 49, 378, 8, 81, "Text",ExpressionUUID->"c65f00c2-5dcc-f447-b593-cb3cc37b746d"],
+Cell[1971, 59, 260, 5, 35, "Text",ExpressionUUID->"201a5103-bafb-6747-8d6b-4b5bdcab6842"],
+Cell[2234, 66, 459, 9, 104, "Text",ExpressionUUID->"5a4753e1-a863-3742-b5ba-7c9f7a9ae2f7"],
+Cell[2696, 77, 763, 14, 150, "Text",ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-a6659e93b944"],
+Cell[CellGroupData[{
+Cell[3484, 95, 1215, 28, 86, "Input",ExpressionUUID->"0521ee7a-7701-bf48-b428-782099279bb5"],
+Cell[4702, 125, 31576, 847, 1056, "Output",ExpressionUUID->"06913b4a-a447-4e4a-80fc-46e60087c66b"]
+}, {2}]],
+Cell[36290, 975, 1206, 17, 150, "Text",ExpressionUUID->"a5998614-67a9-694f-891c-733ead3577d1"],
+Cell[37499, 994, 1178, 18, 196, "Text",ExpressionUUID->"53a68df3-21ea-2641-872e-15508eda4e4a"],
+Cell[38680, 1014, 489, 8, 127, "Text",ExpressionUUID->"1a933d5e-6161-b443-9f40-e71b9baf0e4a"],
+Cell[39172, 1024, 881, 15, 173, "Text",ExpressionUUID->"32c8b98f-7e92-af4d-b450-749c65828672"],
+Cell[40056, 1041, 250, 5, 35, "Text",ExpressionUUID->"5184138c-136d-b44c-9fdc-2b02344918df"],
+Cell[40309, 1048, 647, 11, 150, "Text",ExpressionUUID->"c0a1ef9d-4aef-a042-b109-88f487fb68b2"],
+Cell[40959, 1061, 276, 5, 35, "Text",ExpressionUUID->"638331d6-c528-ef44-8c03-9777dddf3b15"],
+Cell[41238, 1068, 2612, 41, 449, "Text",ExpressionUUID->"5895f51b-5412-be42-bfae-3c71c5fcba65"]
+}
+]
+*)
+
