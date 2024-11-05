@@ -1,0 +1,86 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2721,         78]
+NotebookOptionsPosition[      2027,         58]
+NotebookOutlinePosition[      2437,         74]
+CellTagsIndexPosition[      2394,         71]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["FAQ : Causal  Networks", "Title",
+ CellChangeTimes->{{3.934981651775061*^9, 3.9349816698382225`*^9}, {
+  3.939819762487564*^9, 3.939819765758381*^9}, {3.9398197971998444`*^9, 
+  3.9398198183817024`*^9}},ExpressionUUID->"dbf4cb3d-4440-5045-be5e-\
+beb657c9c615"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.8159227950159807`*^9, 3.815922857230071*^9}, {
+   3.832959057462519*^9, 3.8329590603471575`*^9}, 3.938448124213293*^9, {
+   3.939048652824898*^9, 3.939048662772999*^9}, {3.939048891462473*^9, 
+   3.939048899769232*^9}, {3.939050675614113*^9, 3.9390506757015133`*^9}, {
+   3.9390507275600243`*^9, 3.93905072931427*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"40aa6123-c195-9442-b56e-ee114ad7c011"],
+
+Cell["Causal Networks:", "Text",
+ CellChangeTimes->{{3.939819861022932*^9, 
+  3.9398198691630135`*^9}},ExpressionUUID->"052ee0b0-437b-cd44-8add-\
+73a51e6ffb23"],
+
+Cell["\<\
+Currently the best description of how a causal is constructed from a sessie \
+is in the Caviness, Beard, ________ & Deschamps paper.\
+\>", "Text",
+ CellChangeTimes->{{3.939819861022932*^9, 
+  3.9398199106130714`*^9}},ExpressionUUID->"954d6371-61dd-894b-90be-\
+29f399f6a344"]
+}, Open  ]]
+},
+WindowSize->{948, 705.75},
+WindowMargins->{{Automatic, -960}, {-3.75, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"93c46e0b-dd74-354d-bbe2-9547b66dffd3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 266, 4, 98, "Title",ExpressionUUID->"dbf4cb3d-4440-5045-be5e-beb657c9c615"],
+Cell[849, 28, 712, 14, 64, "Input",ExpressionUUID->"40aa6123-c195-9442-b56e-ee114ad7c011",
+ InitializationCell->True],
+Cell[1564, 44, 160, 3, 35, "Text",ExpressionUUID->"052ee0b0-437b-cd44-8add-73a51e6ffb23"],
+Cell[1727, 49, 284, 6, 35, "Text",ExpressionUUID->"954d6371-61dd-894b-90be-29f399f6a344"]
+}, Open  ]]
+}
+]
+*)
+
