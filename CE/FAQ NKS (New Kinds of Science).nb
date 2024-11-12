@@ -1,0 +1,131 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4605,        123]
+NotebookOptionsPosition[      3713,        101]
+NotebookOutlinePosition[      4119,        117]
+CellTagsIndexPosition[      4076,        114]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.8159227950159807`*^9, 3.815922857230071*^9}, {
+   3.832959057462519*^9, 3.8329590603471575`*^9}, 3.938448124213293*^9, {
+   3.939048652824898*^9, 3.939048662772999*^9}, {3.939048891462473*^9, 
+   3.939048899769232*^9}, {3.939050675614113*^9, 3.9390506757015133`*^9}, {
+   3.9390507275600243`*^9, 3.93905072931427*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"71cbf5f1-efaf-ef45-baf9-d3eb6d2f2312"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NotebookDirectory", "nosv", 
+   "\"The notebook \\!\\(\\*TemplateBox[Association[RuleDelayed[\\\"obj\\\", \
+NotebookObject[\\\"468cde79-e5f8-af43-9dc3-9b8805524c1b\\\", \
+\\\"c660481d-d8ab-7a47-a48a-b3b0d0c59244\\\"]], Rule[\\\"label\\\", \
+\\\"\\\\\\\"Untitled-3\\\\\\\"\\\"]], \\\"NotebookObjectUUIDsUnsaved\\\"]\\) \
+is not saved.\"", 2, 11, 26, 23410765893879336084, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.9404098529255238`*^9, 3.940409853063444*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"28d370b1-99d3-6a4f-a428-9a10e64e93c5"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ParentDirectory", "nums", 
+   "\"Argument \\!\\(\\*RowBox[{\\\"$Failed\\\"}]\\) should be a positive \
+machine-size integer, a nonempty string, or a File specification.\"", 2, 11, 
+   27, 23410765893879336084, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.9404098529255238`*^9, 3.940409853085434*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"4fd5300e-2970-b142-a3a8-4629c941de65"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "SetDirectory", "badfile", 
+   "\"The specified argument, \\!\\(\\*RowBox[{\\\"ParentDirectory\\\", \\\"[\
+\\\", \\\"$Failed\\\", \\\"]\\\"}]\\), should be a valid string or File.\"", 
+   2, 11, 28, 23410765893879336084, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.9404098529255238`*^9, 3.940409853100424*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"e47c7655-eebb-4c45-b737-e28fca0d4d97"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get", "noopen", 
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"SSSiCv100`\\\\\\\"\\\"}]\\).\"", 2, 12, 29, 
+   23410765893879336084, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.9404098529255238`*^9, 3.940409853114416*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"332baeec-e85d-9541-9af3-82f6a30e8011"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Needs", "nocont", 
+   "\"Context \\!\\(\\*RowBox[{\\\"\\\\\\\"SSSiCv100`\\\\\\\"\\\"}]\\) was \
+not created when Needs was evaluated.\"", 2, 12, 30, 23410765893879336084, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.9404098529255238`*^9, 3.9404098531284084`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"0c9ce778-409a-3344-b467-63c7c933ac90"]
+}, Open  ]]
+},
+WindowSize->{1440, 747.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"468cde79-e5f8-af43-9dc3-9b8805524c1b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 713, 14, 64, "Input",ExpressionUUID->"71cbf5f1-efaf-ef45-baf9-d3eb6d2f2312",
+ InitializationCell->True],
+Cell[1296, 38, 626, 12, 39, "Message",ExpressionUUID->"28d370b1-99d3-6a4f-a428-9a10e64e93c5"],
+Cell[1925, 52, 465, 10, 28, "Message",ExpressionUUID->"4fd5300e-2970-b142-a3a8-4629c941de65"],
+Cell[2393, 64, 475, 10, 28, "Message",ExpressionUUID->"e47c7655-eebb-4c45-b737-e28fca0d4d97"],
+Cell[2871, 76, 391, 10, 28, "Message",ExpressionUUID->"332baeec-e85d-9541-9af3-82f6a30e8011"],
+Cell[3265, 88, 432, 10, 28, "Message",ExpressionUUID->"0c9ce778-409a-3344-b467-63c7c933ac90"]
+}, Open  ]]
+}
+]
+*)
+
