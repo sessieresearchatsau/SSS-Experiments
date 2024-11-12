@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     40007,        917]
-NotebookOptionsPosition[     38823,        887]
-NotebookOutlinePosition[     39263,        904]
-CellTagsIndexPosition[     39220,        901]
+NotebookDataLength[     41044,        941]
+NotebookOptionsPosition[     39570,        907]
+NotebookOutlinePosition[     39988,        923]
+CellTagsIndexPosition[     39945,        920]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,15 +27,28 @@ Cell[BoxData[{
   "]"}], "\[IndentingNewLine]", 
  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}]}], "Input",
  CellChangeTimes->{{3.939810352342203*^9, 3.939810392758831*^9}, {
-  3.9398105095985603`*^9, 3.9398105240345783`*^9}, {3.9398105619944153`*^9, 
+  3.93981050959856*^9, 3.939810524034578*^9}, {3.9398105619944153`*^9, 
   3.939810601881899*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"199409af-7f28-b84f-87a6-dbda4c887059"],
+ CellLabel->"In[3]:=",ExpressionUUID->"199409af-7f28-b84f-87a6-dbda4c887059"],
 
 Cell[BoxData["\<\"C:\\\\!Library\\\\Rhys\\\\source\\\\SSS-Experiments\"\>"], \
 "Output",
- CellChangeTimes->{{3.9398105622261944`*^9, 3.939810603321253*^9}, 
-   3.9398108582323895`*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"aaeb6311-a41f-634f-bc87-dceaa7bb81a8"]
+ CellChangeTimes->{
+  3.940412764400589*^9, {3.9404128143151913`*^9, 3.9404128146811924`*^9}},
+ CellLabel->"Out[3]=",ExpressionUUID->"84bd6dcf-5eee-9b49-b5e7-bc109a7013e8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\"\<C:\\\\!Library\\\\Rhys\\\\source\\\\SSS-Experiments\>\""], \
+"Input",
+ CellChangeTimes->{3.940412715571068*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"aaeb6311-a41f-634f-bc87-dceaa7bb81a8"],
+
+Cell[BoxData["\<\"C:\\\\!Library\\\\Rhys\\\\source\\\\SSS-Experiments\"\>"], \
+"Output",
+ CellChangeTimes->{3.940412715633417*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"f9402b95-7eb1-0b44-85ea-d7765b56c09f"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -44,8 +57,8 @@ Cell[BoxData[
  RowBox[{"rsoc1", " ", "=", " ", 
   RowBox[{"FromReducedRankIndex", "[", "6355450520", "]"}]}]], "Input",
  CellChangeTimes->{{3.9398106475380726`*^9, 3.939810652442013*^9}, {
-   3.9398106981507607`*^9, 3.939810699068012*^9}, 3.9398115346296425`*^9},
- CellLabel->"In[15]:=",ExpressionUUID->"f777dc73-502d-f744-9465-77d4cdcb6081"],
+   3.93981069815076*^9, 3.939810699068012*^9}, 3.939811534629642*^9},
+ CellLabel->"In[7]:=",ExpressionUUID->"f777dc73-502d-f744-9465-77d4cdcb6081"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -59,9 +72,10 @@ Cell[BoxData[
       RowBox[{"\<\"A\"\>", "\[Rule]", "\<\"B\"\>"}], ",", 
       RowBox[{"\<\"B\"\>", "\[Rule]", "\<\"AA\"\>"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{3.9398107019500103`*^9, 3.939810861926319*^9, 
-  3.939811428039316*^9, 3.9398115374039288`*^9},
- CellLabel->"Out[15]=",ExpressionUUID->"b2a38b96-82eb-1341-a1a2-0337e4e4321e"]
+ CellChangeTimes->{
+  3.939810701950011*^9, 3.939810861926319*^9, 3.939811428039316*^9, 
+   3.9398115374039288`*^9, {3.9404128212256985`*^9, 3.9404128323184395`*^9}},
+ CellLabel->"Out[7]=",ExpressionUUID->"741d2727-91bd-c64c-a58a-c9cda1ce1bb6"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -70,7 +84,7 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"sss", " ", "=", " ", 
    RowBox[{"SSS", "[", 
-    RowBox[{"rsoc1", ",", " ", "\"\<ABB\>\"", ",", "800", ",", " ", 
+    RowBox[{"rsoc1", ",", " ", "\"\<A\>\"", ",", "800", ",", " ", 
      RowBox[{"(*", " ", 
       RowBox[{
        RowBox[{
@@ -105,12 +119,14 @@ Cell[BoxData[
        RowBox[{"Automatic", ",", "31.8`"}], "}"}]}], ",", 
      RowBox[{"VertexSize", "\[Rule]", "Automatic"}]}], "]"}]}], 
   ";"}]], "Input",
- CellChangeTimes->{{3.9398107113144913`*^9, 3.9398107290907955`*^9}, {
-  3.9398107842691536`*^9, 3.9398107921859913`*^9}, {3.939810905017809*^9, 
-  3.939810921477417*^9}, {3.9398111701615562`*^9, 3.9398111757959614`*^9}, {
-  3.9398115494728127`*^9, 3.939811559233738*^9}, {3.939811598283531*^9, 
-  3.9398116251190395`*^9}},
- CellLabel->"In[23]:=",ExpressionUUID->"528757aa-5c97-024c-80a5-0051cd0596b5"],
+ CellChangeTimes->{{3.9398107113144913`*^9, 3.939810729090795*^9}, {
+  3.939810784269153*^9, 3.9398107921859913`*^9}, {3.939810905017809*^9, 
+  3.939810921477417*^9}, {3.9398111701615562`*^9, 3.939811175795961*^9}, {
+  3.939811549472813*^9, 3.939811559233738*^9}, {3.939811598283531*^9, 
+  3.939811625119039*^9}, {3.9404127039128647`*^9, 3.940412705706358*^9}, {
+  3.940412745911417*^9, 3.940412752590252*^9}, {3.940412830202713*^9, 
+  3.940412848319769*^9}, {3.940413576234844*^9, 3.940413585563019*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"528757aa-5c97-024c-80a5-0051cd0596b5"],
 
 Cell[BoxData[
  TemplateBox[{"  ", "\"  \"", 
@@ -331,28 +347,27 @@ Cell[BoxData[
             "]"}]& )], 
         GraphicsBox[{
           RasterBox[CompressedData["
-1:eJzt181NA0EMhuGVwo0qUgMFUEBulICUcwrnQgmscsNkiSz/fP48HimK4CXK
-+lF2Jpw/bx/X07Ztl/3xuj9e9sfbfX29y+ftvr7//F72389yTZ/u2Y/+vsr1
-1eu6+3d8ZffdH9fztfqt7hvt190X7cfui/Zh90XPz+6Lng/drb7o66/en/mi
-r4+9j6/GRy5t7+fr62Pt9Xxz54/u/r615kP3ev9fcPVnfuv5+t5/6/nm7m/9
-fGudr3y+0X7dfdF+7L5oH3Zf9Pzsvuj50H18PX2snc8318fa831z50P3et/P
-uLrVbz1f3f03vrL77m/r+eaer/18o/26+6L92H3RPuy+6PnZfdHzofv4anzk
-0vZ+vr4+1l7P13c+dK/3/YGrR/vx+freP+v55u5P/XxrnY98vtF+3X3Rfuy+
-aJ/xreRj7Xy+uvnQvd7+y9XRfny+uvsH7VfP13d/Qvvl++aej2g/f99ov+6+
-aD92X7TP+Gb6yKXt/Xwfv9/R+0b3er6660d3tE89X9/PP9on3zd3f0H7+PvW
-Ot/QPvnn2/j+33N9rL2en67LNX6+XS67n+7zj56/nq/v/oKeP98393xDz+/f
-o/3G19NHrjnfHv989DprR8+H7nLZz7fc66/e5Zr91drn/Irtc37F9h9yf9jf
-
-           "], {{0, 0}, {11, 75}}, {0, 1}], {{Antialiasing -> False, 
+1:eJzt1ktqAzEQBFBBvPItcgYfwAfILkcIZJ2De+MjeDB4I8+giP5UdasFJpDK
+R/UYqefz5+/796O19rV9ztvn1F7rfm276/X9vPnluW5vX/+bo/dvnUt9svtZ
++0T3Q/uw+6H7s/uh+7H7ofePzsun8sp5z98oR+8f3T+6H7q/NF+9f+We+dHP
+s+xPP9c9P/n8fO+feH5c84vPz9onuh/ah90P3Z/dD92P3Q+9f3S+ut9cf2nO
+5+fbX5rr+3H1s8753v+48pHPen5z52c9P937J5+f7/yK52ftE90P7cPuh+7P
+7ofux+6H3j86X91vv+9R71Eez0+3vzT39/PtZ53zvb9w5VKfeH66z38+P9/7
+I54f1/zh87P2ie6H9mH3Q/cvP8/+0pzPT7efdc43P7hya594fnPP/3p+uvdH
+Pj/f+RPPz9onuh/ah90P3b/8NPv3i//9hau/NOe7/7hytA/f+8vc30f76Pv5
+nn+0z7wf1/xA+0Sfv/n89v/f0f+V5nx+c/u3ztH9+fzmnl90f38/3fOP7q/v
+5zs/0P3950f5afbvV80P3Rzdj+/+G/2+7/6zn1++/rp5v8pnLu9X/vkpzVd/
+/9DN+1U+o7yeL1n+AMbF3yQ=
+           "], {{0, 0}, {10, 75}}, {0, 1}], {{Antialiasing -> False, 
             GrayLevel[
              NCache[-1 + GoldenRatio, 0.6180339887498949]], 
             LineBox[CompressedData["
-1:eJwtw1lWAQAAQNFnSPQyJdFAkTmzhIQGKeqrJbSB9v9XH91zbun75+s7BHz+
-Df7nww927ti65d133nxj44ZXX1m75sUXnn3myScefWTliqVLFi548IG5c+69
-Z+aMqVMmTrjzjrFjbr1l5IihQwYO6NunZ4+uXTp2aNvmxhtatmjapGGDunVq
-1qhapWKFa68pW6ZkiSuvuPSSokUKFrjwgnPPOfOMU0/JmydnjhNPyJrl2GMy
-ZjjyiLRpUqZImiRhgrhxDj1E5cADYsaIGmXffSJG2HOPsGFChggaJGAA5Bcc
-rxuC
+1:eJwtw1k2AgAAQNFXoXqkSVJJcyqNlCIkCsWXJbQB+//jwz3nVnY/37sQ8PU3
++J9PP9m6ZeOGDz94950331i7ZuWKV1958YWlS559ZuGCJ5949JEHH5g75957
+7rxj5oypU269ZeKEsWNuvOHaa0aOGDpk4IC+fXr26Nrlyis6dmjbpmWLSy9p
+2qRhg7p1ataoWqVihbJlSpa48IKiRc49p2CBvHly5jjzjKxZTj0lY4YTT0ib
+JmWKpEkSJogb59hjYsY48ohDD1GJGiVihLBhDjxg33323CNkiKBBAgZAfgHv
+gBs2
              "]]}, {Antialiasing -> False, 
             GrayLevel[
              NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -360,8 +375,8 @@ rxuC
             LineBox[{{{0, 0}, {0, 75}}, {{1, 0}, {1, 75}}, {{2, 0}, {2, 
              75}}, {{3, 0}, {3, 75}}, {{4, 0}, {4, 75}}, {{5, 0}, {5, 75}}, {{
              6, 0}, {6, 75}}, {{7, 0}, {7, 75}}, {{8, 0}, {8, 75}}, {{9, 0}, {
-             9, 75}}, {{10, 0}, {10, 75}}, {{11, 0}, {11, 75}}}]}}}, 
-         Epilog -> {}, Frame -> False, FrameLabel -> {None, None}, 
+             9, 75}}, {{10, 0}, {10, 75}}}]}}}, Epilog -> {}, Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], ImageSize -> {Automatic, 380}, 
@@ -380,55 +395,55 @@ rxuC
        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
     ImageSize -> 604., ImageSizeAction -> "ShrinkToFit"], 
    GraphicsBox[{{
-      Arrowheads[0.012587262340968526`], 
+      Arrowheads[0.011893671775733576`], 
       Directive[
        Opacity[0.7], 
        Hue[0.6, 0.7, 0.5]], 
       ArrowBox[CompressedData["
-1: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
-eez3L6GFP2A=
-       "], 0.08430648185757433]}, {
+1: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
+a+X1
+       "], 0.08780277556657455]}, {
       Directive[
        Hue[0.6, 0.2, 0.8], 
        EdgeForm[
@@ -437,413 +452,418 @@ eez3L6GFP2A=
          Opacity[0.7]]]], 
       TagBox[
        TooltipBox[
-        DiskBox[{0.1718763396720533, 1.8206357917165947`}, 
-         0.08430648185757433], "1"], Annotation[#, 1, "Tooltip"]& ], 
+        DiskBox[{0., 1.5780112901923236`}, 0.08780277556657455], "1"], 
+       Annotation[#, 1, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{0., 2.248970134719424}, 0.08430648185757433], "2"], 
-       Annotation[#, 2, "Tooltip"]& ], 
+        DiskBox[{0.6397395449702508, 1.854289799458331}, 0.08780277556657455],
+         "2"], Annotation[#, 2, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{0.743380558523139, 1.7535646580234092`}, 
-         0.08430648185757433], "3"], Annotation[#, 3, "Tooltip"]& ], 
+        DiskBox[{0.3496279170524357, 2.2245204613545813`}, 
+         0.08780277556657455], "3"], Annotation[#, 3, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{0.6860557853012015, 1.9715374814285471`}, 
-         0.08430648185757433], "4"], Annotation[#, 4, "Tooltip"]& ], 
+        DiskBox[{1.5964286655918176`, 2.09554231705515}, 0.08780277556657455],
+         "4"], Annotation[#, 4, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{0.6732621661014502, 2.52018839787084}, 0.08430648185757433], 
-        "5"], Annotation[#, 5, "Tooltip"]& ], 
+        DiskBox[{0.9122711286897616, 2.512755686956885}, 0.08780277556657455],
+         "5"], Annotation[#, 5, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{1.4898500211410486`, 2.186355302109173}, 
-         0.08430648185757433], "6"], Annotation[#, 6, "Tooltip"]& ], 
+        DiskBox[{1.2268574769758338`, 2.917224136983528}, 
+         0.08780277556657455], "6"], Annotation[#, 6, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{0.997538436798596, 3.1421323416504388`}, 
-         0.08430648185757433], "7"], Annotation[#, 7, "Tooltip"]& ], 
+        DiskBox[{1.7055214562927254`, 2.4836497551076215`}, 
+         0.08780277556657455], "7"], Annotation[#, 7, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{1.8836745596052742`, 2.449147906500195}, 
-         0.08430648185757433], "8"], Annotation[#, 8, "Tooltip"]& ], 
+        DiskBox[{1.9872374468475371`, 3.011978984945585}, 
+         0.08780277556657455], "8"], Annotation[#, 8, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{1.7343460776638313`, 2.660882145672756}, 
-         0.08430648185757433], "9"], Annotation[#, 9, "Tooltip"]& ], 
+        DiskBox[{2.675349930346254, 2.538271179408832}, 0.08780277556657455], 
+        "9"], Annotation[#, 9, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{2.928898592845501, 2.288213163972613}, 0.08430648185757433], 
-        "10"], Annotation[#, 10, "Tooltip"]& ], 
+        DiskBox[{2.4934523891207645`, 3.5303095751777405`}, 
+         0.08780277556657455], "10"], Annotation[#, 10, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{1.799660774364086, 3.445289765354616}, 0.08430648185757433], 
-        "11"], Annotation[#, 11, "Tooltip"]& ], 
+        DiskBox[{3.2358278025854412`, 2.7128447762197405`}, 
+         0.08780277556657455], "11"], Annotation[#, 11, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{2.440881936424339, 2.9375567547636763`}, 
-         0.08430648185757433], "12"], Annotation[#, 12, "Tooltip"]& ], 
+        DiskBox[{3.138669036167043, 2.930713280087538}, 0.08780277556657455], 
+        "12"], Annotation[#, 12, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{2.466177163282599, 3.9901447520734945`}, 
-         0.08430648185757433], "13"], Annotation[#, 13, "Tooltip"]& ], 
+        DiskBox[{4.261576613061081, 2.56103453590734}, 0.08780277556657455], 
+        "13"], Annotation[#, 13, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{3.094699164268012, 3.1661090055608567`}, 
-         0.08430648185757433], "14"], Annotation[#, 14, "Tooltip"]& ], 
+        DiskBox[{3.346283478340812, 3.7389353420644804`}, 
+         0.08780277556657455], "14"], Annotation[#, 14, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{3.0212496438618457`, 3.366820851074965}, 
-         0.08430648185757433], "15"], Annotation[#, 15, "Tooltip"]& ], 
+        DiskBox[{3.914069616717505, 3.1655096861037104`}, 
+         0.08780277556657455], "15"], Annotation[#, 15, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{3.387506020830388, 2.6488833233099336`}, 
-         0.08430648185757433], "16"], Annotation[#, 16, "Tooltip"]& ], 
+        DiskBox[{4.084398784107144, 4.2232156130866505`}, 
+         0.08780277556657455], "16"], Annotation[#, 16, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{3.426240314041462, 4.17242212715017}, 0.08430648185757433], 
-        "17"], Annotation[#, 17, "Tooltip"]& ], 
+        DiskBox[{4.563653780404301, 3.5571810826859553`}, 
+         0.08780277556657455], "17"], Annotation[#, 17, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{3.8856013020851057`, 3.462650051070124}, 
-         0.08430648185757433], "18"], Annotation[#, 18, "Tooltip"]& ], 
+        DiskBox[{4.621436186782244, 3.356555028649189}, 0.08780277556657455], 
+        "18"], Annotation[#, 18, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{4.443530741428358, 2.5755329605804165`}, 
-         0.08430648185757433], "19"], Annotation[#, 19, "Tooltip"]& ], 
+        DiskBox[{4.862761207385414, 2.844543579247734}, 0.08780277556657455], 
+        "19"], Annotation[#, 19, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{4.295237108211839, 4.6650528954346075`}, 
-         0.08430648185757433], "20"], Annotation[#, 20, "Tooltip"]& ], 
+        DiskBox[{5.069194471900805, 4.366092712731314}, 0.08780277556657455], 
+        "20"], Annotation[#, 20, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{4.681186313045528, 3.8993912005926483`}, 
-         0.08430648185757433], "21"], Annotation[#, 21, "Tooltip"]& ], 
+        DiskBox[{5.452961693817651, 3.634586594409538}, 0.08780277556657455], 
+        "21"], Annotation[#, 21, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{4.730802758913773, 3.7117065317549454`}, 
-         0.08430648185757433], "22"], Annotation[#, 22, "Tooltip"]& ], 
+        DiskBox[{5.919234327075714, 2.744613699199498}, 0.08780277556657455], 
+        "22"], Annotation[#, 22, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{5.246344587398632, 2.5919932978616975`}, 
-         0.08430648185757433], "23"], Annotation[#, 23, "Tooltip"]& ], 
+        DiskBox[{5.980373537781808, 4.818163901382315}, 0.08780277556657455], 
+        "23"], Annotation[#, 23, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{5.204151414476349, 2.791690564225128}, 0.08430648185757433], 
+        DiskBox[{6.340142534135173, 3.847821553698939}, 0.08780277556657455], 
         "24"], Annotation[#, 24, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.177172463298351, 2.2776479155853293`}, 
-         0.08430648185757433], "25"], Annotation[#, 25, "Tooltip"]& ], 
+        DiskBox[{6.298477939831892, 4.035489796229262}, 0.08780277556657455], 
+        "25"], Annotation[#, 25, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{5.367315227065026, 4.78128405029951}, 0.08430648185757433], 
-        "26"], Annotation[#, 26, "Tooltip"]& ], 
+        DiskBox[{6.741062379638143, 2.9270335869275272`}, 
+         0.08780277556657455], "26"], Annotation[#, 26, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{5.6771296700952245`, 3.9867471945388675`}, 
-         0.08430648185757433], "27"], Annotation[#, 27, "Tooltip"]& ], 
+        DiskBox[{6.770168431419799, 2.730683906267336}, 0.08780277556657455], 
+        "27"], Annotation[#, 27, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.111349354766887, 2.9949526560857724`}, 
-         0.08430648185757433], "28"], Annotation[#, 28, "Tooltip"]& ], 
+        DiskBox[{7.688772797414693, 2.401976756333199}, 0.08780277556657455], 
+        "28"], Annotation[#, 28, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.384856690836118, 5.186474519165998}, 0.08430648185757433], 
+        DiskBox[{7.060290088354414, 4.906537599100452}, 0.08780277556657455], 
         "29"], Annotation[#, 29, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.6495455281809335`, 4.193259156368668}, 
-         0.08430648185757433], "30"], Annotation[#, 30, "Tooltip"]& ], 
+        DiskBox[{7.315478723701879, 4.097049250726489}, 0.08780277556657455], 
+        "30"], Annotation[#, 30, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.619018742003255, 4.371274794294063}, 0.08430648185757433], 
-        "31"], Annotation[#, 31, "Tooltip"]& ], 
+        DiskBox[{7.683662430005031, 3.0959402660381925`}, 
+         0.08780277556657455], "31"], Annotation[#, 31, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.970098857517787, 2.9968862584956577`}, 
-         0.08430648185757433], "32"], Annotation[#, 32, "Tooltip"]& ], 
+        DiskBox[{8.102486917693454, 5.288766921455055}, 0.08780277556657455], 
+        "32"], Annotation[#, 32, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.944528273087698, 3.192105675740054}, 0.08430648185757433], 
-        "33"], Annotation[#, 33, "Tooltip"]& ], 
+        DiskBox[{8.31311255666394, 4.2732752262257865`}, 0.08780277556657455],
+         "33"], Annotation[#, 33, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{6.977074218352996, 2.432054775503831}, 0.08430648185757433], 
+        DiskBox[{8.29134769335954, 4.452033758999999}, 0.08780277556657455], 
         "34"], Annotation[#, 34, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{7.5285831973620265`, 5.215517518324333}, 
-         0.08430648185757433], "35"], Annotation[#, 35, "Tooltip"]& ], 
+        DiskBox[{8.53887451730723, 3.2692945640707785`}, 0.08780277556657455],
+         "35"], Annotation[#, 35, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{7.693265032196763, 4.361842318915874}, 0.08430648185757433], 
+        DiskBox[{8.56237532081898, 3.075045627306247}, 0.08780277556657455], 
         "36"], Annotation[#, 36, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{7.880134796665498, 3.23891021830808}, 0.08430648185757433], 
+        DiskBox[{8.532787752708192, 2.513865746208389}, 0.08780277556657455], 
         "37"], Annotation[#, 37, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{7.97414817487786, 2.17265141964029}, 0.08430648185757433], 
+        DiskBox[{9.253693767205732, 5.283731273625701}, 0.08780277556657455], 
         "38"], Annotation[#, 38, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{8.654282684813118, 5.528535182267155}, 0.08430648185757433], 
+        DiskBox[{9.369667916536441, 4.424890972198895}, 0.08780277556657455], 
         "39"], Annotation[#, 39, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{8.747805023717254, 4.667108625991721}, 0.08430648185757433], 
-        "40"], Annotation[#, 40, "Tooltip"]& ], 
+        DiskBox[{9.49043815632284, 3.3009743750932583`}, 0.08780277556657455],
+         "40"], Annotation[#, 40, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{8.763684374940254, 4.492949047769376}, 0.08430648185757433], 
-        "41"], Annotation[#, 41, "Tooltip"]& ], 
+        DiskBox[{9.523048947804428, 2.2418363874687794`}, 
+         0.08780277556657455], "41"], Annotation[#, 41, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{8.864128604527727, 3.406751937592696}, 0.08430648185757433], 
-        "42"], Annotation[#, 42, "Tooltip"]& ], 
+        DiskBox[{10.393301214107229`, 5.56688611624244}, 0.08780277556657455],
+         "42"], Annotation[#, 42, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{8.873937474238232, 3.222915928588206}, 0.08430648185757433], 
-        "43"], Annotation[#, 43, "Tooltip"]& ], 
+        DiskBox[{10.442731768797278`, 4.707605944420589}, 
+         0.08780277556657455], "43"], Annotation[#, 43, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{8.907804293650907, 1.9519567054431408`}, 
-         0.08430648185757433], "44"], Annotation[#, 44, "Tooltip"]& ], 
+        DiskBox[{10.45293609759651, 4.533383835954331}, 0.08780277556657455], 
+        "44"], Annotation[#, 44, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{8.913772406695202, 2.1401465362323693`}, 
-         0.08430648185757433], "45"], Annotation[#, 45, "Tooltip"]& ], 
+        DiskBox[{10.48542630847954, 3.2617329639195702`}, 
+         0.08780277556657455], "45"], Annotation[#, 45, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{9.57479114192148, 1.5497992935829275`}, 0.08430648185757433],
-         "46"], Annotation[#, 46, "Tooltip"]& ], 
+        DiskBox[{10.483913218608317`, 3.445946703568951}, 
+         0.08780277556657455], "46"], Annotation[#, 46, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{9.834068519972053, 5.438857388773327}, 0.08430648185757433], 
-        "47"], Annotation[#, 47, "Tooltip"]& ], 
+        DiskBox[{10.467788688812865`, 2.004318595354765}, 
+         0.08780277556657455], "47"], Annotation[#, 47, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{9.866576391911645, 4.545963008590484}, 0.08430648185757433], 
-        "48"], Annotation[#, 48, "Tooltip"]& ], 
+        DiskBox[{10.477293221777128`, 2.1922810242754656`}, 
+         0.08780277556657455], "48"], Annotation[#, 48, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{9.895591459141949, 3.3616173142745067`}, 
-         0.08430648185757433], "49"], Annotation[#, 49, "Tooltip"]& ], 
+        DiskBox[{11.114868751574111`, 1.5910312117143395`}, 
+         0.08780277556657455], "49"], Annotation[#, 49, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{9.918188072836788, 2.1857091933999344`}, 
-         0.08430648185757433], "50"], Annotation[#, 50, "Tooltip"]& ], 
+        DiskBox[{11.571899895752447`, 5.456993904522912}, 
+         0.08780277556657455], "50"], Annotation[#, 50, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{11.003223954271245`, 5.64254316246457}, 0.08430648185757433],
-         "51"], Annotation[#, 51, "Tooltip"]& ], 
+        DiskBox[{11.55827627243417, 4.57053897927241}, 0.08780277556657455], 
+        "51"], Annotation[#, 51, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{10.979301438793648`, 4.577029771865104}, 
-         0.08430648185757433], "52"], Annotation[#, 52, "Tooltip"]& ], 
+        DiskBox[{11.51221170346844, 3.3869678782232193`}, 
+         0.08780277556657455], "52"], Annotation[#, 52, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{10.98074903065311, 4.7502714578287}, 0.08430648185757433], 
-        "53"], Annotation[#, 53, "Tooltip"]& ], 
+        DiskBox[{11.489249661935297`, 2.2162372080914055`}, 
+         0.08780277556657455], "53"], Annotation[#, 53, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{10.93135345179473, 3.2800602223923025`}, 
-         0.08430648185757433], "54"], Annotation[#, 54, "Tooltip"]& ], 
+        DiskBox[{12.746408600788769`, 5.632503089112527}, 
+         0.08780277556657455], "54"], Annotation[#, 54, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{10.937392692103002`, 3.4614046686638162`}, 
-         0.08430648185757433], "55"], Annotation[#, 55, "Tooltip"]& ], 
+        DiskBox[{12.678851754813653`, 4.761063328692604}, 
+         0.08780277556657455], "55"], Annotation[#, 55, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{10.825324542246879`, 2.1377778555166422`}, 
-         0.08430648185757433], "56"], Annotation[#, 56, "Tooltip"]& ], 
+        DiskBox[{12.674586437382661`, 4.5875301876248775`}, 
+         0.08780277556657455], "56"], Annotation[#, 56, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{10.814227375911226`, 1.9446508463155565`}, 
-         0.08430648185757433], "57"], Annotation[#, 57, "Tooltip"]& ], 
+        DiskBox[{12.534202349124692`, 3.289116862245868}, 
+         0.08780277556657455], "57"], Annotation[#, 57, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{10.48621276434433, 1.4646186617565646`}, 
-         0.08430648185757433], "58"], Annotation[#, 58, "Tooltip"]& ], 
+        DiskBox[{12.546874762850734`, 3.4711240168259336`}, 
+         0.08780277556657455], "58"], Annotation[#, 58, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.152512629019064`, 5.433685211209594}, 
-         0.08430648185757433], "59"], Annotation[#, 59, "Tooltip"]& ], 
+        DiskBox[{12.38997185513911, 2.157520881553307}, 0.08780277556657455], 
+        "59"], Annotation[#, 59, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.07843005835429, 4.525736849777693}, 0.08430648185757433], 
-        "60"], Annotation[#, 60, "Tooltip"]& ], 
+        DiskBox[{12.37908575933099, 1.9629230843233778`}, 
+         0.08780277556657455], "60"], Annotation[#, 60, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{11.959736439185754`, 3.3096660656271566`}, 
-         0.08430648185757433], "61"], Annotation[#, 61, "Tooltip"]& ], 
+        DiskBox[{12.037225837976754`, 1.4880111149728892`}, 
+         0.08780277556657455], "61"], Annotation[#, 61, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{11.734184154384698`, 2.0784515355195925`}, 
-         0.08430648185757433], "62"], Annotation[#, 62, "Tooltip"]& ], 
+        DiskBox[{13.88676778026119, 5.391609933624224}, 0.08780277556657455], 
+        "62"], Annotation[#, 62, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{11.245925699090026`, 1.1516821986784758`}, 
-         0.08430648185757433], "63"], Annotation[#, 63, "Tooltip"]& ], 
+        DiskBox[{13.754067004854628`, 4.498258380171881}, 
+         0.08780277556657455], "63"], Annotation[#, 63, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.290166522051695`, 5.55084589159594}, 0.08430648185757433],
-         "64"], Annotation[#, 64, "Tooltip"]& ], 
+        DiskBox[{13.55087303913349, 3.3013325917062337`}, 
+         0.08780277556657455], "64"], Annotation[#, 64, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.183765081482882`, 4.649347116038404}, 
-         0.08430648185757433], "65"], Annotation[#, 65, "Tooltip"]& ], 
+        DiskBox[{13.28292376155215, 2.0856228423601406`}, 
+         0.08780277556657455], "65"], Annotation[#, 65, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.165286502636349`, 4.473721110943922}, 
-         0.08430648185757433], "66"], Annotation[#, 66, "Tooltip"]& ], 
+        DiskBox[{12.77388601031061, 1.1686160369722103`}, 
+         0.08780277556657455], "66"], Annotation[#, 66, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.005895585677294`, 3.330003863320648}, 
-         0.08430648185757433], "67"], Annotation[#, 67, "Tooltip"]& ], 
+        DiskBox[{15.024312233674678`, 5.460148203778022}, 
+         0.08780277556657455], "67"], Annotation[#, 67, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.986001029811668`, 3.147539793532669}, 
-         0.08430648185757433], "68"], Annotation[#, 68, "Tooltip"]& ], 
+        DiskBox[{14.8479371817088, 4.5829031547221035`}, 0.08780277556657455],
+         "68"], Annotation[#, 68, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.67427025341344, 1.7940828531386308`}, 
-         0.08430648185757433], "69"], Annotation[#, 69, "Tooltip"]& ], 
+        DiskBox[{14.829286733264158`, 4.404543431535514}, 
+         0.08780277556657455], "69"], Annotation[#, 69, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.699781240511754`, 1.9810637285564252`}, 
-         0.08430648185757433], "70"], Annotation[#, 70, "Tooltip"]& ], 
+        DiskBox[{14.567023802976156`, 3.3034723106460913`}, 
+         0.08780277556657455], "70"], Annotation[#, 70, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.212758979176053`, 0.8791924094789838}, 
-         0.08430648185757433], "71"], Annotation[#, 71, "Tooltip"]& ], 
+        DiskBox[{14.544088072065282`, 3.1172210897968173`}, 
+         0.08780277556657455], "71"], Annotation[#, 71, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.145274228969038`, 0.7145891543278116}, 
-         0.08430648185757433], "72"], Annotation[#, 72, "Tooltip"]& ], 
+        DiskBox[{14.222702090054774`, 1.979864872435998}, 
+         0.08780277556657455], "72"], Annotation[#, 72, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{12.223405884412772`, 0.4796244134732781}, 
-         0.08430648185757433], "73"], Annotation[#, 73, "Tooltip"]& ], 
+        DiskBox[{14.194232702096347`, 1.787975635740323}, 
+         0.08780277556657455], "73"], Annotation[#, 73, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{14.327032511457867`, 5.241261323796018}, 
-         0.08430648185757433], "74"], Annotation[#, 74, "Tooltip"]& ], 
+        DiskBox[{13.727268984164692`, 0.8829131717343142}, 
+         0.08780277556657455], "74"], Annotation[#, 74, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{14.17729167944952, 4.325355040217618}, 0.08430648185757433], 
-        "75"], Annotation[#, 75, "Tooltip"]& ], 
+        DiskBox[{13.664618086754839`, 0.7176373576801498}, 
+         0.08780277556657455], "75"], Annotation[#, 75, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.952146485287843`, 3.0883327312368682`}, 
-         0.08430648185757433], "76"], Annotation[#, 76, "Tooltip"]& ], 
+        DiskBox[{13.713301011148609`, 0.4770060792829516}, 
+         0.08780277556657455], "76"], Annotation[#, 76, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.588649028578011`, 1.824327810704191}, 
-         0.08430648185757433], "77"], Annotation[#, 77, "Tooltip"]& ], 
+        DiskBox[{16.03550768915341, 5.10716058891679}, 0.08780277556657455], 
+        "77"], Annotation[#, 77, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.142527579648082`, 0.736059229512739}, 
-         0.08430648185757433], "78"], Annotation[#, 78, "Tooltip"]& ], 
+        DiskBox[{15.801769410467937`, 4.221708147022308}, 
+         0.08780277556657455], "78"], Annotation[#, 78, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{15.328253642602867`, 5.350716684838831}, 
-         0.08430648185757433], "79"], Annotation[#, 79, "Tooltip"]& ], 
+        DiskBox[{15.45494284734095, 3.038575600316778}, 0.08780277556657455], 
+        "79"], Annotation[#, 79, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{15.177405877971403`, 4.41093212361965}, 0.08430648185757433],
-         "80"], Annotation[#, 80, "Tooltip"]& ], 
+        DiskBox[{15.068479964710274`, 1.8049528464777358`}, 
+         0.08780277556657455], "80"], Annotation[#, 80, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{15.152094498973263`, 4.222072718196753}, 
-         0.08430648185757433], "81"], Annotation[#, 81, "Tooltip"]& ], 
+        DiskBox[{14.647791289611217`, 0.7272604046046931}, 
+         0.08780277556657455], "81"], Annotation[#, 81, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{14.912205312957024`, 3.0626958686921633`}, 
-         0.08430648185757433], "82"], Annotation[#, 82, "Tooltip"]& ], 
+        DiskBox[{17.035972779375975`, 5.150817592203088}, 
+         0.08780277556657455], "82"], Annotation[#, 82, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{14.885419052839733`, 2.866135599378201}, 
-         0.08430648185757433], "83"], Annotation[#, 83, "Tooltip"]& ], 
+        DiskBox[{16.74507560352282, 4.068360847228011}, 0.08780277556657455], 
+        "83"], Annotation[#, 83, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{14.419635969427187`, 1.5053956586583952`}, 
-         0.08430648185757433], "84"], Annotation[#, 84, "Tooltip"]& ], 
+        DiskBox[{16.777821850536586`, 4.261268187773661}, 
+         0.08780277556657455], "84"], Annotation[#, 84, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{14.439621999332353`, 1.7186280968530494`}, 
-         0.08430648185757433], "85"], Annotation[#, 85, "Tooltip"]& ], 
+        DiskBox[{16.312626614328792`, 3.02525404778442}, 0.08780277556657455],
+         "85"], Annotation[#, 85, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.851099472144018`, 0.2793236954356235}, 
-         0.08430648185757433], "86"], Annotation[#, 86, "Tooltip"]& ], 
+        DiskBox[{16.279068582456006`, 2.8101262544371868`}, 
+         0.08780277556657455], "86"], Annotation[#, 86, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.823906310515977`, 0.48949720060113133`}, 
-         0.08430648185757433], "87"], Annotation[#, 87, "Tooltip"]& ], 
+        DiskBox[{15.832675192089026`, 1.4804150470638264`}, 
+         0.08780277556657455], "87"], Annotation[#, 87, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.314078286336448`, 0.}, 0.08430648185757433], "88"], 
-       Annotation[#, 88, "Tooltip"]& ], 
+        DiskBox[{15.838837200370953`, 1.7093553084644006`}, 
+         0.08780277556657455], "88"], Annotation[#, 88, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{16.128429334969614`, 5.01950767885041}, 0.08430648185757433],
-         "89"], Annotation[#, 89, "Tooltip"]& ], 
+        DiskBox[{15.347919608224096`, 0.27481350376302727`}, 
+         0.08780277556657455], "89"], Annotation[#, 89, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{15.946510232819382`, 4.072511398559666}, 
-         0.08430648185757433], "90"], Annotation[#, 90, "Tooltip"]& ], 
+        DiskBox[{15.307791995463166`, 0.48177347359715794`}, 
+         0.08780277556657455], "90"], Annotation[#, 90, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{15.644693860933064`, 2.8076359293130047`}, 
-         0.08430648185757433], "91"], Annotation[#, 91, "Tooltip"]& ], 
+        DiskBox[{14.842249651225192`, 0.}, 0.08780277556657455], "91"], 
+       Annotation[#, 91, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{15.052861126463604`, 1.606910557408007}, 
-         0.08430648185757433], "92"], Annotation[#, 92, "Tooltip"]& ], 
+        DiskBox[{17.79374854680485, 4.771411590096265}, 0.08780277556657455], 
+        "92"], Annotation[#, 92, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{14.241856365950138`, 0.7073732731370486}, 
-         0.08430648185757433], "93"], Annotation[#, 93, "Tooltip"]& ], 
+        DiskBox[{17.474757505698374`, 3.884784915433486}, 
+         0.08780277556657455], "93"], Annotation[#, 93, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{13.276227057945936`, 0.32859188554650753`}, 
-         0.08430648185757433], "94"], Annotation[#, 94, "Tooltip"]& ], 
+        DiskBox[{16.858987562882973`, 2.795298808786802}, 
+         0.08780277556657455], "94"], Annotation[#, 94, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{16.744403900913568`, 5.446687248995783}, 
-         0.08430648185757433], "95"], Annotation[#, 95, "Tooltip"]& ], 
+        DiskBox[{16.317786125821485`, 1.6748450343486205`}, 
+         0.08780277556657455], "95"], Annotation[#, 95, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{16.69685895068166, 4.068419049635321}, 0.08430648185757433], 
-        "96"], Annotation[#, 96, "Tooltip"]& ], 
+        DiskBox[{15.657142102384757`, 0.731423729952672}, 
+         0.08780277556657455], "96"], Annotation[#, 96, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{16.632723168622753`, 4.379040468144496}, 
-         0.08430648185757433], "97"], Annotation[#, 97, "Tooltip"]& ], 
+        DiskBox[{14.742821543510136`, 0.3243151552117882}, 
+         0.08780277556657455], "97"], Annotation[#, 97, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{16.34278555785182, 2.5130919162982135`}, 
-         0.08430648185757433], "98"], Annotation[#, 98, "Tooltip"]& ], 
+        DiskBox[{18.45577573145175, 5.116201991733513}, 0.08780277556657455], 
+        "98"], Annotation[#, 98, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{16.3977674087164, 2.8209828802540464`}, 0.08430648185757433],
-         "99"], Annotation[#, 99, "Tooltip"]& ], 
+        DiskBox[{18.213710465471724`, 3.752622384820496}, 
+         0.08780277556657455], "99"], Annotation[#, 99, "Tooltip"]& ], 
       TagBox[
        TooltipBox[
-        DiskBox[{15.703641579816821`, 1.212181374597607}, 
-         0.08430648185757433], "100"], Annotation[#, 100, "Tooltip"]& ]}}, {
+        DiskBox[{18.205283172650887`, 4.077192190038149}, 
+         0.08780277556657455], "100"], Annotation[#, 100, "Tooltip"]& ]}}, {
     FormatType -> TraditionalForm, FrameTicks -> None, 
      ImageSize -> {600, Automatic}}]},
   "RowWithSeparators"]], "Print",
- CellChangeTimes->{{3.9398115395965977`*^9, 3.939811560203945*^9}, {
-  3.939811599714531*^9, 3.939811626097002*^9}},
+ CellChangeTimes->{{3.940412826980978*^9, 3.9404128500928555`*^9}, {
+  3.9404135798702393`*^9, 3.9404135864486294`*^9}},
  CellLabel->
   "During evaluation of \
-In[23]:=",ExpressionUUID->"286af1f5-0656-b14d-8916-e6e0c8f5a941"]
+In[11]:=",ExpressionUUID->"e094e3bc-351a-8744-9289-d3412621b60c"]
 }, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.940412727249609*^9},ExpressionUUID->"1629e17e-bf97-3047-91f4-\
+d5cab5034a2d"],
 
 Cell[CellGroupData[{
 
@@ -885,9 +905,8 @@ Cell[BoxData[
  CellLabel->"Out[11]=",ExpressionUUID->"16640191-7289-5a4e-b040-a0c0ecfa6703"]
 }, Open  ]]
 },
-WindowSize->{1152, 585.6},
-WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+WindowSize->{1130.3999999999999`, 579.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"e64ff23f-95a5-dc41-89b3-a3edc2703a9b"
@@ -904,20 +923,25 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 476, 9, 48, "Input",ExpressionUUID->"199409af-7f28-b84f-87a6-dbda4c887059"],
-Cell[1059, 33, 262, 4, 32, "Output",ExpressionUUID->"aaeb6311-a41f-634f-bc87-dceaa7bb81a8"]
+Cell[580, 22, 471, 9, 48, "Input",ExpressionUUID->"199409af-7f28-b84f-87a6-dbda4c887059"],
+Cell[1054, 33, 261, 4, 32, "Output",ExpressionUUID->"84bd6dcf-5eee-9b49-b5e7-bc109a7013e8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1358, 42, 342, 5, 28, "Input",ExpressionUUID->"f777dc73-502d-f744-9465-77d4cdcb6081"],
-Cell[1703, 49, 686, 14, 32, "Output",ExpressionUUID->"b2a38b96-82eb-1341-a1a2-0337e4e4321e"]
+Cell[1352, 42, 207, 3, 28, "Input",ExpressionUUID->"aaeb6311-a41f-634f-bc87-dceaa7bb81a8"],
+Cell[1562, 47, 208, 3, 32, "Output",ExpressionUUID->"f9402b95-7eb1-0b44-85ea-d7765b56c09f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2426, 68, 1982, 44, 86, "Input",ExpressionUUID->"528757aa-5c97-024c-80a5-0051cd0596b5"],
-Cell[4411, 114, 32922, 730, 640, "Print",ExpressionUUID->"286af1f5-0656-b14d-8916-e6e0c8f5a941"]
+Cell[1807, 55, 336, 5, 28, "Input",ExpressionUUID->"f777dc73-502d-f744-9465-77d4cdcb6081"],
+Cell[2146, 62, 737, 15, 32, "Output",ExpressionUUID->"741d2727-91bd-c64c-a58a-c9cda1ce1bb6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37370, 849, 129, 2, 28, "Input",ExpressionUUID->"5b46479c-77ae-0b4d-b6b4-bce0a2a1ba98"],
-Cell[37502, 853, 1305, 31, 71, "Output",ExpressionUUID->"16640191-7289-5a4e-b040-a0c0ecfa6703"]
+Cell[2920, 82, 2162, 46, 86, "Input",ExpressionUUID->"528757aa-5c97-024c-80a5-0051cd0596b5"],
+Cell[5085, 130, 32845, 729, 621, "Print",ExpressionUUID->"e094e3bc-351a-8744-9289-d3412621b60c"]
+}, Open  ]],
+Cell[37945, 862, 147, 3, 48, "Input",ExpressionUUID->"1629e17e-bf97-3047-91f4-d5cab5034a2d"],
+Cell[CellGroupData[{
+Cell[38117, 869, 129, 2, 28, "Input",ExpressionUUID->"5b46479c-77ae-0b4d-b6b4-bce0a2a1ba98"],
+Cell[38249, 873, 1305, 31, 71, "Output",ExpressionUUID->"16640191-7289-5a4e-b040-a0c0ecfa6703"]
 }, Open  ]]
 }
 ]
