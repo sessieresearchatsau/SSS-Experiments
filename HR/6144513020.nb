@@ -1,0 +1,120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3773,        110]
+NotebookOptionsPosition[      2981,         88]
+NotebookOutlinePosition[      3377,        104]
+CellTagsIndexPosition[      3334,        101]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["6144513020 - ", "Subtitle",
+ CellChangeTimes->{{3.941471512649571*^9, 
+  3.9414715169895077`*^9}},ExpressionUUID->"6436cfd5-eae4-4596-a17e-\
+83219a0c7f2a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"6144513020", ":", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\"\<AAB\>\"", "->", "\"\<BAA\>\""}], ",", 
+    RowBox[{"\"\<A\>\"", "->", "\"\<B\>\""}], ",", 
+    RowBox[{"\"\<B\>\"", "->", "\"\<AA\>\""}]}], "}"}]}]}], "Input",
+ CellChangeTimes->{{3.9414715271686*^9, 3.94147155362995*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[94]:=",ExpressionUUID->"3a2280fd-81ed-4771-a854-91a81485b830"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NotebookDirectory", "nosv", 
+   "\"The notebook \\!\\(\\*TemplateBox[Association[RuleDelayed[\\\"obj\\\", \
+NotebookObject[\\\"b6121ead-a1b8-4a55-b610-22395298a9dc\\\", \
+\\\"d0cb5e19-92d2-4ccb-bb7a-aa433f469af0\\\"]], Rule[\\\"label\\\", \
+\\\"\\\\\\\"Untitled-9\\\\\\\"\\\"]], \\\"NotebookObjectUUIDsUnsaved\\\"]\\) \
+is not saved.\"", 2, 94, 39, 18270567337044682674, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.941471554920206*^9},
+ CellLabel->
+  "During evaluation of \
+In[94]:=",ExpressionUUID->"b066f5ef-0b5b-4ac9-81e5-e2487517bb58"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ParentDirectory", "nums", 
+   "\"Argument \\!\\(\\*RowBox[{\\\"$Failed\\\"}]\\) should be a positive \
+machine-size integer, a nonempty string, or a File specification.\"", 2, 94, 
+   40, 18270567337044682674, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9414715549321003`*^9},
+ CellLabel->
+  "During evaluation of \
+In[94]:=",ExpressionUUID->"b6ab09b7-bcdc-4330-abe8-f6800d1ba73b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "SetDirectory", "badfile", 
+   "\"The specified argument, \\!\\(\\*RowBox[{\\\"ParentDirectory\\\", \\\"[\
+\\\", \\\"$Failed\\\", \\\"]\\\"}]\\), should be a valid string or File.\"", 
+   2, 94, 41, 18270567337044682674, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.941471554933939*^9},
+ CellLabel->
+  "During evaluation of \
+In[94]:=",ExpressionUUID->"eff70b44-498d-4cf3-99ab-3dac2fbced28"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 730},
+WindowMargins->{{Automatic, -4}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b6121ead-a1b8-4a55-b610-22395298a9dc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 161, 3, 53, "Subtitle",ExpressionUUID->"6436cfd5-eae4-4596-a17e-83219a0c7f2a"],
+Cell[CellGroupData[{
+Cell[766, 29, 688, 17, 73, "Input",ExpressionUUID->"3a2280fd-81ed-4771-a854-91a81485b830"],
+Cell[1457, 48, 600, 12, 34, "Message",ExpressionUUID->"b066f5ef-0b5b-4ac9-81e5-e2487517bb58"],
+Cell[2060, 62, 441, 10, 28, "Message",ExpressionUUID->"b6ab09b7-bcdc-4330-abe8-f6800d1ba73b"],
+Cell[2504, 74, 449, 10, 28, "Message",ExpressionUUID->"eff70b44-498d-4cf3-99ab-3dac2fbced28"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
