@@ -6,6 +6,7 @@ def test_list_comps(n: int) -> None:
         
 def dec_pattern_1(n: int) -> None:
     print([[n-j-i for j in range(0, n-i)] for i in range(0, n)])
+    # print([[n-j-i for j in range(0, n)] for i in range(n, 0, -1)])
     
 if __name__ == "__main__":
     test_list_comps(10)
