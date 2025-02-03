@@ -1,0 +1,768 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     31109,        760]
+NotebookOptionsPosition[     29586,        728]
+NotebookOutlinePosition[     29983,        744]
+CellTagsIndexPosition[     29940,        741]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv101`\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"contains", " ", "RollIC"}], " ", "&"}], " ", "RollBackIC"}], 
+   " ", "*)"}]}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.8159227950159807`*^9, 3.815922857230071*^9}, {
+   3.832959057462519*^9, 3.8329590603471575`*^9}, 3.938448124213293*^9, {
+   3.939048652824898*^9, 3.939048662772999*^9}, {3.939048891462473*^9, 
+   3.939048899769232*^9}, {3.939050675614113*^9, 3.9390506757015133`*^9}, {
+   3.9390507275600243`*^9, 3.93905072931427*^9}, 3.9447810957049675`*^9, {
+   3.9447829973152733`*^9, 3.9447830122680264`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"0e8acd81-f999-cd4d-8467-5beeb7433e17"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"IC1", "=", 
+  RowBox[{"{", 
+   RowBox[{"IndexedConcatenate", "[", 
+    RowBox[{"k", ",", 
+     RowBox[{"k", "+", "1"}], ",", 
+     RowBox[{"k", "+", "2"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", "1", ",", "4"}], "}"}]}], "]"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"IC1", "//", "ExpandAll"}]}], "Input",
+ CellChangeTimes->{{3.9447820468244457`*^9, 3.9447821199416656`*^9}, {
+  3.944782152128151*^9, 3.9447822593470745`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"c3c9d00b-2d7a-e24a-9d76-3aa6adca36f2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox[
+   RowBox[{
+    UnderoverscriptBox["\[Euro]", 
+     RowBox[{"k", "\[DoubleRightTee]", "1"}], "4"], "[", "k", ",", 
+    RowBox[{"1", "+", "k"}], ",", 
+    RowBox[{"2", "+", "k"}], "]"}],
+   DisplayForm], "}"}]], "Output",
+ CellChangeTimes->{{3.944782072271473*^9, 3.944782093694851*^9}, {
+   3.944782159271368*^9, 3.9447822030336533`*^9}, {3.944782248923214*^9, 
+   3.9447822599950523`*^9}, 3.9447841507971478`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"3f6d62ee-dd05-6347-a394-115fc1d40efb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "3", ",", "2", ",", "3", ",", "4", ",", "3", ",", "4", 
+   ",", "5", ",", "4", ",", "5", ",", "6"}], "}"}]], "Output",
+ CellChangeTimes->{{3.944782072271473*^9, 3.944782093694851*^9}, {
+   3.944782159271368*^9, 3.9447822030336533`*^9}, {3.944782248923214*^9, 
+   3.9447822599950523`*^9}, 3.9447841507971478`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"1e8f365a-b4b9-7f41-84da-91aaf4e80d39"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"IC1", "=", 
+  RowBox[{"RollBackIC", "@", 
+   RowBox[{"RollBackIC", "@", 
+    RowBox[{"RollBackIC", "@", 
+     RowBox[{"{", 
+      RowBox[{"IndexedConcatenate", "[", 
+       RowBox[{"k", ",", 
+        RowBox[{"k", "+", "1"}], ",", 
+        RowBox[{"k", "+", "2"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"k", ",", "1", ",", "4"}], "}"}]}], "]"}], 
+      "}"}]}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"IC1", "//", "ExpandAll"}]}], "Input",
+ CellChangeTimes->{{3.9447820468244457`*^9, 3.9447821199416656`*^9}, {
+  3.944782152128151*^9, 3.9447823102764034`*^9}, {3.9447830226260967`*^9, 
+  3.9447830572685585`*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"3e4af4a4-3a6f-d44a-8bc8-eadc044ba451"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox[
+   RowBox[{
+    UnderoverscriptBox["\[Euro]", 
+     RowBox[{"k", "\[DoubleRightTee]", "1"}], "4"], "[", 
+    RowBox[{"1", "+", "k"}], ",", 
+    RowBox[{"2", "+", "k"}], ",", 
+    RowBox[{"3", "+", "k"}], "]"}],
+   DisplayForm], "}"}]], "Output",
+ CellChangeTimes->{{3.9447822762913265`*^9, 3.944782311363016*^9}, {
+  3.9447830344005375`*^9, 3.944783058818468*^9}},
+ CellLabel->"Out[36]=",ExpressionUUID->"a9a9ec91-1e94-db48-aefa-01ca8b31a12f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "3", ",", "4", ",", "3", ",", "4", ",", "5", ",", "4", ",", "5", 
+   ",", "6", ",", "5", ",", "6", ",", "7"}], "}"}]], "Output",
+ CellChangeTimes->{{3.9447822762913265`*^9, 3.944782311363016*^9}, {
+  3.9447830344005375`*^9, 3.944783058829088*^9}},
+ CellLabel->"Out[37]=",ExpressionUUID->"b208c513-7d53-024b-8da9-aac7392253fd"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Code", " ", "to", " ", 
+    RowBox[{"(", 
+     RowBox[{"attempt", " ", "to"}], ")"}], " ", "reduce", " ", "lists", " ", 
+    "to", " ", 
+    RowBox[{"(", "nested", ")"}], " ", "indexed", " ", "concatenations"}], 
+   " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"$debug", "=", "False"}], ";"}], "\n", 
+   RowBox[{"(*", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"ReduceToIC", "::", "usage"}], " ", "=", 
+      "\"\<ReduceToIC[\\!\\(\\*StyleBox[\\\"l\\\",FontSlant->\\\"Italic\\\"]\\\
+)] takes a list \\!\\(\\*StyleBox[\\\"l\\\",FontSlant->\\\"Italic\\\"]\\) of \
+elements or nested lists of elements, and summarizes duplicate elements and \
+duplicate subsequences using DoConcatenate objects, having the format \
+\\!\\(\\*TagBox[RowBox[{UnderoverscriptBox[StyleBox[\\\"\[Euro]\\\",FontSize->\
+18], RowBox[{\\\"var\\\", \\\"=\\\", \\\"start\\\"}], \\\"finish\\\"], \
+\\\"[\\\", \\\"...\\\", \\\"]\\\"}],DisplayForm]\\), specifying how many \
+times the elements or subsequences are repeated.\>\""}], ";"}], 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", "*)"}]}]}]], "Input",
+ CellChangeTimes->{
+  3.944781779325886*^9, {3.9447820244309616`*^9, 3.9447820430532837`*^9}, {
+   3.9447830915651417`*^9, 3.944783115737854*^9}, {3.94478427473687*^9, 
+   3.944784279886875*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"fa919249-a268-dd4c-a8a8-7c661a7ee80a"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Clear", "[", "FindSeqFns", "]"}], ";"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"FindSeqFns", "[", 
+    RowBox[{"repLen_Integer", ",", "varName_", ",", "subseqList_List"}], 
+    "]"}], " ", ":=", " ", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "parted", ",", "firstRep", ",", "numArray", ",", "fnList", ",", "ans"}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"$debug", " ", "&&", " ", 
+         RowBox[{"\"\<N\>\"", "===", 
+          RowBox[{"Input", "[", "\"\<Continue? (Y/N)\>\"", "]"}]}]}], ",", 
+        RowBox[{"Abort", "[", "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"parted", "=", 
+       RowBox[{"Partition", "[", 
+        RowBox[{"subseqList", ",", "repLen"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"firstRep", "=", 
+       RowBox[{"First", "@", "parted"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", 
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<Entering FindSeqFns with:\\n parted: \>\"", ",", "parted", ",", 
+          "\"\<\\n firstRep: \>\"", ",", "firstRep"}], "]"}]}], "]"}], ";", 
+      RowBox[{"numArray", " ", "=", " ", 
+       RowBox[{"Transpose", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Cases", "[", 
+           RowBox[{"#", ",", "_Integer", ",", "\[Infinity]"}], "]"}], "&"}], 
+         " ", "/@", " ", "parted"}], "]"}]}], ";", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\<\\nNumerical Table to fit:\\n\>\"", ",", 
+          RowBox[{"Grid", "@", 
+           RowBox[{"Transpose", "@", "numArray"}]}]}], "]"}]}], "]"}], ";", 
+      RowBox[{"fnList", "=", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"FindSequenceFunction", "[", 
+          RowBox[{"#", ",", "varName"}], "]"}], "&"}], " ", "/@", " ", 
+        "numArray"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"!", 
+         RowBox[{"FreeQ", "[", 
+          RowBox[{"fnList", ",", "FindSequenceFunction"}], "]"}]}], ",", 
+        RowBox[{"If", "[", 
+         RowBox[{"$debug", ",", 
+          RowBox[{"Print", "[", 
+           RowBox[{
+           "\"\<FindSeqFns failed\\n\>\"", ",", "subseqList", ",", 
+            "\"\<\\n\>\"", ",", "fnList"}], "]"}], ",", 
+          RowBox[{"Return", "[", "subseqList", "]"}]}], "]"}]}], "]"}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", 
+        RowBox[{
+         RowBox[{"Print", "[", 
+          RowBox[{"\"\<Function list: \>\"", ",", "fnList"}], "]"}], ";", 
+         "  ", 
+         RowBox[{"Print", "[", 
+          RowBox[{"parted", ",", " ", "\"\< : \>\"", ",", "firstRep"}], "]"}],
+          ";", "  ", 
+         RowBox[{"Print", "@", 
+          RowBox[{"Position", "[", 
+           RowBox[{"firstRep", ",", "_Integer"}], "]"}]}], ";", " ", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Print", "[", 
+          RowBox[{"ReplacePart", "[", 
+           RowBox[{"firstRep", ",", 
+            RowBox[{"Thread", "[", 
+             RowBox[{
+              RowBox[{"Position", "[", 
+               RowBox[{"firstRep", ",", "_Integer"}], "]"}], " ", "->", " ", 
+              "fnList"}], "]"}]}], "]"}], "]"}]}]}], "]"}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"ans", "=", 
+       RowBox[{"{", 
+        RowBox[{"IndexedConcatenate", "[", 
+         RowBox[{
+          RowBox[{"Sequence", "@@", 
+           RowBox[{"ReplacePart", "[", 
+            RowBox[{"firstRep", ",", 
+             RowBox[{"Thread", "[", 
+              RowBox[{
+               RowBox[{"Position", "[", 
+                RowBox[{"firstRep", ",", "_Integer"}], "]"}], " ", "->", " ", 
+               "fnList"}], "]"}]}], "]"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"varName", ",", "1", ",", 
+            RowBox[{
+             RowBox[{"Length", "[", "subseqList", "]"}], "/", "repLen"}]}], 
+           "}"}]}], "]"}], "}"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Print", "[", 
+          RowBox[{"\"\<ans: \>\"", ",", "ans"}], "]"}], ";", " ", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Print", "[", 
+          RowBox[{"\"\<ExpandAll[ans]: \>\"", ",", 
+           RowBox[{"ExpandAll", "[", "ans", "]"}]}], "]"}], ";", " ", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Print", "[", 
+          RowBox[{"\"\<ExpandAll[subseqList]: \>\"", ",", 
+           RowBox[{"ExpandAll", "[", "subseqList", "]"}]}], "]"}], ";", 
+         RowBox[{"Print", "@", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"ExpandAll", "[", "ans", "]"}], "===", 
+             RowBox[{"ExpandAll", "[", "subseqList", "]"}]}], ",", 
+            "\"\<(same)\>\"", ",", "\"\<(different)\>\""}], "]"}]}]}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"ExpandAll", "[", "ans", "]"}], "===", 
+         RowBox[{"ExpandAll", "[", "subseqList", "]"}]}], ",", "ans", ",", 
+        "subseqList"}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{
+  3.944781779325886*^9, {3.9447820244309616`*^9, 3.9447820430532837`*^9}, {
+   3.9447830915651417`*^9, 3.944783115737854*^9}, {3.9447831543602695`*^9, 
+   3.944783282513893*^9}, {3.944783339486471*^9, 3.944783419284588*^9}, {
+   3.9447835184090595`*^9, 3.9447835784065037`*^9}, {3.944783616030363*^9, 
+   3.9447837187709637`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"42f62932-2607-7f4a-9a5d-0786794b57fb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", "ReduceToIC", "]"}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.944781779325886*^9, {3.9447820244309616`*^9, 3.9447820430532837`*^9}, {
+   3.9447830915651417`*^9, 3.944783115737854*^9}, {3.9447831543602695`*^9, 
+   3.944783282513893*^9}, {3.944783339486471*^9, 3.944783419284588*^9}, {
+   3.9447835184090595`*^9, 3.9447835784065037`*^9}, {3.944783616030363*^9, 
+   3.9447837187709637`*^9}, {3.944783840659012*^9, 3.944783854307085*^9}, {
+   3.9447841924907513`*^9, 3.944784244056534*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"6e8a41af-aa84-ca49-a8e0-a182c953ab5c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ReduceToIC", "[", "l_List", "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"l1", ",", 
+       RowBox[{"l0", "=", "l"}], ",", "gl0", ",", "repLen", ",", "repMax", 
+       ",", "pos", ",", "varName", ",", "i", ",", "x", ",", "p", ",", "len"}],
+       "}"}], ",", "\n", 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"$debug", " ", "&&", " ", 
+         RowBox[{"\"\<N\>\"", "===", 
+          RowBox[{"Input", "[", "\"\<Continue? (Y/N)\>\"", "]"}]}]}], ",", 
+        RowBox[{"Abort", "[", "]"}]}], "]"}], ";", "\n", "\n", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\<Entering ReduceSetList with: \>\"", ",", "l"}], "]"}]}],
+        "]"}], ";", "\n", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "l", "]"}], "<=", "1"}], ",", "\n", 
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", "\"\<Immediate Return\>\"", "]"}]}], "]"}], 
+         ";", "\n", 
+         RowBox[{"Return", "[", "l", "]"}]}]}], "\n", "]"}], ";", "\n", "\n", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "first", " ", "check", " ", "for", " ", "subsequences", " ", "of", " ",
+         "duplicate", " ", "elements"}], " ", "*)"}], "\n", "\n", 
+      RowBox[{"len", "=", 
+       RowBox[{"Length", "[", "l0", "]"}]}], ";", "\n", 
+      RowBox[{"l1", "=", 
+       RowBox[{"SequenceReplace", "[", 
+        RowBox[{"l0", ",", "\n", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"x", ":", 
+            RowBox[{"Repeated", "[", 
+             RowBox[{"a_", ",", 
+              RowBox[{"{", 
+               RowBox[{"2", ",", "len"}], "}"}]}], "]"}]}], "}"}], ":>", 
+          RowBox[{"IndexedConcatenate", "[", 
+           RowBox[{"a", ",", 
+            RowBox[{"Length", "[", 
+             RowBox[{"{", "x", "}"}], "]"}]}], "]"}]}]}], "\n", "]"}]}], ";", 
+      " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "looks", " ", "for", " ", "an", " ", "exactly", " ", "repeated", " ", 
+        "subsequence"}], " ", "*)"}], "\n", "\n", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"l1", " ", "=!=", " ", "l0"}], ",", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+          RowBox[{"not", " ", "same"}], ",", " ", 
+          RowBox[{"repLen", " ", "1", " ", "worked"}]}], " ", "*)"}], "\n", 
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<exact repLen = 1: \>\"", ",", "l1"}], "]"}]}], "]"}],
+          ";", "\n", "\[IndentingNewLine]", "\n", 
+         RowBox[{"l1", "=", 
+          RowBox[{"ReduceToIC", "[", "l1", "]"}]}], ";", "\n", 
+         RowBox[{"Return", "[", "l1", "]"}], ";"}]}], " ", "\n", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{"if", " ", "changed"}], ",", " ", 
+         RowBox[{
+         "call", " ", "recursively", " ", "to", " ", "continue", " ", 
+          "trying"}]}], " ", "*)"}], "\n", "]"}], ";", "\n", "\n", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\<exact repLen: \>\"", ",", "1"}], "]"}]}], "]"}], ";", 
+      " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{"report", " ", "what", " ", "we", " ", "tried"}], " ", "*)"}], 
+      "\n", 
+      RowBox[{"repLen", " ", "=", " ", "2"}], ";", " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+         "start", " ", "with", " ", "length", " ", "of", " ", "repeating", 
+          " ", "unit"}], " ", "=", " ", "2"}], ",", " ", 
+        RowBox[{"up", " ", "to", " ", "max", " ", "useful"}]}], " ", "*)"}], 
+      "\n", 
+      RowBox[{"l0", "=", "l1"}], ";", " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "set", " ", "up", " ", "to", " ", "check", " ", "next", " ", 
+        "attempted", " ", "reduction"}], " ", "*)"}], "\n", 
+      RowBox[{"While", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"2", " ", "repLen"}], " ", "<=", " ", 
+         RowBox[{"(", 
+          RowBox[{"len", "=", 
+           RowBox[{"Length", "[", "l1", "]"}]}], ")"}]}], ",", "\n", 
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<exact repLen: \>\"", ",", "repLen"}], "]"}]}], "]"}],
+          ";", "\n", 
+         RowBox[{"l1", "=", 
+          RowBox[{"SequenceReplace", "[", 
+           RowBox[{"l1", ",", "\n", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ":", 
+               RowBox[{"Repeated", "[", 
+                RowBox[{
+                 RowBox[{"PatternSequence", "@@", 
+                  RowBox[{"Table", "[", 
+                   RowBox[{
+                    RowBox[{"ToExpression", "[", 
+                    RowBox[{
+                    RowBox[{"ToString", "@", 
+                    RowBox[{"Unique", "[", "x", "]"}]}], "<>", "\"\<_\>\""}], 
+                    "]"}], ",", 
+                    RowBox[{"{", "repLen", "}"}]}], "]"}]}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"2", ",", "\[Infinity]"}], "}"}]}], "]"}]}], "}"}], 
+             ":>", "\n", 
+             RowBox[{"IndexedConcatenate", "[", 
+              RowBox[{
+               RowBox[{"Sequence", "@@", 
+                RowBox[{"Take", "[", 
+                 RowBox[{
+                  RowBox[{"{", "x", "}"}], ",", "repLen"}], "]"}]}], ",", 
+               RowBox[{
+                RowBox[{"Length", "[", 
+                 RowBox[{"{", "x", "}"}], "]"}], "/", "repLen"}]}], "]"}]}]}],
+            "\n", "]"}]}], ";", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"l1", " ", "=!=", " ", "l0"}], ",", "\n", 
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{"$debug", ",", 
+              RowBox[{"Print", "[", 
+               RowBox[{
+               "\"\<Changed (in While): exact repLen = \>\"", ",", "repLen", 
+                ",", "\"\<: \>\"", ",", "l1"}], "]"}]}], "]"}], ";", "\n", 
+            "\[IndentingNewLine]", 
+            RowBox[{"l1", "=", 
+             RowBox[{"ReduceSetList", "[", "l1", "]"}]}], ";", 
+            "\[IndentingNewLine]", "\n", 
+            RowBox[{"If", "[", 
+             RowBox[{"$debug", ",", 
+              RowBox[{"Print", "[", 
+               RowBox[{"\"\<reduced? : \>\"", ",", "l1"}], "]"}]}], "]"}], 
+            ";", "\n", 
+            RowBox[{"Return", "[", "l1", "]"}]}]}], "\n", "]"}], ";", "\n", 
+         RowBox[{"(*", " ", 
+          RowBox[{
+           RowBox[{"if", " ", "changed"}], ",", " ", 
+           RowBox[{
+           "call", " ", "recursively", " ", "to", " ", "continue", " ", 
+            "reduction"}], ",", " ", 
+           RowBox[{"else", " ", "try", " ", "next", " ", "repLen"}]}], " ", 
+          "*)"}], "\n", 
+         RowBox[{"repLen", "++"}], ";"}]}], "\n", "]"}], ";", "\n", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", 
+        RowBox[{"Print", "[", "\"\<Exiting While[...replen...]\>\"", "]"}]}], 
+       "]"}], ";", "\n", "\n", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"l1", " ", "=!=", " ", "l0"}], ",", "\n", 
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{
+            "\"\<Changed: exact repLen = \>\"", ",", "repLen", ",", 
+             "\"\<: \>\"", ",", "l1"}], "]"}]}], "]"}], ";", "\n", 
+         RowBox[{"l1", "=", 
+          RowBox[{"ReduceSetList", "[", "l1", "]"}]}], ";", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<reduced? : \>\"", ",", "l1"}], "]"}]}], "]"}], ";", 
+         "\n", 
+         RowBox[{"Return", "[", "l1", "]"}]}]}], "\n", "]"}], ";", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{"if", " ", "changed"}], ",", " ", 
+        RowBox[{
+        "call", " ", "recursively", " ", "to", " ", "continue", " ", 
+         "trying"}], ",", " ", 
+        RowBox[{
+        "else", " ", "try", " ", "the", " ", "generic", " ", "list"}]}], " ", 
+       "*)"}], "\n", "\n", 
+      RowBox[{"If", "[", 
+       RowBox[{"$debug", ",", 
+        RowBox[{"Print", "[", "\"\<Treating Generic patterns\>\"", "]"}]}], 
+       "]"}], ";", "\n", "\n", 
+      RowBox[{"repLen", " ", "=", " ", "1"}], ";", "            ", 
+      RowBox[{"(*", " ", 
+       RowBox[{"first", " ", "time", " ", "choice"}], " ", "*)"}], "\n", 
+      RowBox[{"l0", "=", 
+       RowBox[{"{", "}"}]}], ";", "                     ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "force", " ", "one", " ", "time", " ", "through", " ", "loop"}], " ", 
+       "*)"}], "\n", "\n", 
+      RowBox[{"While", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"l1", "=!=", "l0"}], " ", "&&", " ", 
+         RowBox[{
+          RowBox[{"Length", "[", "l1", "]"}], ">", "1"}]}], ",", " ", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+          RowBox[{"while", " ", "changed"}], ",", " ", 
+          RowBox[{"and", " ", "of", " ", "course"}], ",", " ", 
+          RowBox[{"the", " ", "first", " ", "time"}]}], " ", "*)"}], "\n", 
+        RowBox[{
+         RowBox[{"l0", "=", "l1"}], ";", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<orig: \>\"", ",", "l0"}], "]"}]}], "]"}], ";", "\n", 
+         RowBox[{"len", "=", 
+          RowBox[{"Length", "[", "l0", "]"}]}], ";", "\n", "\n", 
+         RowBox[{"gl0", "=", 
+          RowBox[{"(", 
+           RowBox[{"l0", " ", "/.", " ", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"i_Integer", " ", "/;", " ", 
+               RowBox[{"i", "!=", "1"}]}], ")"}], " ", "->", "0"}]}], ")"}]}],
+          ";", "\n", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<generic: \>\"", ",", "gl0"}], "]"}]}], "]"}], ";", 
+         "\n", "\n", 
+         RowBox[{"pos", "=", 
+          RowBox[{"SequencePosition", "[", 
+           RowBox[{"gl0", ",", 
+            RowBox[{"{", 
+             RowBox[{"Repeated", "[", 
+              RowBox[{
+               RowBox[{"PatternSequence", "[", "x_", "]"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"2", ",", "len"}], "}"}]}], "]"}], "}"}], ",", 
+            RowBox[{"Overlaps", "->", "False"}]}], "]"}]}], ";", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{
+            "\"\<generic repLen: \>\"", ",", " ", "repLen", ",", 
+             "\"\<, pos: \>\"", ",", "pos"}], "]"}]}], "]"}], ";", "\n", "\n", 
+         RowBox[{"While", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"Length", "[", "pos", "]"}], "==", "0"}], " ", "&&", " ", 
+            RowBox[{
+             RowBox[{"Length", "[", "l0", "]"}], ">", "1"}], " ", "&&", 
+            RowBox[{
+             RowBox[{"Length", "[", "l0", "]"}], ">", 
+             RowBox[{"2", "*", 
+              RowBox[{"(", 
+               RowBox[{"repLen", "+", "1"}], ")"}]}]}]}], ",", "\n", 
+           RowBox[{
+            RowBox[{"repLen", "++"}], ";", "\n", 
+            RowBox[{"pos", "=", 
+             RowBox[{"SequencePosition", "[", 
+              RowBox[{"gl0", ",", 
+               RowBox[{"{", 
+                RowBox[{"Repeated", "[", 
+                 RowBox[{
+                  RowBox[{"PatternSequence", "@@", 
+                   RowBox[{"Table", "[", 
+                    RowBox[{
+                    RowBox[{"ToExpression", "[", 
+                    RowBox[{
+                    RowBox[{"ToString", "@", 
+                    RowBox[{"Unique", "[", "x", "]"}]}], "<>", "\"\<_\>\""}], 
+                    "]"}], ",", 
+                    RowBox[{"{", "repLen", "}"}]}], "]"}]}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"2", ",", "\[Infinity]"}], "}"}]}], "]"}], "}"}], 
+               ",", 
+               RowBox[{"Overlaps", "->", "False"}]}], "]"}]}], ";", "\n", 
+            RowBox[{"If", "[", 
+             RowBox[{"$debug", ",", 
+              RowBox[{"Print", "[", 
+               RowBox[{
+               "\"\<generic repLen: \>\"", ",", " ", "repLen", ",", 
+                "\"\<, pos: \>\"", ",", "pos"}], "]"}]}], "]"}], ";"}]}], 
+          "\n", "]"}], ";", "\n", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"pos", "==", "0"}], ",", "\n", 
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{"$debug", ",", 
+              RowBox[{
+              "Print", "[", "\"\<Returning, no generic matches found\>\"", 
+               "]"}]}], "]"}], ";", "\n", 
+            RowBox[{"Return", "[", "l0", "]"}]}]}], "]"}], ";", "  ", 
+         RowBox[{"(*", " ", 
+          RowBox[{"No", " ", "further", " ", "reduction", " ", "found"}], " ",
+           "*)"}], "\n", "\n", 
+         RowBox[{"(*", " ", 
+          RowBox[{
+          "at", " ", "least", " ", "one", " ", "possible", " ", "reduction", 
+           " ", "found"}], " ", "*)"}], "\n", "\n", 
+         RowBox[{"Do", "[", "     ", 
+          RowBox[{"(*", " ", 
+           RowBox[{
+            RowBox[{
+            "find", " ", "first", " ", "unused", " ", "variable", " ", "name",
+              " ", "of", " ", "form", " ", "n$i"}], ",", " ", 
+            RowBox[{
+            "where", " ", "i", " ", "is", " ", "an", " ", "integer"}]}], " ", 
+           "*)"}], "\n", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"varName", "=", 
+             RowBox[{"ToExpression", "[", 
+              RowBox[{"\"\<n$\>\"", "<>", 
+               RowBox[{"ToString", "[", "i", "]"}]}], "]"}]}], ";", "\n", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{"FreeQ", "[", 
+               RowBox[{"l0", ",", "varName"}], "]"}], ",", 
+              RowBox[{"Break", "[", "]"}]}], "]"}]}], ",", "\n", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", "1", ",", "\[Infinity]"}], "}"}]}], "]"}], ";", 
+         "\n", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{"$debug", ",", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<new varName: \>\"", ",", "varName"}], "]"}]}], "]"}],
+          ";", "\n", "\n", 
+         RowBox[{"l1", "=", 
+          RowBox[{"Flatten", "[", 
+           RowBox[{
+            RowBox[{"SequenceSplit", "[", 
+             RowBox[{"l0", ",", 
+              RowBox[{"Thread", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"Take", "[", 
+                    RowBox[{"l0", ",", "#"}], "]"}], "&"}], " ", "/@", " ", 
+                  "pos"}], ")"}], " ", "->", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"FindSeqFns", "[", 
+                    RowBox[{"repLen", ",", "varName", ",", 
+                    RowBox[{"Take", "[", 
+                    RowBox[{"l0", ",", "#"}], "]"}]}], "]"}], "&"}], " ", "/@",
+                   " ", "pos"}], ")"}]}], "]"}]}], "]"}], ",", "1"}], "]"}]}],
+          ";", "\n", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"l1", "=!=", "l0"}], ",", " ", "\n", 
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{"$debug", ",", 
+              RowBox[{"Print", "[", 
+               RowBox[{
+               "\"\<generic repLen = \>\"", ",", "repLen", ",", "\"\<: \>\"", 
+                ",", "l1"}], "]"}]}], "]"}], ";"}]}], "\n", "]"}], ";"}]}], 
+       "\n", "]"}], ";", " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{"end", " ", "of", " ", "While", " ", "l1"}], "\[NotEqual]", 
+        RowBox[{"l0", " ", "loop"}]}], " ", "*)"}], "\n", "\n", "l1"}]}], " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"here", " ", "l1"}], "==", "l0"}], ",", " ", 
+      RowBox[{"best", " ", "we", " ", "can", " ", "do"}]}], " ", "*)"}], "\n",
+     "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.944781779325886*^9, {3.9447820244309616`*^9, 3.9447820430532837`*^9}, {
+   3.9447830915651417`*^9, 3.944783115737854*^9}, {3.9447831543602695`*^9, 
+   3.944783282513893*^9}, {3.944783339486471*^9, 3.944783419284588*^9}, {
+   3.9447835184090595`*^9, 3.9447835784065037`*^9}, {3.944783616030363*^9, 
+   3.9447837187709637`*^9}, {3.944783840659012*^9, 3.944783854307085*^9}, {
+   3.9447841924907513`*^9, 3.944784244056534*^9}, {3.9447843452221184`*^9, 
+   3.9447844146959877`*^9}},ExpressionUUID->"113298ff-6af4-824f-a22c-\
+58b0b2219df2"],
+
+Cell[BoxData["1267650600228229401496703205376"], "Output",
+ CellChangeTimes->{3.9447820307293835`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"9b7b3303-881e-c94d-a7bf-e8027aca8ea7"]
+}, Open  ]]
+},
+WindowSize->{1117, 673},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"44104104-8997-3f4a-b0d3-2f93ae047383"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 968, 22, 82, "Input",ExpressionUUID->"0e8acd81-f999-cd4d-8467-5beeb7433e17",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[1547, 46, 546, 13, 47, "Input",ExpressionUUID->"c3c9d00b-2d7a-e24a-9d76-3aa6adca36f2"],
+Cell[2096, 61, 531, 12, 45, "Output",ExpressionUUID->"3f6d62ee-dd05-6347-a394-115fc1d40efb"],
+Cell[2630, 75, 452, 8, 32, "Output",ExpressionUUID->"1e8f365a-b4b9-7f41-84da-91aaf4e80d39"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3119, 88, 723, 17, 47, "Input",ExpressionUUID->"3e4af4a4-3a6f-d44a-8bc8-eadc044ba451"],
+Cell[3845, 107, 482, 12, 45, "Output",ExpressionUUID->"a9a9ec91-1e94-db48-aefa-01ca8b31a12f"],
+Cell[4330, 121, 378, 7, 32, "Output",ExpressionUUID->"b208c513-7d53-024b-8da9-aac7392253fd"]
+}, Open  ]],
+Cell[4723, 131, 1463, 29, 237, "Input",ExpressionUUID->"fa919249-a268-dd4c-a8a8-7c661a7ee80a"],
+Cell[6189, 162, 5901, 141, 522, "Input",ExpressionUUID->"42f62932-2607-7f4a-9a5d-0786794b57fb"],
+Cell[12093, 305, 613, 10, 28, "Input",ExpressionUUID->"6e8a41af-aa84-ca49-a8e0-a182c953ab5c"],
+Cell[CellGroupData[{
+Cell[12731, 319, 16656, 402, 1892, "Input",ExpressionUUID->"113298ff-6af4-824f-a22c-58b0b2219df2"],
+Cell[29390, 723, 180, 2, 32, "Output",ExpressionUUID->"9b7b3303-881e-c94d-a7bf-e8027aca8ea7"]
+}, Open  ]]
+}
+]
+*)
+
