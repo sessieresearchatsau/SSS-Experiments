@@ -1,0 +1,560 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21538,        552]
+NotebookOptionsPosition[     18985,        501]
+NotebookOutlinePosition[     19547,        522]
+CellTagsIndexPosition[     19504,        519]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"SetDirectory", "[", 
+    RowBox[{"ParentDirectory", "[", 
+     RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], ";"}], 
+  "  "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"IC", "=", "IndexedConcatenate"}], ";", "    ", 
+  RowBox[{"Cat", "=", "Concatenate"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.94829571256674*^9, 3.9482957130074825`*^9}, {
+   3.948296661807789*^9, 3.9482966618100967`*^9}, {3.948299658524378*^9, 
+   3.9482996940356617`*^9}, 3.9513050424616528`*^9, {3.9513051050580597`*^9, 
+   3.9513051078471107`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"c36e4b5d-0c08-db49-ab55-8d88ece836d9"],
+
+Cell[CellGroupData[{
+
+Cell["Write a decimal in IC from, then do an operation on it", "Subsection",
+ CellChangeTimes->{
+  3.9482969915145054`*^9, {3.948297040975073*^9, 3.948297048823988*^9}, {
+   3.9482994828547535`*^9, 3.9482994899986687`*^9}, {3.9513033003611774`*^9, 
+   3.9513033207168827`*^9}, 
+   3.9513035499959774`*^9},ExpressionUUID->"dd841f86-7eb6-9340-ba46-\
+b101efd18636"],
+
+Cell[CellGroupData[{
+
+Cell["Simple multiplication 1", "Subsubsection",
+ CellChangeTimes->{
+  3.9482969915145054`*^9, {3.948297040975073*^9, 3.948297048823988*^9}, {
+   3.9482994828547535`*^9, 3.9482994899986687`*^9}, {3.9513033003611774`*^9, 
+   3.9513033207168827`*^9}, {3.951303555667185*^9, 3.951303559051323*^9}, {
+   3.951303712549593*^9, 
+   3.951303720889036*^9}},ExpressionUUID->"a0e4fbdd-71d2-6f4b-8911-\
+2ca6bfc69b02"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     FractionBox["1", "3"], "=", 
+     RowBox[{"0.333", "\[Ellipsis]"}], "=", 
+     TemplateBox[{"0.", 
+       OverscriptBox["3", "_"]},
+      "RowDefault"], "=", 
+     TemplateBox[{"0.", 
+       OverscriptBox["\[Euro]", "\[Infinity]"], "3"},
+      "RowDefault"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"d30d5ba2-472c-c841-9ff2-9e9e53bc33bb"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 
+  3.9513034135960636`*^9}},ExpressionUUID->"02a3c44a-a5e9-144b-932a-\
+1f8a6d353d6f"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"3", GridBox[{
+     {
+      RowBox[{"(", 
+       FractionBox["1", "3"], ")"}], "=", 
+      RowBox[{"0.999", "\[Ellipsis]"}], "=", 
+      TemplateBox[{"0.", 
+        OverscriptBox["9", "_"]},
+       "RowDefault"], "=", 
+      TemplateBox[{"0.", 
+        OverscriptBox["\[Euro]", "\[Infinity]"], "9"},
+       "RowDefault"]}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}],
+   TraditionalForm]],ExpressionUUID->"f406a032-5d4e-e64e-beb0-bc0ec5a4b6b5"]],\
+ "Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513034781809177`*^9, 
+  3.951303520390663*^9}},ExpressionUUID->"3c88537b-1146-f846-a98c-\
+a77a776418cd"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"2", GridBox[{
+     {
+      RowBox[{"(", 
+       FractionBox["1", "3"], ")"}], "=", 
+      RowBox[{"0.666", "\[Ellipsis]"}], "=", 
+      TemplateBox[{"0.", 
+        OverscriptBox["6", "_"]},
+       "RowDefault"], "=", 
+      TemplateBox[{"0.", 
+        OverscriptBox["\[Euro]", "\[Infinity]"], "6"},
+       "RowDefault"]}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}],
+   TraditionalForm]],ExpressionUUID->"053e0aab-4cd3-c04a-8594-0bc9bd30df90"]],\
+ "Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513034781809177`*^9, 
+  3.9513035420037384`*^9}},ExpressionUUID->"ed107863-fdcc-e24f-91e9-\
+913efd997cb2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Simple multiplication 2", "Subsubsection",
+ CellChangeTimes->{
+  3.9482969915145054`*^9, {3.948297040975073*^9, 3.948297048823988*^9}, {
+   3.9482994828547535`*^9, 3.9482994899986687`*^9}, {3.9513033003611774`*^9, 
+   3.9513033207168827`*^9}, {3.951303555667185*^9, 3.951303559051323*^9}, {
+   3.9513037254826107`*^9, 
+   3.9513037269255333`*^9}},ExpressionUUID->"269133e6-b22c-b645-a3c7-\
+d7c398d8e866"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     FractionBox["1", "7"], "=", 
+     TemplateBox[{"0.", 
+       OverscriptBox["142857", "_"]},
+      "RowDefault"], "=", 
+     TemplateBox[{"0.", 
+       OverscriptBox["\[Euro]", "\[Infinity]"], 
+       RowBox[{"(", "142857", ")"}]},
+      "RowDefault"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"ac0b5593-1707-d54b-bb81-ba1bfc83f6e2"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 
+  3.9513036491668777`*^9}},ExpressionUUID->"faf17262-6b5d-d14e-be24-\
+bcea903cdb68"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"2", 
+      RowBox[{"(", 
+       FractionBox["1", "7"], ")"}]}], "=", 
+     TemplateBox[{"0.", 
+       OverscriptBox["285714", "_"]},
+      "RowDefault"], "=", 
+     TemplateBox[{"0.", 
+       OverscriptBox["\[Euro]", "\[Infinity]"], 
+       RowBox[{"(", "285714", ")"}]},
+      "RowDefault"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"c346d07d-6f32-164d-a346-93b5c6fd3dfd"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 
+  3.9513036892498455`*^9}},ExpressionUUID->"286884c6-0c27-b14b-8e41-\
+a08c13fc7acb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Simple multiplication 3", "Subsubsection",
+ CellChangeTimes->{
+  3.9482969915145054`*^9, {3.948297040975073*^9, 3.948297048823988*^9}, {
+   3.9482994828547535`*^9, 3.9482994899986687`*^9}, {3.9513033003611774`*^9, 
+   3.9513033207168827`*^9}, {3.951303555667185*^9, 3.951303559051323*^9}, {
+   3.9513037254826107`*^9, 
+   3.9513037363441105`*^9}},ExpressionUUID->"4561d0bf-0b7b-7442-92c4-\
+74305987ac07"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"0.010010001", "\[Ellipsis]"}], "=", 
+     TemplateBox[{"0.", 
+       UnderoverscriptBox["\[Euro]", 
+        RowBox[{"i", "\[DoubleRightTee]", "1"}], "\[Infinity]"], "(", "(", 
+       UnderoverscriptBox["\[Euro]", 
+        RowBox[{"j", "\[DoubleRightTee]", "1"}], "i"], "0", ")", "1", ")"},
+      "RowDefault"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"0aef35a6-b095-9e4e-93e7-2d749f448774"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 3.9513036491668777`*^9}, {3.9513037678273335`*^9, 
+  3.9513038183751564`*^9}},ExpressionUUID->"9e18f028-07c9-204b-8431-\
+b3b1059d3ee1"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{"5", 
+      RowBox[{"(", 
+       RowBox[{"0.010010001", "\[Ellipsis]"}], ")"}]}], "=", 
+     TemplateBox[{"0.", 
+       UnderoverscriptBox["\[Euro]", 
+        RowBox[{"i", "\[DoubleRightTee]", "1"}], "\[Infinity]"], "(", "(", 
+       UnderoverscriptBox["\[Euro]", 
+        RowBox[{"j", "\[DoubleRightTee]", "1"}], "i"], "0", ")", "5", ")"},
+      "RowDefault"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"b4809b78-eb2e-6b4d-9c6b-710d5b2b36db"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 3.9513036491668777`*^9}, {3.9513037678273335`*^9, 
+  3.951303854242941*^9}},ExpressionUUID->"709cce8f-2a00-eb4b-ae73-\
+b80bbd9d542e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Division 1: method = partially unpack", "Subsubsection",
+ CellChangeTimes->{
+  3.9482969915145054`*^9, {3.948297040975073*^9, 3.948297048823988*^9}, {
+   3.9482994828547535`*^9, 3.9482994899986687`*^9}, {3.9513033003611774`*^9, 
+   3.9513033207168827`*^9}, {3.951303555667185*^9, 3.951303559051323*^9}, {
+   3.9513037254826107`*^9, 3.9513037363441105`*^9}, {3.9513038662791977`*^9, 
+   3.951303868731985*^9}, {3.951303905354908*^9, 
+   3.951303914246788*^9}},ExpressionUUID->"9d4c558f-4992-fc4d-b8bc-\
+d6f033e0af30"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     FractionBox["1", "7"], "=", 
+     TemplateBox[{"0.", 
+       OverscriptBox["\[Euro]", "\[Infinity]"], 
+       RowBox[{"(", "142857", ")"}]},
+      "RowDefault"], "=", 
+     TemplateBox[{"0.142857", 
+       OverscriptBox["\[Euro]", "\[Infinity]"], 
+       RowBox[{"(", "142857", ")"}]},
+      "RowDefault"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"f4ce33e7-54c8-4b43-b397-ee38673c32c1"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 3.9513036491668777`*^9}, {3.9513039783221283`*^9, 
+  3.9513039848096714`*^9}},ExpressionUUID->"2f44e4e5-2df9-524d-b3ea-\
+1173e007c9bb"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      FractionBox["1", "2"], 
+      RowBox[{"(", 
+       FractionBox["1", "7"], ")"}]}], "=", 
+     RowBox[{
+      FractionBox[
+       TemplateBox[{"0.142857142857", 
+         OverscriptBox["\[Euro]", "\[Infinity]"], 
+         RowBox[{"(", "142857", ")"}]},
+        "RowDefault"], "2"], GridBox[{
+        {"=", 
+         RowBox[{"0.", "\[VeryThinSpace]", 
+          FractionBox["142857142857", "2"], 
+          FractionBox[
+           TemplateBox[{" ", 
+             OverscriptBox["\[Euro]", "\[Infinity]"], 
+             RowBox[{"(", "142857", ")"}]},
+            "RowDefault"], "2"]}]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], GridBox[{
+        {"=", 
+         RowBox[{"0.", "\[VeryThinSpace]", "071428571428", 
+          FractionBox[
+           RowBox[{"1", 
+            TemplateBox[{" ", 
+              OverscriptBox["\[Euro]", "\[Infinity]"], 
+              RowBox[{"(", "142857", ")"}]},
+             "RowDefault"]}], "2"]}]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], GridBox[{
+        {"=", 
+         RowBox[{"0.", "\[VeryThinSpace]", "071428571428", 
+          TemplateBox[{" ", "571428", 
+            RowBox[{" ", 
+              FractionBox[
+               RowBox[{"1", 
+                 TemplateBox[{" ", 
+                   OverscriptBox["\[Euro]", "\[Infinity]"], 
+                   RowBox[{"(", "142857", ")"}]}, "RowDefault"]}], "2"]}]},
+           "RowDefault"]}]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"43bfcb54-a1d2-de41-aa2c-2f4a71ca6dbe"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 3.9513036491668777`*^9}, {3.9513039783221283`*^9, 
+  3.9513041931307545`*^9}, {3.951304244449972*^9, 3.9513042872475433`*^9}, {
+  3.9513043520059757`*^9, 3.9513043524176254`*^9}, {3.9513044190999374`*^9, 
+  3.951304473276619*^9}, {3.9513046065188484`*^9, 
+  3.951304660616617*^9}},ExpressionUUID->"34af8026-1a73-f24d-b45a-\
+3d8c7ab1dea4"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{GridBox[{
+     {"=", 
+      RowBox[{"0.", "\[VeryThinSpace]", "071428", 
+       TemplateBox[{" ", 
+         OverscriptBox["\[Euro]", "\[Infinity]"], 
+         RowBox[{"(", "571428", ")"}]},
+        "RowDefault"]}]}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+   GridBox[{
+     {GridBox[{
+        {"=", 
+         RowBox[{"0.0", 
+          TemplateBox[{" ", 
+            OverscriptBox["\[Euro]", "\[Infinity]"], 
+            RowBox[{"(", "714285", ")"}]},
+           "RowDefault"]}]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}],
+   TraditionalForm]],ExpressionUUID->"f7e31315-13a6-c341-b94f-d3bec3e175d9"]],\
+ "Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 3.9513036491668777`*^9}, {3.9513039783221283`*^9, 
+  3.9513041931307545`*^9}, {3.951304244449972*^9, 3.9513042872475433`*^9}, {
+  3.9513043520059757`*^9, 3.9513043524176254`*^9}, {3.9513044190999374`*^9, 
+  3.951304552249813*^9}, {3.951304680919178*^9, 
+  3.9513047061583633`*^9}},ExpressionUUID->"0c297c7a-ea52-e940-82d7-\
+c2e02d61ee9b"],
+
+Cell["\<\
+Not simple!  Relies on our recognizing that a pattern has been established.\
+\>", "Text",
+ CellChangeTimes->{{3.951304560180004*^9, 3.95130457469685*^9}, {
+  3.9513047155884075`*^9, 
+  3.9513047262627068`*^9}},ExpressionUUID->"8eb7168f-05ad-3c4c-86e5-\
+1f974e683e47"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Division 2:", "Subsubsection",
+ CellChangeTimes->{
+  3.9482969915145054`*^9, {3.948297040975073*^9, 3.948297048823988*^9}, {
+   3.9482994828547535`*^9, 3.9482994899986687`*^9}, {3.9513033003611774`*^9, 
+   3.9513033207168827`*^9}, {3.951303555667185*^9, 3.951303559051323*^9}, {
+   3.9513037254826107`*^9, 3.9513037363441105`*^9}, {3.9513038662791977`*^9, 
+   3.951303868731985*^9}, {3.951303905354908*^9, 3.951303914246788*^9}, {
+   3.9513047356411514`*^9, 
+   3.9513047373488483`*^9}},ExpressionUUID->"43dd2bc7-2471-114a-a994-\
+3d3e28e150b2"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[GridBox[{
+    {
+     RowBox[{
+      FractionBox["1", "3"], 
+      RowBox[{"(", 
+       FractionBox["1", "7"], ")"}]}], "=", 
+     RowBox[{
+      FractionBox[
+       TemplateBox[{
+         RowBox[{"0.142857", " ", "142857", " "}], 
+         OverscriptBox["\[Euro]", "\[Infinity]"], 
+         RowBox[{"(", "142857", ")"}]},
+        "RowDefault"], "3"], GridBox[{
+        {"=", 
+         RowBox[{"0.", "\[VeryThinSpace]", 
+          FractionBox[
+           RowBox[{"142857", "\[VeryThinSpace]", "142857"}], "3"], 
+          FractionBox[
+           TemplateBox[{" ", 
+             OverscriptBox["\[Euro]", "\[Infinity]"], 
+             RowBox[{"(", "142857", ")"}]},
+            "RowDefault"], "3"]}]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], GridBox[{
+        {"=", 
+         RowBox[{
+         "0.", "\[VeryThinSpace]", "047619", "\[VeryThinSpace]", "047619", 
+          FractionBox[
+           TemplateBox[{" ", 
+             OverscriptBox["\[Euro]", "\[Infinity]"], 
+             RowBox[{"(", "142857", ")"}]},
+            "RowDefault"], "2"]}]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], GridBox[{
+        {"=", 
+         RowBox[{"0.", "\[VeryThinSpace]", 
+          TemplateBox[{" ", 
+            OverscriptBox["\[Euro]", "\[Infinity]"], 
+            RowBox[{"(", "047619", ")"}]},
+           "RowDefault"]}]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+  TraditionalForm]],ExpressionUUID->"dfcadd66-c58d-6547-8dd7-47091a5f4173"]], \
+"Text",
+ CellChangeTimes->{{3.951303329407942*^9, 3.9513034135960636`*^9}, {
+  3.9513036134922523`*^9, 3.9513036491668777`*^9}, {3.9513039783221283`*^9, 
+  3.9513041931307545`*^9}, {3.951304244449972*^9, 3.9513042872475433`*^9}, {
+  3.9513043520059757`*^9, 3.9513043524176254`*^9}, {3.9513044190999374`*^9, 
+  3.951304473276619*^9}, {3.9513046065188484`*^9, 3.951304660616617*^9}, {
+  3.95130475095496*^9, 3.9513048017778816`*^9}, {3.9513048413778687`*^9, 
+  3.9513049773686924`*^9}},ExpressionUUID->"c4242d45-4797-1d4b-a06d-\
+725dbceba47c"],
+
+Cell["Easier! But still requires human recognition.", "Text",
+ CellChangeTimes->{{3.951305128404127*^9, 
+  3.9513051526577187`*^9}},ExpressionUUID->"0a9b0fd9-51bc-854d-8eb9-\
+17e209e4e7ea"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1128, 684},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1df3ee19-bd42-934d-9e74-dd685c5630dc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 764, 17, 82, "Input",ExpressionUUID->"c36e4b5d-0c08-db49-ab55-8d88ece836d9",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[1347, 41, 362, 6, 53, "Subsection",ExpressionUUID->"dd841f86-7eb6-9340-ba46-b101efd18636"],
+Cell[CellGroupData[{
+Cell[1734, 51, 406, 7, 43, "Subsubsection",ExpressionUUID->"a0e4fbdd-71d2-6f4b-8911-2ca6bfc69b02"],
+Cell[2143, 60, 750, 20, 40, "Text",ExpressionUUID->"02a3c44a-a5e9-144b-932a-1f8a6d353d6f"],
+Cell[2896, 82, 861, 23, 40, "Text",ExpressionUUID->"3c88537b-1146-f846-a98c-a77a776418cd"],
+Cell[3760, 107, 863, 23, 40, "Text",ExpressionUUID->"ed107863-fdcc-e24f-91e9-913efd997cb2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4660, 135, 410, 7, 43, "Subsubsection",ExpressionUUID->"269133e6-b22c-b645-a3c7-d7c398d8e866"],
+Cell[5073, 144, 796, 21, 39, "Text",ExpressionUUID->"faf17262-6b5d-d14e-be24-bcea903cdb68"],
+Cell[5872, 167, 846, 23, 39, "Text",ExpressionUUID->"286884c6-0c27-b14b-8e41-a08c13fc7acb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6755, 195, 410, 7, 43, "Subsubsection",ExpressionUUID->"4561d0bf-0b7b-7442-92c4-74305987ac07"],
+Cell[7168, 204, 914, 20, 50, "Text",ExpressionUUID->"9e18f028-07c9-204b-8431-b3b1059d3ee1"],
+Cell[8085, 226, 962, 22, 50, "Text",ExpressionUUID->"709cce8f-2a00-eb4b-ae73-b80bbd9d542e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9084, 253, 522, 8, 43, "Subsubsection",ExpressionUUID->"9d4c558f-4992-fc4d-b8bc-d6f033e0af30"],
+Cell[9609, 263, 901, 22, 39, "Text",ExpressionUUID->"2f44e4e5-2df9-524d-b3ea-1173e007c9bb"],
+Cell[10513, 287, 2844, 70, 45, "Text",ExpressionUUID->"34af8026-1a73-f24d-b45a-3d8c7ab1dea4"],
+Cell[13360, 359, 1692, 40, 36, "Text",ExpressionUUID->"0c297c7a-ea52-e940-82d7-c2e02d61ee9b"],
+Cell[15055, 401, 277, 6, 33, "Text",ExpressionUUID->"8eb7168f-05ad-3c4c-86e5-1f974e683e47"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15369, 412, 550, 9, 43, "Subsubsection",ExpressionUUID->"43dd2bc7-2471-114a-a994-3d3e28e150b2"],
+Cell[15922, 423, 2843, 69, 46, "Text",ExpressionUUID->"c4242d45-4797-1d4b-a06d-725dbceba47c"],
+Cell[18768, 494, 189, 3, 33, "Text",ExpressionUUID->"0a9b0fd9-51bc-854d-8eb9-17e209e4e7ea"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
