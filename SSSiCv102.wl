@@ -601,13 +601,16 @@ Return[TestForShorteningRuleSet[rs]]
 Concatenate[l__List] := Join[l];
 Format[Concatenate[l__]] := Row[Riffle[{l},"\:29fa"]];  (* FromCharacterCode[10746] *) 
 Clear[IndexedConcatenate];
-Format[IndexedConcatenate[x__, {var_, start_, finish_}]] :=
+Format[IndexedConcatenate[x___, {var_, start_, finish_}]] :=
 DisplayForm[RowBox[{UnderoverscriptBox["\[Euro]", RowBox[{var,"\[DoubleRightTee]", start}], finish], "[", Sequence @@ Riffle[{x}, ","], "]"}]];  (* FromCharacterCode[8364] *)
 Format[IndexedConcatenate[x___, {var_, finish_}]] :=  DisplayForm[RowBox[{UnderoverscriptBox["\[Euro]", var, finish], "[", Sequence @@ Riffle[{x}, ","], "]"}]];
 Format[IndexedConcatenate[x___, finish_]] := DisplayForm[RowBox[{OverscriptBox["\[Euro]", finish], "[", Sequence @@ Riffle[{x}, ","], "]"}]];
-iC[x___, iter:(_Integer|{_,_Integer}|{_,_Integer,_Integer})]:= Sequence @@ (Join @@ Table[{x},  iter]); 
+
+iC[ (* empty, no argugment *) iter:(_Integer|{_,_Integer}|{_,_Integer,_Integer})]:= Sequence[]; (* delete empty arg I-Cat *) 
+
+iC[x__, iter:(_Integer|{_,_Integer}|{_,_Integer,_Integer})]:= Sequence @@ (Join @@ Table[{x},  iter]); 
 (* allow 1 or more elements to be repeated & concatenated according to iter, result will be a subsequence, assumed to be inside a List *)
-iC[x___] := IndexedConcatenate[x] (* any non-resolved cases redefined, awaiting further processing *)
+iC[x__] := IndexedConcatenate[x] (* any non-resolved cases redefined, awaiting further processing *)
 
 Unprotect[Expand,ExpandAll];
 ExpandAll[x_ /; !FreeQ[x,IndexedConcatenate]] := (x //. IndexedConcatenate->iC);
@@ -661,7 +664,7 @@ If[Length[l]<=1,
 If[$debug,Print["Immediate Return"]];
 Return[l]
 ];
-p=Flatten@Position[l0,IndexedConcatenate[___,{__}],{1}]; (* find parts that might allow improved reduction *)
+p=Flatten@Position[l0,IndexedConcatenate[__,{__}],{1}]; (* find parts that might allow improved reduction *)
 (* this only fits indexed concatenate objects with iterators in {...} *)
 While[Length[p]>0 && Length[l0]>1,
 If[$debug,Print["Trying to improve reduction at pos: ",First[p], " (of ",p,")\nLength[p] = ",Length[p],", Length[l0] = ",Length[l0]]];
@@ -670,7 +673,7 @@ l1=improveReductionAt[First[p],l0];
 If[l1===l0, (* nothing changed, that didn't help *)
 p=Rest[p], (* drop first location, try next *)
 If[$debug,Print["improvement (p was ",p,"): ",l1]];
-l0=l1; p=Flatten@Position[l0,IndexedConcatenate[___,{__}],{1}]; (* if improved, restart from top *)
+l0=l1; p=Flatten@Position[l0,IndexedConcatenate[__,{__}],{1}]; (* if improved, restart from top *)
 ]; (* end If *)
 ]; (* end While *)
 l1  (* this is now the best we can do *)
