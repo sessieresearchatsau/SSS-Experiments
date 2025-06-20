@@ -1,0 +1,166 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      6187,        156]
+NotebookOptionsPosition[      5082,        129]
+NotebookOutlinePosition[      5479,        145]
+CellTagsIndexPosition[      5436,        142]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Using new Graph commands to display (parts of) OurNet", "Chapter",
+ CellChangeTimes->{{3.9575301854050617`*^9, 
+  3.9575302209420223`*^9}},ExpressionUUID->"6fa92836-b72e-cf41-9adc-\
+bfe7110c3103"],
+
+Cell[BoxData[
+ RowBox[{"Cases", "[", 
+  RowBox[{"OurNet", ",", 
+   RowBox[{
+    RowBox[{"Rule", "[", 
+     RowBox[{"a_", ",", "b_"}], "]"}], "/;", " ", 
+    RowBox[{"(", 
+     RowBox[{"b", "<", "29"}], ")"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9574861446391335`*^9, 3.9574861634014664`*^9}, {
+  3.9574862583687077`*^9, 3.957486281042286*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"00fc6344-4d07-ac4f-9f2c-9ca385103026"],
+
+Cell[BoxData[
+ RowBox[{"g", "=", 
+  RowBox[{"Graph", "[", 
+   RowBox[{
+    RowBox[{"Cases", "[", 
+     RowBox[{"OurNet", ",", 
+      RowBox[{
+       RowBox[{"Rule", "[", 
+        RowBox[{"a_", ",", "b_"}], "]"}], "/;", " ", 
+       RowBox[{"(", 
+        RowBox[{"b", "<", "40"}], ")"}]}]}], "]"}], ",", 
+    RowBox[{"GraphLayout", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<SpringElectricalEmbedding\>\"", ",", 
+       RowBox[{"\"\<Rotation\>\"", "\[Rule]", 
+        RowBox[{"0", "Degree"}]}]}], "}"}]}], ",", 
+    RowBox[{"PlotTheme", "->", "\"\<NameLabeled\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.957481768720957*^9, 3.9574818540811043`*^9}, {
+   3.9574819882077103`*^9, 3.9574820031434364`*^9}, {3.957482055223387*^9, 
+   3.957482066912081*^9}, {3.9574821076677895`*^9, 3.957482147986904*^9}, {
+   3.957482405373472*^9, 3.957482455910633*^9}, {3.957482497696333*^9, 
+   3.9574824989352264`*^9}, {3.9574858758510895`*^9, 3.957485904150484*^9}, {
+   3.9574859692833195`*^9, 3.9574860230228195`*^9}, {3.957486291157402*^9, 
+   3.957486294953806*^9}, 3.9574863501274376`*^9, {3.957489373914423*^9, 
+   3.957489535660404*^9}, {3.9574895702773495`*^9, 3.957489570984995*^9}, {
+   3.9574945769075146`*^9, 3.957494582860567*^9}, {3.9574946168802376`*^9, 
+   3.9574946516656303`*^9}, {3.9575190729811115`*^9, 
+   3.9575191963941174`*^9}, {3.957519228879879*^9, 3.9575192296631737`*^9}},
+ CellLabel->"In[79]:=",ExpressionUUID->"8b81dd9b-bcc4-154a-997c-5c5be6dee664"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<OurGraph39.svg\>\"", ",", 
+   TemplateBox[<|
+    "InUUID" -> "8b81dd9b-bcc4-154a-997c-5c5be6dee664", "OutUUID" -> 
+     "dd214d0e-d5e4-2347-82a2-81f13632263e", "InUUIDOffset" -> 0, 
+     "KernelEvalInfoKey" -> {"Global`", 11}, "OutNumber" -> 79, "Status" -> 
+     "PercentReferenceExists_KernelY_InY_OutN", "DisplayCache" -> 
+     TemplateBox[{"\"Graph\""}, "SmartPercent_Head"]|>,
+    "PercentRef"]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9574946903938484`*^9, 3.9574947194785385`*^9}, {
+  3.9575192474117527`*^9, 3.9575192539575005`*^9}},
+ CellLabel->"In[80]:=",ExpressionUUID->"45a6f5eb-d209-cf49-826f-5500a94493ca"],
+
+Cell[BoxData["\<\"OurGraph39.svg\"\>"], "Output",
+ CellChangeTimes->{3.95749472210952*^9, 3.9575192550398617`*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"4522bd47-66cd-a048-9929-8a702b6f8652"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{
+   RowBox[{"Cases", "[", 
+    RowBox[{"OurNet", ",", 
+     RowBox[{
+      RowBox[{"Rule", "[", 
+       RowBox[{"a_", ",", "b_"}], "]"}], "/;", " ", 
+      RowBox[{"(", 
+       RowBox[{"b", "<", "500"}], ")"}]}]}], "]"}], ",", 
+   RowBox[{"GraphLayout", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<SpringElectricalEmbedding\>\"", ",", 
+      RowBox[{"\"\<Rotation\>\"", "\[Rule]", 
+       RowBox[{"0", "Degree"}]}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.957495101592724*^9, 3.957495108821289*^9}},
+ CellLabel->"In[69]:=",ExpressionUUID->"7f2fd587-a32f-8545-81cc-807fa88ade54"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<OurGraph.svg\>\"", ",", 
+   TemplateBox[<|
+    "InUUID" -> "7f2fd587-a32f-8545-81cc-807fa88ade54", "OutUUID" -> 
+     "2ca4ac33-7ecc-3148-b914-09be1b4237b6", "InUUIDOffset" -> 0, 
+     "KernelEvalInfoKey" -> {"Global`", 11}, "OutNumber" -> 69, "Status" -> 
+     "PercentReferenceExists_KernelY_InY_OutN", "DisplayCache" -> 
+     TemplateBox[{"\"Graph\""}, "SmartPercent_Head"]|>,
+    "PercentRef"]}], "]"}]], "Input",
+ CellChangeTimes->{{3.95749514727911*^9, 3.957495158808367*^9}},
+ CellLabel->"In[70]:=",ExpressionUUID->"640dca87-fc70-dd48-b419-48bd530c96db"],
+
+Cell[BoxData["\<\"OurGraph.svg\"\>"], "Output",
+ CellChangeTimes->{3.957495163345804*^9},
+ CellLabel->"Out[70]=",ExpressionUUID->"a7067fdb-17d2-fa4a-b118-6ca95b942f85"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1116, 672},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"0e60dbc4-13d8-d047-a477-85f5c1f52672"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 202, 3, 67, "Chapter",ExpressionUUID->"6fa92836-b72e-cf41-9adc-bfe7110c3103"],
+Cell[781, 27, 429, 10, 28, "Input",ExpressionUUID->"00fc6344-4d07-ac4f-9f2c-9ca385103026"],
+Cell[1213, 39, 1477, 28, 28, "Input",ExpressionUUID->"8b81dd9b-bcc4-154a-997c-5c5be6dee664"],
+Cell[CellGroupData[{
+Cell[2715, 71, 675, 12, 30, "Input",ExpressionUUID->"45a6f5eb-d209-cf49-826f-5500a94493ca"],
+Cell[3393, 85, 193, 2, 32, "Output",ExpressionUUID->"4522bd47-66cd-a048-9929-8a702b6f8652"]
+}, Open  ]],
+Cell[3601, 90, 642, 16, 28, "Input",ExpressionUUID->"7f2fd587-a32f-8545-81cc-807fa88ade54"],
+Cell[CellGroupData[{
+Cell[4268, 110, 615, 11, 30, "Input",ExpressionUUID->"640dca87-fc70-dd48-b419-48bd530c96db"],
+Cell[4886, 123, 168, 2, 32, "Output",ExpressionUUID->"a7067fdb-17d2-fa4a-b118-6ca95b942f85"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
