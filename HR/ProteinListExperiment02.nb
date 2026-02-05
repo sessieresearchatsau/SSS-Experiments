@@ -1,0 +1,432 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     18106,        424]
+NotebookOptionsPosition[     16223,        388]
+NotebookOutlinePosition[     16615,        404]
+CellTagsIndexPosition[     16572,        401]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellLabel->"In[1]:=",ExpressionUUID->"7f792c68-774e-4223-9340-84938edc4813"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  OverscriptBox[
+   RowBox[{"{", 
+    RowBox[{"\"\<#\>\"", ",", "\"\<Original\>\"", ",", "\"\<#1 GUAC\>\"", 
+     ",", "\"\<#2 AUCG\>\""}], "}"}], 
+   StyleBox["\[Placeholder]", "Text"]], "}"}]], "Input",
+ CellChangeTimes->{{3.979246118551167*^9, 3.979246128547999*^9}, {
+  3.979293515652672*^9, 3.979293519806861*^9}, {3.979293584457509*^9, 
+  3.9792935865141697`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"03470251-19d5-4698-8d97-1fd6005aae34"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  OverscriptBox[
+   RowBox[{"{", 
+    RowBox[{"\<\"#\"\>", ",", "\<\"Original\"\>", ",", "\<\"#1 GUAC\"\>", 
+     ",", "\<\"#2 AUCG\"\>"}], "}"}], "\[Placeholder]"], "}"}]], "Output",
+ CellChangeTimes->{3.9792935883460617`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"f344e951-252e-49ed-ad80-70a8d55e84c2"]
+}, Open  ]],
+
+Cell["\<\
+Comparing the different amino acid ordering wheels and how that influences \
+the success concatenating the protein 
+F5GZP4 \[CenterDot] F5GZP4_HUMAN Polyhomeotic homolog 1\
+\>", "Text",
+ CellChangeTimes->{{3.9792936799912987`*^9, 3.979293711204088*^9}, 
+   3.9792943325546513`*^9, {3.979294366449862*^9, 3.9792943697767*^9}, {
+   3.979294425626648*^9, 3.979294449965404*^9}, {3.9792944898080606`*^9, 
+   3.979294498469077*^9}},ExpressionUUID->"70c50f7f-bf2c-485f-b846-\
+2c20f6198384"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "protein02", 
+   "=", "\"\<\
+METESEQNSNSTNGSSSSGGSSRPQIAQMSLYERQAVQALQALQRQPNAAQYFHQFMLQQQLSNAQLHSLAAVQQATI\
+AASRQASSPNTSTTQQQTTTTQASINLATTSAAQLISRSQSVSSPSATTLTQSVLLGNTTSPPLNQSQAQMYLRPQLG\
+NLLQSSRRCHLLSLLEFMQMQIRFRTWQ\>\""}], ";"}]], "Input",
+ CellChangeTimes->{{3.979295338336472*^9, 3.9792953609059343`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"ca956a17-70cb-4563-9578-ad26f1a85703"],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.979293667198186*^9, 
+  3.979293677115314*^9}},ExpressionUUID->"052d0c72-da04-4e58-94c9-\
+a57e9741cf5e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"aminoAcidTable", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "\"\<G\>\"", ",", "\"\<G\>\"", ",", "\"\<G\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\"\<E\>\"", ",", "\"\<V\>\"", ",", "\"\<A\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\"\<D\>\"", ",", "\"\<E\>\"", ",", "\"\<V\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\"\<A\>\"", ",", "\"\<D\>\"", ",", "\"\<E\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\"\<V\>\"", ",", "\"\<A\>\"", ",", "\"\<D\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\"\<R\>\"", ",", "\"\<W\>\"", ",", "\"\<R\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\"\<S\>\"", ",", "\"\<C\>\"", ",", "\"\<P\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\"\<K\>\"", ",", "\"\<L\>\"", ",", "\"\<L\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\"\<N\>\"", ",", "\"\<F\>\"", ",", "\"\<Q\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\"\<T\>\"", ",", "\"\<Y\>\"", ",", "\"\<H\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"11", ",", "\"\<M\>\"", ",", "\"\<S\>\"", ",", "\"\<W\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"12", ",", "\"\<I\>\"", ",", "\"\<R\>\"", ",", "\"\<C\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"13", ",", "\"\<Q\>\"", ",", "\"\<M\>\"", ",", "\"\<S\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"14", ",", "\"\<H\>\"", ",", "\"\<I\>\"", ",", "\"\<F\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"15", ",", "\"\<P\>\"", ",", "\"\<K\>\"", ",", "\"\<Y\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "\"\<L\>\"", ",", "\"\<N\>\"", ",", "\"\<T\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", "\"\<W\>\"", ",", "\"\<T\>\"", ",", "\"\<M\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", "\"\<C\>\"", ",", "\"\<Q\>\"", ",", "\"\<I\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", "\"\<Y\>\"", ",", "\"\<H\>\"", ",", "\"\<K\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", "\"\<F\>\"", ",", "\"\<P\>\"", ",", "\"\<N\>\""}], 
+      "}"}]}], "}"}]}], "\n"}]], "Input",
+ CellChangeTimes->{{3.953113248692359*^9, 3.9531132998956633`*^9}, {
+  3.953202798952086*^9, 3.9532027995262213`*^9}, {3.953206339825939*^9, 
+  3.9532064402249403`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"ed82ec44-6e90-41d4-9717-ca74ad8a9408"],
+
+Cell["\<\
+Last time we met, we constructed  a table of amino acids organized by their \
+one - letter codes and arranged according to the amino acid wheel . From this \
+framework, we generate three possible  ordering schemes:
+
+#1. The original order of the amino acid wheel
+#2. A reordered sequence based on the codon orientation GUAC
+#3. Alternative reordered sequences based on GCUA\
+\>", "Text",
+ CellChangeTimes->{{3.979294598172447*^9, 3.97929467047394*^9}, {
+  3.9792947071174793`*^9, 
+  3.979294744354786*^9}},ExpressionUUID->"c4b64e46-30cd-4cfa-8e29-\
+8decf3a134f0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "\<\"G\"\>", ",", "\<\"G\"\>", ",", "\<\"G\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"E\"\>", ",", "\<\"V\"\>", ",", "\<\"A\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"D\"\>", ",", "\<\"E\"\>", ",", "\<\"V\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"A\"\>", ",", "\<\"D\"\>", ",", "\<\"E\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"V\"\>", ",", "\<\"A\"\>", ",", "\<\"D\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"R\"\>", ",", "\<\"W\"\>", ",", "\<\"R\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"S\"\>", ",", "\<\"C\"\>", ",", "\<\"P\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"K\"\>", ",", "\<\"L\"\>", ",", "\<\"L\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"N\"\>", ",", "\<\"F\"\>", ",", "\<\"Q\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"T\"\>", ",", "\<\"Y\"\>", ",", "\<\"H\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"11", ",", "\<\"M\"\>", ",", "\<\"S\"\>", ",", "\<\"W\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"12", ",", "\<\"I\"\>", ",", "\<\"R\"\>", ",", "\<\"C\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"13", ",", "\<\"Q\"\>", ",", "\<\"M\"\>", ",", "\<\"S\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"14", ",", "\<\"H\"\>", ",", "\<\"I\"\>", ",", "\<\"F\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"15", ",", "\<\"P\"\>", ",", "\<\"K\"\>", ",", "\<\"Y\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"16", ",", "\<\"L\"\>", ",", "\<\"N\"\>", ",", "\<\"T\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"17", ",", "\<\"W\"\>", ",", "\<\"T\"\>", ",", "\<\"M\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"18", ",", "\<\"C\"\>", ",", "\<\"Q\"\>", ",", "\<\"I\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"19", ",", "\<\"Y\"\>", ",", "\<\"H\"\>", ",", "\<\"K\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"20", ",", "\<\"F\"\>", ",", "\<\"P\"\>", ",", "\<\"N\"\>"}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.97929355002505*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"0caa6897-e224-4eaf-a123-50a5f82051a0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TranslateAA1", "[", "l_List", "]"}], ":=", 
+  RowBox[{"l", "/.", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Rule", "@@", "#"}], "&"}], "/@", 
+     RowBox[{"(", 
+      RowBox[{"Reverse", "/@", 
+       RowBox[{"aminoAcidTable", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", 
+          RowBox[{"1", ";;", "2"}]}], "]"}], "]"}]}], ")"}]}], 
+    ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.953113395037796*^9, 3.9531135548789797`*^9}, {
+  3.953113585413534*^9, 3.953113623973194*^9}, {3.953113725032093*^9, 
+  3.953113729415131*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"e1cb209b-5bc4-4579-aa9a-411d1f30e56e"],
+
+Cell["This one here is for the order of original wheel", "Text",
+ CellChangeTimes->{{3.9792948866023703`*^9, 
+  3.9792949014609127`*^9}},ExpressionUUID->"953210f3-6116-4449-9c86-\
+07509e283be7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\"\<G\>\"", "\[Rule]", "1"}], ",", 
+   RowBox[{"\"\<E\>\"", "\[Rule]", "2"}], ",", 
+   RowBox[{"\"\<D\>\"", "\[Rule]", "3"}], ",", 
+   RowBox[{"\"\<A\>\"", "\[Rule]", "4"}], ",", 
+   RowBox[{"\"\<V\>\"", "\[Rule]", "5"}], ",", 
+   RowBox[{"\"\<R\>\"", "\[Rule]", "6"}], ",", 
+   RowBox[{"\"\<S\>\"", "\[Rule]", "7"}], ",", 
+   RowBox[{"\"\<K\>\"", "\[Rule]", "8"}], ",", 
+   RowBox[{"\"\<N\>\"", "\[Rule]", "9"}], ",", 
+   RowBox[{"\"\<T\>\"", "\[Rule]", "10"}], ",", 
+   RowBox[{"\"\<M\>\"", "\[Rule]", "11"}], ",", 
+   RowBox[{"\"\<I\>\"", "\[Rule]", "12"}], ",", 
+   RowBox[{"\"\<Q\>\"", "\[Rule]", "13"}], ",", 
+   RowBox[{"\"\<H\>\"", "\[Rule]", "14"}], ",", 
+   RowBox[{"\"\<P\>\"", "\[Rule]", "15"}], ",", 
+   RowBox[{"\"\<L\>\"", "\[Rule]", "16"}], ",", 
+   RowBox[{"\"\<W\>\"", "\[Rule]", "17"}], ",", 
+   RowBox[{"\"\<C\>\"", "\[Rule]", "18"}], ",", 
+   RowBox[{"\"\<Y\>\"", "\[Rule]", "19"}], ",", 
+   RowBox[{"\"\<F\>\"", "\[Rule]", "20"}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.95311354201165*^9, 3.953113545219219*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"0d1ab6c1-8bd7-415a-9589-60d14322ef1e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\<\"G\"\>", "\[Rule]", "1"}], ",", 
+   RowBox[{"\<\"E\"\>", "\[Rule]", "2"}], ",", 
+   RowBox[{"\<\"D\"\>", "\[Rule]", "3"}], ",", 
+   RowBox[{"\<\"A\"\>", "\[Rule]", "4"}], ",", 
+   RowBox[{"\<\"V\"\>", "\[Rule]", "5"}], ",", 
+   RowBox[{"\<\"R\"\>", "\[Rule]", "6"}], ",", 
+   RowBox[{"\<\"S\"\>", "\[Rule]", "7"}], ",", 
+   RowBox[{"\<\"K\"\>", "\[Rule]", "8"}], ",", 
+   RowBox[{"\<\"N\"\>", "\[Rule]", "9"}], ",", 
+   RowBox[{"\<\"T\"\>", "\[Rule]", "10"}], ",", 
+   RowBox[{"\<\"M\"\>", "\[Rule]", "11"}], ",", 
+   RowBox[{"\<\"I\"\>", "\[Rule]", "12"}], ",", 
+   RowBox[{"\<\"Q\"\>", "\[Rule]", "13"}], ",", 
+   RowBox[{"\<\"H\"\>", "\[Rule]", "14"}], ",", 
+   RowBox[{"\<\"P\"\>", "\[Rule]", "15"}], ",", 
+   RowBox[{"\<\"L\"\>", "\[Rule]", "16"}], ",", 
+   RowBox[{"\<\"W\"\>", "\[Rule]", "17"}], ",", 
+   RowBox[{"\<\"C\"\>", "\[Rule]", "18"}], ",", 
+   RowBox[{"\<\"Y\"\>", "\[Rule]", "19"}], ",", 
+   RowBox[{"\<\"F\"\>", "\[Rule]", "20"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.979294907035771*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"b199b4bc-2b80-4ea6-84d6-923e1fc08aab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"codedProtein02", "=", 
+  RowBox[{
+   RowBox[{"Characters", "[", "protein02", "]"}], "/.", 
+   "replaceList"}]}]], "Input",
+ CellChangeTimes->{{3.9792954103539057`*^9, 3.979295427891016*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"a84c86c4-141c-411c-82dd-7015df836c45"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ReplaceAll", "reps", 
+   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"replaceList\\\", \\\"}\\\"}]\\) is \
+neither a list of replacement rules nor a valid dispatch table, and so cannot \
+be used for replacing.\"", 2, 11, 8, 22463553837317078592, "Local"},
+  "MessageTemplate",
+  BaseStyle->"MSG"]], "Message",
+ CellChangeTimes->{3.979295431187356*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"c0f80b6d-a260-4bac-8bf3-3010f78a00d4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"\<\"M\"\>", ",", "\<\"E\"\>", ",", "\<\"T\"\>", ",", "\<\"E\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"E\"\>", ",", "\<\"Q\"\>", ",", "\<\"N\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"N\"\>", ",", "\<\"S\"\>", ",", "\<\"T\"\>", 
+    ",", "\<\"N\"\>", ",", "\<\"G\"\>", ",", "\<\"S\"\>", ",", "\<\"S\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"S\"\>", ",", "\<\"G\"\>", ",", "\<\"G\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"S\"\>", ",", "\<\"R\"\>", ",", "\<\"P\"\>", 
+    ",", "\<\"Q\"\>", ",", "\<\"I\"\>", ",", "\<\"A\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"M\"\>", ",", "\<\"S\"\>", ",", "\<\"L\"\>", ",", "\<\"Y\"\>", 
+    ",", "\<\"E\"\>", ",", "\<\"R\"\>", ",", "\<\"Q\"\>", ",", "\<\"A\"\>", 
+    ",", "\<\"V\"\>", ",", "\<\"Q\"\>", ",", "\<\"A\"\>", ",", "\<\"L\"\>", 
+    ",", "\<\"Q\"\>", ",", "\<\"A\"\>", ",", "\<\"L\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"R\"\>", ",", "\<\"Q\"\>", ",", "\<\"P\"\>", ",", "\<\"N\"\>", 
+    ",", "\<\"A\"\>", ",", "\<\"A\"\>", ",", "\<\"Q\"\>", ",", "\<\"Y\"\>", 
+    ",", "\<\"F\"\>", ",", "\<\"H\"\>", ",", "\<\"Q\"\>", ",", "\<\"F\"\>", 
+    ",", "\<\"M\"\>", ",", "\<\"L\"\>", ",", "\<\"Q\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"Q\"\>", ",", "\<\"L\"\>", ",", "\<\"S\"\>", ",", "\<\"N\"\>", 
+    ",", "\<\"A\"\>", ",", "\<\"Q\"\>", ",", "\<\"L\"\>", ",", "\<\"H\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"L\"\>", ",", "\<\"A\"\>", ",", "\<\"A\"\>", 
+    ",", "\<\"V\"\>", ",", "\<\"Q\"\>", ",", "\<\"Q\"\>", ",", "\<\"A\"\>", 
+    ",", "\<\"T\"\>", ",", "\<\"I\"\>", ",", "\<\"A\"\>", ",", "\<\"A\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"R\"\>", ",", "\<\"Q\"\>", ",", "\<\"A\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"S\"\>", ",", "\<\"P\"\>", ",", "\<\"N\"\>", 
+    ",", "\<\"T\"\>", ",", "\<\"S\"\>", ",", "\<\"T\"\>", ",", "\<\"T\"\>", 
+    ",", "\<\"Q\"\>", ",", "\<\"Q\"\>", ",", "\<\"Q\"\>", ",", "\<\"T\"\>", 
+    ",", "\<\"T\"\>", ",", "\<\"T\"\>", ",", "\<\"T\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"A\"\>", ",", "\<\"S\"\>", ",", "\<\"I\"\>", ",", "\<\"N\"\>", 
+    ",", "\<\"L\"\>", ",", "\<\"A\"\>", ",", "\<\"T\"\>", ",", "\<\"T\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"A\"\>", ",", "\<\"A\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"L\"\>", ",", "\<\"I\"\>", ",", "\<\"S\"\>", ",", "\<\"R\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"Q\"\>", ",", "\<\"S\"\>", ",", "\<\"V\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"S\"\>", ",", "\<\"P\"\>", ",", "\<\"S\"\>", 
+    ",", "\<\"A\"\>", ",", "\<\"T\"\>", ",", "\<\"T\"\>", ",", "\<\"L\"\>", 
+    ",", "\<\"T\"\>", ",", "\<\"Q\"\>", ",", "\<\"S\"\>", ",", "\<\"V\"\>", 
+    ",", "\<\"L\"\>", ",", "\<\"L\"\>", ",", "\<\"G\"\>", ",", "\<\"N\"\>", 
+    ",", "\<\"T\"\>", ",", "\<\"T\"\>", ",", "\<\"S\"\>", ",", "\<\"P\"\>", 
+    ",", "\<\"P\"\>", ",", "\<\"L\"\>", ",", "\<\"N\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"Q\"\>", ",", "\<\"A\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"M\"\>", ",", "\<\"Y\"\>", ",", "\<\"L\"\>", ",", "\<\"R\"\>", 
+    ",", "\<\"P\"\>", ",", "\<\"Q\"\>", ",", "\<\"L\"\>", ",", "\<\"G\"\>", 
+    ",", "\<\"N\"\>", ",", "\<\"L\"\>", ",", "\<\"L\"\>", ",", "\<\"Q\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"S\"\>", ",", "\<\"R\"\>", ",", "\<\"R\"\>", 
+    ",", "\<\"C\"\>", ",", "\<\"H\"\>", ",", "\<\"L\"\>", ",", "\<\"L\"\>", 
+    ",", "\<\"S\"\>", ",", "\<\"L\"\>", ",", "\<\"L\"\>", ",", "\<\"E\"\>", 
+    ",", "\<\"F\"\>", ",", "\<\"M\"\>", ",", "\<\"Q\"\>", ",", "\<\"M\"\>", 
+    ",", "\<\"Q\"\>", ",", "\<\"I\"\>", ",", "\<\"R\"\>", ",", "\<\"F\"\>", 
+    ",", "\<\"R\"\>", ",", "\<\"T\"\>", ",", "\<\"W\"\>", ",", "\<\"Q\"\>"}], 
+   "}"}], "/.", "\[VeryThinSpace]", "replaceList"}]], "Output",
+ CellChangeTimes->{3.97929543119827*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"2275455f-9ef7-4ef0-abf1-5ab82c87ff8a"]
+}, Open  ]]
+},
+WindowSize->{1085, 838},
+WindowMargins->{{Automatic, 14}, {Automatic, 0}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ff424be9-c1fb-4988-91cb-bfe0def3e11f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 368, 8, 65, "Input",ExpressionUUID->"7f792c68-774e-4223-9340-84938edc4813",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[947, 32, 477, 10, 40, "Input",ExpressionUUID->"03470251-19d5-4698-8d97-1fd6005aae34"],
+Cell[1427, 44, 334, 7, 42, "Output",ExpressionUUID->"f344e951-252e-49ed-ad80-70a8d55e84c2"]
+}, Open  ]],
+Cell[1776, 54, 494, 9, 55, "Text",ExpressionUUID->"70c50f7f-bf2c-485f-b846-2c20f6198384"],
+Cell[2273, 65, 426, 9, 70, "Input",ExpressionUUID->"ca956a17-70cb-4563-9578-ad26f1a85703"],
+Cell[2702, 76, 142, 3, 33, "Text",ExpressionUUID->"052d0c72-da04-4e58-94c9-a57e9741cf5e"],
+Cell[2847, 81, 2649, 68, 111, "Input",ExpressionUUID->"ed82ec44-6e90-41d4-9717-ca74ad8a9408"],
+Cell[5499, 151, 573, 12, 143, "Text",ExpressionUUID->"c4b64e46-30cd-4cfa-8e29-8decf3a134f0"],
+Cell[6075, 165, 2343, 64, 74, "Output",ExpressionUUID->"0caa6897-e224-4eaf-a123-50a5f82051a0"],
+Cell[8421, 231, 668, 18, 29, "Input",ExpressionUUID->"e1cb209b-5bc4-4579-aa9a-411d1f30e56e"],
+Cell[9092, 251, 194, 3, 33, "Text",ExpressionUUID->"953210f3-6116-4449-9c86-07509e283be7"],
+Cell[CellGroupData[{
+Cell[9311, 258, 1166, 24, 49, "Input",ExpressionUUID->"0d1ab6c1-8bd7-415a-9589-60d14322ef1e"],
+Cell[10480, 284, 1144, 24, 53, "Output",ExpressionUUID->"b199b4bc-2b80-4ea6-84d6-923e1fc08aab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11661, 313, 293, 6, 29, "Input",ExpressionUUID->"a84c86c4-141c-411c-82dd-7015df836c45"],
+Cell[11957, 321, 478, 11, 26, "Message",ExpressionUUID->"c0f80b6d-a260-4bac-8bf3-3010f78a00d4"],
+Cell[12438, 334, 3769, 51, 134, "Output",ExpressionUUID->"2275455f-9ef7-4ef0-abf1-5ab82c87ff8a"]
+}, Open  ]]
+}
+]
+*)
+
