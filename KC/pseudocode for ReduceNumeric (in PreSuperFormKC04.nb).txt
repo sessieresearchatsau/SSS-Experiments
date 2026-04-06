@@ -1,0 +1,31 @@
+(* pseudocode for ReduceNumeric *)
+
+function ReduceNumeric(input)
+    if input is a string then
+        convert characters of string to digits
+    else if input is an integer then
+        convert integer to a list of its digits
+    
+    previousDigits = []
+    repeatingLength = 1
+
+    while digits are still changing
+        if length of digits is 1 then
+            return the single digit
+        
+        previousDigits = current digits
+
+        if repeatingLength is 1 then
+            group consecutive identical elements
+            replace groups longer than 1 with IndexedConcatenate
+        
+        increase repeatingLength
+
+        while repeatingLength is useful
+            replace sequences that repeat with IndexedConcatenate
+            if digits did not change then
+                increase repeatingLength
+            else
+                reset repeatingLength to 1
+    
+    return concatenated digits
