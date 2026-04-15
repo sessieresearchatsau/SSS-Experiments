@@ -10,16 +10,74 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     12216,        376]
-NotebookOptionsPosition[      9720,        322]
-NotebookOutlinePosition[     10150,        339]
-CellTagsIndexPosition[     10107,        336]
+NotebookDataLength[    106917,       3322]
+NotebookOptionsPosition[     97292,       3163]
+NotebookOutlinePosition[     98599,       3196]
+CellTagsIndexPosition[     98518,       3191]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
+Cell["We\[CloseCurlyQuote]ll investigate multiples of 0.11...1. ", "Subtitle",
+ CellChangeTimes->{{3.9848579361577835`*^9, 3.9848579615578346`*^9}, {
+  3.9848583469018*^9, 
+  3.9848583615305157`*^9}},ExpressionUUID->"c5603109-9f45-3e4e-b129-\
+94286526d05d"],
+
+Cell["Start with an initial 0. followed by 8 consecutive 1s.", "Text",
+ CellChangeTimes->{{3.9848579361577835`*^9, 3.9848579615578346`*^9}, {
+   3.9848583469018*^9, 3.984858396623127*^9}, 
+   3.9848584508971863`*^9},ExpressionUUID->"4fc05387-9584-014f-9edd-\
+5fbc3cbe0979"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"0.", 
+   TagBox[
+    TemplateBox[{
+      OverscriptBox["\[Euro]", "8"], "\"(\"", "1", ")"},
+     "RowDefault"],
+    DisplayForm]}]], "Output",
+  GeneratedCell->False,
+  CellAutoOverwrite->False,
+  CellChangeTimes->{
+   3.981425459653042*^9, 3.981425972935837*^9, 3.982353037303913*^9, 
+    3.9823533811696568`*^9, 3.9824188985074387`*^9, 3.982419488565132*^9, 
+    3.982419629319687*^9, 3.9824196887782745`*^9, 3.982419824159094*^9, 
+    3.9824199080238647`*^9, 3.9824199733501415`*^9, 3.982420009257988*^9, 
+    3.9824200917617016`*^9, 3.9824209367935963`*^9, {3.982422511979908*^9, 
+    3.982422520897238*^9}},ExpressionUUID->
+  "5a7bc649-161a-a44c-8b65-7834a9e3b4de"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.984857496298868*^9, 3.9848574976090775`*^9}, {
+   3.984857557145687*^9, 3.9848575822931576`*^9}, 3.9848578332457848`*^9, {
+   3.984858456135174*^9, 3.984858456135174*^9}, {3.9850276078556767`*^9, 
+   3.9850276171103973`*^9}},ExpressionUUID->"27a71153-182f-fb48-a649-\
+7abe06ea9497"],
+
+Cell["This is equivalent to the the following indexed sum:", "Text",
+ CellChangeTimes->{{3.984858401660343*^9, 
+  3.9848584256414948`*^9}},ExpressionUUID->"96ed67fc-c194-7a4d-a048-\
+29fb74f72898"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"k", "=", "1"}], "8"], 
+   RowBox[{"1", "\[Times]", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "k"}]]}]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.9848583350874615`*^9, 3.9848583364761257`*^9}, 
+   3.984858462710026*^9, {3.9850277695078373`*^9, 
+   3.985027772347822*^9}},ExpressionUUID->"135c4221-f511-604b-beb9-\
+ab15851171e6"],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"N", "[", 
   RowBox[{
@@ -28,16 +86,57 @@ Cell[BoxData[
      SuperscriptBox["10", 
       RowBox[{"-", "k"}]], ",", 
      RowBox[{"{", 
-      RowBox[{"k", ",", "1", ",", "12"}], "}"}]}], "]"}], ",", "15"}], 
+      RowBox[{"k", ",", "1", ",", "8"}], "}"}]}], "]"}], ",", "9"}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.983885492423174*^9, 3.983885563467211*^9}, {
-  3.9841242224719543`*^9, 3.9841242371490707`*^9}},
- CellLabel->"In[97]:=",ExpressionUUID->"7c9ad66e-c089-2543-9b44-5367cbead203"],
+   3.9841242224719543`*^9, 3.9841242371490707`*^9}, {3.9848584369641113`*^9, 
+   3.9848584376680565`*^9}, {3.984858469290209*^9, 3.9848584725259495`*^9}, {
+   3.9850089449967594`*^9, 3.9850089477319965`*^9}, 3.9850089955274487`*^9},
+ CellLabel->
+  "In[156]:=",ExpressionUUID->"7c9ad66e-c089-2543-9b44-5367cbead203"],
 
-Cell[BoxData["0.111111111111`15."], "Output",
- CellChangeTimes->{3.984126650286764*^9},
- CellLabel->"Out[97]=",ExpressionUUID->"022c6d8f-fb18-3448-b040-e2acb48ef0af"]
+Cell[BoxData["0.11111111`9."], "Output",
+ CellChangeTimes->{3.984126650286764*^9, 3.9848584385919228`*^9, 
+  3.9848584729886074`*^9, 3.9850089502969303`*^9, 3.9850089984831753`*^9},
+ CellLabel->
+  "Out[156]=",ExpressionUUID->"fc6c4a25-d2b7-4f44-893a-622cf3c88d93"]
 }, Open  ]],
+
+Cell["Now square it:", "Text",
+ CellChangeTimes->{{3.9848584783528614`*^9, 
+  3.984858481888548*^9}},ExpressionUUID->"6801ba4f-06ef-b441-8843-\
+0ea64327cebe"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"(", 
+   RowBox[{"0.", 
+    SuperscriptBox[
+     TagBox[
+      RowBox[{
+       TemplateBox[{
+         OverscriptBox["\[Euro]", "8"], "\"(\"", 
+         RowBox[{"1", ")"}]},
+        "RowDefault"], ")"}],
+      DisplayForm], "2"]}]}]], "Output",
+  GeneratedCell->False,
+  CellAutoOverwrite->False,
+  CellChangeTimes->{
+   3.981425459653042*^9, 3.981425972935837*^9, 3.982353037303913*^9, 
+    3.9823533811696568`*^9, 3.9824188985074387`*^9, 3.982419488565132*^9, 
+    3.982419629319687*^9, 3.9824196887782745`*^9, 3.982419824159094*^9, 
+    3.9824199080238647`*^9, 3.9824199733501415`*^9, 3.982420009257988*^9, 
+    3.9824200917617016`*^9, 3.9824209367935963`*^9, {3.982422511979908*^9, 
+    3.982422520897238*^9}},ExpressionUUID->
+  "851fd620-659f-7844-9451-e0b2d26f001c"],
+ " :"
+}], "Text",
+ CellChangeTimes->{{3.984857496298868*^9, 3.9848574976090775`*^9}, {
+  3.984857557145687*^9, 3.9848575822931576`*^9}, {3.984857683112568*^9, 
+  3.9848577787761707`*^9}, {3.9848578179558086`*^9, 3.9848578388545494`*^9}, {
+  3.9848578890414543`*^9, 
+  3.9848578890414543`*^9}},ExpressionUUID->"68a1076e-6f3e-5d47-871f-\
+faf481f990c0"],
 
 Cell[CellGroupData[{
 
@@ -55,13 +154,801 @@ Cell[BoxData[
    "16"}], "]"}]], "Input",
  CellChangeTimes->{{3.983885492423174*^9, 3.983885563467211*^9}, {
   3.9841242224719543`*^9, 3.9841242371490707`*^9}, {3.984124275835579*^9, 
-  3.98412431787113*^9}},
- CellLabel->"In[98]:=",ExpressionUUID->"ce80b804-a5ec-414a-b239-56d908c691a8"],
+  3.98412431787113*^9}, {3.984858538476322*^9, 3.9848585385950375`*^9}, {
+  3.985009013292433*^9, 3.9850090155998535`*^9}},
+ CellLabel->
+  "In[157]:=",ExpressionUUID->"ce80b804-a5ec-414a-b239-56d908c691a8"],
 
 Cell[BoxData["0.0123456787654321`16."], "Output",
- CellChangeTimes->{3.984126650364195*^9},
- CellLabel->"Out[98]=",ExpressionUUID->"2493c3ae-0f71-e341-b487-8ae31499904f"]
+ CellChangeTimes->{3.984126650364195*^9, 3.9848584863464584`*^9, 
+  3.984858539148321*^9, 3.9850090169842453`*^9},
+ CellLabel->
+  "Out[157]=",ExpressionUUID->"1903571c-19b2-9c4d-a632-f0092e1169c7"]
 }, Open  ]],
+
+Cell["\<\
+Strangely enough the digits after the initial 0. count up from 0 to 8 then \
+back down to 0, and stay there. What about a different number of 1s?\
+\>", "Text",
+ CellChangeTimes->{{3.984858495231745*^9, 
+  3.984858586428005*^9}},ExpressionUUID->"76c2520c-8376-9645-a162-\
+2d0daa96f5ce"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"(", 
+   RowBox[{"0.", 
+    SuperscriptBox[
+     TagBox[
+      RowBox[{
+       TemplateBox[{
+         OverscriptBox["\[Euro]", "9"], "\"(\"", 
+         RowBox[{"1", ")"}]},
+        "RowDefault"], ")"}],
+      DisplayForm], "2"]}]}]], "Output",
+  GeneratedCell->False,
+  CellAutoOverwrite->False,
+  CellChangeTimes->{
+   3.981425459653042*^9, 3.981425972935837*^9, 3.982353037303913*^9, 
+    3.9823533811696568`*^9, 3.9824188985074387`*^9, 3.982419488565132*^9, 
+    3.982419629319687*^9, 3.9824196887782745`*^9, 3.982419824159094*^9, 
+    3.9824199080238647`*^9, 3.9824199733501415`*^9, 3.982420009257988*^9, 
+    3.9824200917617016`*^9, 3.9824209367935963`*^9, {3.982422511979908*^9, 
+    3.982422520897238*^9}},ExpressionUUID->
+  "62e76eb0-f522-2b45-bf37-2cbe83630dd3"],
+ " :"
+}], "Text",
+ CellChangeTimes->{{3.984857496298868*^9, 3.9848574976090775`*^9}, {
+  3.984857557145687*^9, 3.9848575822931576`*^9}, {3.984857683112568*^9, 
+  3.9848577787761707`*^9}, {3.9848578179558086`*^9, 3.9848578388545494`*^9}, {
+  3.9848578890414543`*^9, 3.9848578890414543`*^9}, {3.9848586113961506`*^9, 
+  3.9848586113961506`*^9}},ExpressionUUID->"a5068d6a-5a5d-c745-9e79-\
+ed9ecaacbad8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       SuperscriptBox["10", 
+        RowBox[{"-", "k"}]], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "1", ",", "9"}], "}"}]}], "]"}], ")"}], "2"], ",", 
+   "20"}], "]"}]], "Input",
+ CellChangeTimes->{{3.983885492423174*^9, 3.983885563467211*^9}, {
+   3.9841242224719543`*^9, 3.9841242371490707`*^9}, {3.984124275835579*^9, 
+   3.98412431787113*^9}, {3.984858538476322*^9, 3.9848585385950375`*^9}, 
+   3.9848586153544827`*^9},
+ CellLabel->"In[5]:=",ExpressionUUID->"ec291639-fa22-fe46-af78-de8077a16155"],
+
+Cell[BoxData["0.012345678987654321`20."], "Output",
+ CellChangeTimes->{3.984126650364195*^9, 3.9848584863464584`*^9, 
+  3.984858539148321*^9, 3.98485861587274*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"1ece2fda-fc1b-d04e-bed7-9dad31ca9906"]
+}, Open  ]],
+
+Cell["Sure enough, count up to 9 this time!", "Text",
+ CellChangeTimes->{{3.984858620994713*^9, 3.9848586313498363`*^9}, {
+  3.98485866255159*^9, 3.984858668438547*^9}, {3.984930083758909*^9, 
+  3.9849300878725834`*^9}},ExpressionUUID->"cc974002-2e77-c84f-be71-\
+2e08593b5e54"],
+
+Cell[TextData[{
+ "Hypothesis: for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"k", "=", "1"}], ",", "2", ",", "...", ",", "9", ","}], 
+   TraditionalForm]],ExpressionUUID->"941c9230-c8ab-7946-8aeb-c3a040418835"]
+}], "Text",
+ CellChangeTimes->{{3.984858620994713*^9, 3.9848586313498363`*^9}, {
+  3.98485866255159*^9, 3.984858668438547*^9}, {3.984930083758909*^9, 
+  3.9849301369822216`*^9}},ExpressionUUID->"df6d6df3-7f7d-6b4d-98a6-\
+80b75beb7bf6"],
+
+Cell[TextData[Cell[BoxData[
+ RowBox[{"(", 
+  RowBox[{
+   RowBox[{"0.", 
+    SuperscriptBox[
+     TagBox[
+      RowBox[{
+       TemplateBox[{
+         OverscriptBox["\[Euro]", "k"], "\"(\"", 
+         RowBox[{"1", ")"}]},
+        "RowDefault"], ")"}],
+      DisplayForm], "2"]}], "=", 
+   RowBox[{"0.", 
+    TagBox[
+     RowBox[{
+      TagBox[
+       RowBox[{
+        UnderoverscriptBox["\[Euro]", 
+         RowBox[{"i", "\[DoubleRightTee]", "0"}], "k"], 
+        RowBox[{"(", "i", ")"}]}],
+       DisplayForm], 
+      TagBox[
+       RowBox[{
+        UnderoverscriptBox["\[Euro]", 
+         RowBox[{"i", "\[DoubleRightTee]", "1"}], "k"], 
+        RowBox[{"(", 
+         RowBox[{"k", "-", "i"}], ")"}]}],
+       DisplayForm]}],
+     DisplayForm]}]}]}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.981425459653042*^9, 3.981425972935837*^9, 3.982353037303913*^9, 
+   3.9823533811696568`*^9, 3.9824188985074387`*^9, 3.982419488565132*^9, 
+   3.982419629319687*^9, 3.9824196887782745`*^9, 3.982419824159094*^9, 
+   3.9824199080238647`*^9, 3.9824199733501415`*^9, 3.982420009257988*^9, 
+   3.9824200917617016`*^9, 3.9824209367935963`*^9, {3.982422511979908*^9, 
+   3.982422520897238*^9}},ExpressionUUID->"04f19ee6-eccd-484b-bed0-\
+c2f101169683"]], "Text",
+ CellChangeTimes->{{3.984857496298868*^9, 3.9848574976090775`*^9}, {
+  3.984857557145687*^9, 3.9848575822931576`*^9}, {3.984857683112568*^9, 
+  3.9848577787761707`*^9}, {3.9848578179558086`*^9, 3.9848578388545494`*^9}, {
+  3.9848578890414543`*^9, 3.9848578890414543`*^9}, {3.98493015776466*^9, 
+  3.984930178252903*^9}, {3.98493043003524*^9, 
+  3.9849305418945446`*^9}},ExpressionUUID->"b344329d-3bbc-da43-a4d3-\
+a20620b76416"],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]0.\[CloseCurlyDoubleQuote] followed by single digits \
+counting up from 0 to k and immediately back down to 0.\
+\>", "Text",
+ CellChangeTimes->{{3.9849305610678177`*^9, 
+  3.984930598832855*^9}},ExpressionUUID->"63eebf13-7038-7d4c-84c0-\
+38a7108fcca2"],
+
+Cell[TextData[{
+ "An almost trivial case: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"k", "=", "2"}], TraditionalForm]],ExpressionUUID->
+  "518018a4-5d7e-6e4a-aef1-8659a8f25709"]
+}], "Text",
+ CellChangeTimes->{{3.984858620994713*^9, 3.9848586313498363`*^9}, {
+  3.98485866255159*^9, 3.984858668438547*^9}, {3.9849306561109715`*^9, 
+  3.9849306591375904`*^9}},ExpressionUUID->"bbc9869c-3d2c-2e4e-b967-\
+e3c080a49242"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"0.11", " ", "0.11"}]], "Input",
+ CellChangeTimes->{{3.9848586713361893`*^9, 3.984858675755312*^9}, {
+  3.9849306780697365`*^9, 3.9849308118295307`*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"f6f842d1-34c2-b640-ae09-a1b440f759c4"],
+
+Cell[BoxData["0.0121`"], "Output",
+ CellChangeTimes->{
+  3.9848586765822506`*^9, {3.984930681194504*^9, 3.9849307187162704`*^9}, {
+   3.9849307504336777`*^9, 3.984930812521185*^9}},
+ CellLabel->"Out[40]=",ExpressionUUID->"48be6c8a-e70a-6546-ba22-6b92fb9b06ea"]
+}, Open  ]],
+
+Cell["Why does this work?", "Text",
+ CellChangeTimes->{{3.984858684236288*^9, 
+  3.984858802048498*^9}},ExpressionUUID->"2447fcf4-2a49-f040-8871-\
+b5d7b23f490f"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"0.11", "\[Times]", "0.11"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"0.1", "\[Times]", "0.1"}], "+", 
+     RowBox[{"0.1", "\[Times]", "0.01"}], "+", 
+     RowBox[{"0.01", "\[Times]", "0.1"}], "+", 
+     RowBox[{"0.01", "\[Times]", "0.01"}]}], "=", 
+    RowBox[{
+     RowBox[{"0.01", "+", "0.002", "+", "0.0001"}], "=", 
+     RowBox[{"0.0121", "."}]}]}]}], 
+  TraditionalForm]],ExpressionUUID->"c066620d-6c3c-5147-9732-642c03b159a0"]], \
+"Text",
+ CellChangeTimes->{{3.984858684236288*^9, 
+  3.984858922600033*^9}},ExpressionUUID->"7aac6f75-00d2-f541-8fee-\
+1140a651d4d7"],
+
+Cell[TextData[{
+ "It\[CloseCurlyQuote]s because while there is only one term ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["10", 
+      RowBox[{"-", "1"}]], 
+     SuperscriptBox["10", 
+      RowBox[{"-", "1"}]]}], "=", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "2"}]]}], TraditionalForm]],ExpressionUUID->
+  "e76d2bb6-2daf-6741-995c-1dbc72661e09"],
+ ", there are 2 terms ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", 
+    RowBox[{"-", "3"}]], TraditionalForm]],ExpressionUUID->
+  "4c7be74d-1a92-9c45-aaae-21ed08e7ddc8"],
+ ". In longer repetitions the number of terms of a given order grows, and in \
+the case of an infinite repetition that growth would continue. For finite \
+repetitions, it grows, reaches a maximum, and then decreases back to 0."
+}], "Text",
+ CellChangeTimes->{{3.984858684236288*^9, 3.9848591575123577`*^9}, 
+   3.9849312923456326`*^9},ExpressionUUID->"26505ddf-bbf5-0e45-ac44-\
+9c69a7e3b247"],
+
+Cell[CellGroupData[{
+
+Cell["Work out an explanation", "Subsubsection",
+ CellChangeTimes->{{3.9850276474356956`*^9, 
+  3.985027654774006*^9}},ExpressionUUID->"90127101-c321-6b45-a36b-\
+4b1bcf5bd5d8"],
+
+Cell["\<\
+This table shows a sort of multiplication table of the different digits, with \
+products on diagonals (colored for convenience) adding up to form the \
+increasing and then decreasing digits of the answer.\
+\>", "Text",
+ CellChangeTimes->{{3.984858684236288*^9, 3.9848591575123577`*^9}, {
+  3.9849312936343975`*^9, 3.9849313307856617`*^9}, {3.9849346257716255`*^9, 
+  3.984934687562727*^9}, {3.984994021271223*^9, 
+  3.9849940277923164`*^9}},ExpressionUUID->"efa64c20-60e8-ee45-8965-\
+64d0c34527e6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Define", " ", "the", " ", "size", " ", "of", " ", "the", " ", "table"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"1", "+", "9"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Create", " ", "the", " ", "table", " ", "with", " ", "the", " ", 
+     "desired", " ", "structure"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"table", "=", 
+     RowBox[{"ConstantArray", "[", 
+      RowBox[{"1", ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "n"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"table", "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ",", "1"}], "]"}], "]"}], "=", "\"\<\[Times]\>\""}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Function", " ", "to", " ", "generate", " ", "a", " ", "color", " ", 
+     "based", " ", "on", " ", "the", " ", "diagonal", " ", "index"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"colorFunction", "[", 
+     RowBox[{"{", 
+      RowBox[{"i_", ",", "j_"}], "}"}], "]"}], ":=", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"i", "==", "1"}], "||", 
+       RowBox[{"j", "==", "1"}]}], ",", "White", ",", 
+      RowBox[{"Hue", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{
+           RowBox[{"i", "+", "j"}], ",", "n"}], "]"}], "/", "n"}], ",", "0.3",
+         ",", "0.9"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Apply", " ", "the", " ", "color", " ", "function", " ", "to", " ", 
+     "each", " ", "element", " ", "based", " ", "on", " ", "its", " ", 
+     "position"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"coloredTable", "=", 
+     RowBox[{"MapIndexed", "[", "\[IndentingNewLine]", "  ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Item", "[", 
+         RowBox[{"#1", ",", 
+          RowBox[{"Background", "->", 
+           RowBox[{"colorFunction", "[", "#2", "]"}]}]}], "]"}], " ", "&"}], ",",
+        "\[IndentingNewLine]", "  ", "table", ",", 
+       RowBox[{"{", "2", "}"}]}], "\[IndentingNewLine]", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Display", " ", "the", " ", "table", " ", "with", " ", "bold", " ", 
+     "dividers", " ", "and", " ", "colored", " ", "diagonals"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"coloredTable", ",", "\[IndentingNewLine]", "  ", 
+     RowBox[{"Dividers", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"2", "->", "Thick"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"2", "->", "Thick"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", "  ", 
+     RowBox[{"Frame", "->", "All"}], ",", "\[IndentingNewLine]", "  ", 
+     RowBox[{"ItemStyle", "->", 
+      RowBox[{"{", 
+       RowBox[{"Bold", ",", 
+        RowBox[{"{", 
+         RowBox[{"1", "->", "Italic"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", "->", "Italic"}], "}"}]}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9849330804314365`*^9, 3.9849331042197475`*^9}, {
+  3.9849331609826813`*^9, 3.9849331635443134`*^9}},
+ CellTags->"ChatGeneratedCell",
+ CellLabel->"In[99]:=",ExpressionUUID->"0548dac7-b641-d743-a658-28dec013a709"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     ItemBox["\<\"\[Times]\"\>",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 2], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[3, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 5], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[9, 10], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxDividers->{
+    "ColumnsIndexed" -> {2 -> Thickness[Large]}, 
+     "RowsIndexed" -> {2 -> Thickness[Large]}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxItemStyle->{
+    "Columns" -> {{Bold}}, "RowsIndexed" -> {1 -> Italic}, 
+     "ItemsIndexed" -> {1 -> Italic}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.9849328366522903`*^9, {3.984933105128525*^9, 3.9849331160685368`*^9}, 
+   3.9849331647547874`*^9},
+ CellTags->"ChatGeneratedCell",
+ CellLabel->
+  "Out[104]=",ExpressionUUID->"2fddc716-d112-1f47-9bd7-491086901ed5"]
+}, {2}]],
+
+Cell["\<\
+What if the number of repetitions is different for the two factors, say 12 \
+and 8?\
+\>", "Text",
+ CellChangeTimes->{{3.984858684236288*^9, 3.984859182495064*^9}, {
+  3.984930856769747*^9, 
+  3.984930868736746*^9}},ExpressionUUID->"41bbc0dd-b93b-f045-861e-\
+52b4bc5c6b6d"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"(", 
+   RowBox[{"0.", 
+    TagBox[
+     RowBox[{
+      TemplateBox[{
+        OverscriptBox["\[Euro]", "12"], "\"(\"", 
+        RowBox[{"1", ")"}]},
+       "RowDefault"], ")"}],
+     DisplayForm], 
+    RowBox[{"(", 
+     RowBox[{"0.", 
+      TagBox[
+       RowBox[{
+        TemplateBox[{
+          OverscriptBox["\[Euro]", "8"], "\"(\"", 
+          RowBox[{"1", ")"}]},
+         "RowDefault"], ")"}],
+       DisplayForm]}]}]}]}]], "Output",
+  GeneratedCell->False,
+  CellAutoOverwrite->False,
+  CellChangeTimes->{
+   3.981425459653042*^9, 3.981425972935837*^9, 3.982353037303913*^9, 
+    3.9823533811696568`*^9, 3.9824188985074387`*^9, 3.982419488565132*^9, 
+    3.982419629319687*^9, 3.9824196887782745`*^9, 3.982419824159094*^9, 
+    3.9824199080238647`*^9, 3.9824199733501415`*^9, 3.982420009257988*^9, 
+    3.9824200917617016`*^9, 3.9824209367935963`*^9, {3.982422511979908*^9, 
+    3.982422520897238*^9}},ExpressionUUID->
+  "9cc4bc4d-1c37-3f4b-ba96-4298d8ebf703"],
+ " :"
+}], "Text",
+ CellChangeTimes->{{3.984857496298868*^9, 3.9848574976090775`*^9}, {
+  3.984857557145687*^9, 3.9848575822931576`*^9}, {3.984857683112568*^9, 
+  3.9848577787761707`*^9}, {3.9848578179558086`*^9, 3.9848578388545494`*^9}, {
+  3.9848578890414543`*^9, 
+  3.9848579145689125`*^9}},ExpressionUUID->"5df02d68-0dd7-ef4d-9870-\
+270d2a0d2359"],
 
 Cell[CellGroupData[{
 
@@ -86,12 +973,1795 @@ Cell[BoxData[
    "20"}], "]"}]], "Input",
  CellChangeTimes->{{3.983885492423174*^9, 3.983885563467211*^9}, 
    3.984124216389452*^9},
- CellLabel->"In[99]:=",ExpressionUUID->"4da5e82c-1907-e444-bf75-2b74632272fe"],
+ CellLabel->"In[99]:=",ExpressionUUID->"e28e80b0-61c5-0640-9262-132b576d551e"],
 
 Cell[BoxData["0.01234567888887654321`20."], "Output",
  CellChangeTimes->{3.984126650398386*^9},
- CellLabel->"Out[99]=",ExpressionUUID->"29edf03b-1f4e-814b-af2f-2cb47eb6fa19"]
+ CellLabel->"Out[99]=",ExpressionUUID->"67205094-7e0e-c04a-a082-9b42eceffb09"]
 }, Open  ]],
+
+Cell["\<\
+So the digits increase from 0 to 8, stay at 8 for another 4 counts, then \
+decrease down to 0.   Can the diagonal picture explain that?\
+\>", "Text",
+ CellChangeTimes->{{3.98485923141733*^9, 3.9848592749894276`*^9}, {
+  3.9849311520288105`*^9, 3.984931155902302*^9}, {3.984934742525587*^9, 
+  3.984934757495001*^9}, {3.9849349144291077`*^9, 3.9849349155418377`*^9}, {
+  3.984994042355335*^9, 
+  3.984994042492983*^9}},ExpressionUUID->"99c8838f-582e-964f-a875-\
+00719ff29856"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Define", " ", "the", " ", "size", " ", "of", " ", "the", " ", "table"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"1", "+", "8"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m", "=", 
+     RowBox[{"1", "+", "12"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Create", " ", "the", " ", "table", " ", "with", " ", "the", " ", 
+     "desired", " ", "structure"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"table", "=", 
+     RowBox[{"ConstantArray", "[", 
+      RowBox[{"1", ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "m"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"table", "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ",", "1"}], "]"}], "]"}], "=", "\"\<\[Times]\>\""}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Function", " ", "to", " ", "generate", " ", "a", " ", "color", " ", 
+     "based", " ", "on", " ", "the", " ", "diagonal", " ", "index"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"colorFunction", "[", 
+     RowBox[{"{", 
+      RowBox[{"i_", ",", "j_"}], "}"}], "]"}], ":=", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"i", "==", "1"}], "||", 
+       RowBox[{"j", "==", "1"}]}], ",", "White", ",", 
+      RowBox[{"Hue", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{
+           RowBox[{"i", "+", "j"}], ",", "n"}], "]"}], "/", "n"}], ",", "0.3",
+         ",", "0.9"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Apply", " ", "the", " ", "color", " ", "function", " ", "to", " ", 
+     "each", " ", "element", " ", "based", " ", "on", " ", "its", " ", 
+     "position"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"coloredTable", "=", 
+     RowBox[{"MapIndexed", "[", "\[IndentingNewLine]", "  ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Item", "[", 
+         RowBox[{"#1", ",", 
+          RowBox[{"Background", "->", 
+           RowBox[{"colorFunction", "[", "#2", "]"}]}]}], "]"}], " ", "&"}], ",",
+        "\[IndentingNewLine]", "  ", "table", ",", 
+       RowBox[{"{", "2", "}"}]}], "\[IndentingNewLine]", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Display", " ", "the", " ", "table", " ", "with", " ", "bold", " ", 
+     "dividers", " ", "and", " ", "colored", " ", "diagonals"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"coloredTable", ",", "\[IndentingNewLine]", "  ", 
+     RowBox[{"Dividers", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"2", "->", "Thick"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"2", "->", "Thick"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", "  ", 
+     RowBox[{"Frame", "->", "All"}], ",", "\[IndentingNewLine]", "  ", 
+     RowBox[{"ItemStyle", "->", 
+      RowBox[{"{", 
+       RowBox[{"Bold", ",", 
+        RowBox[{"{", 
+         RowBox[{"1", "->", "Italic"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", "->", "Italic"}], "}"}]}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9849330804314365`*^9, 3.9849331042197475`*^9}, {
+   3.9849331609826813`*^9, 3.9849331635443134`*^9}, {3.9849348079449215`*^9, 
+   3.984934828893215*^9}, 3.9849940713434105`*^9},
+ CellTags->"ChatGeneratedCell",
+ CellLabel->
+  "In[133]:=",ExpressionUUID->"2f6114ed-8476-7c4a-9379-473182a5640d"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     ItemBox["\<\"\[Times]\"\>",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox["1",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox["1",
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxDividers->{
+    "ColumnsIndexed" -> {2 -> Thickness[Large]}, 
+     "RowsIndexed" -> {2 -> Thickness[Large]}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxItemStyle->{
+    "Columns" -> {{Bold}}, "RowsIndexed" -> {1 -> Italic}, 
+     "ItemsIndexed" -> {1 -> Italic}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.9849328366522903`*^9, {3.984933105128525*^9, 3.9849331160685368`*^9}, 
+   3.9849331647547874`*^9, 3.9849348380108967`*^9, 3.9849941013942394`*^9},
+ CellTags->"ChatGeneratedCell",
+ CellLabel->
+  "Out[139]=",ExpressionUUID->"8cd3e526-939f-294d-bb8b-5d36baf3db0a"]
+}, {2}]],
+
+Cell[TextData[{
+ "Ah! The lengths of the diagonals increase up to the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["8", "th"], TraditionalForm]],ExpressionUUID->
+  "3e972cab-7ae3-8443-a929-f23ecc152f52"],
+ " column, then stay constant until the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["12", "th"], TraditionalForm]],ExpressionUUID->
+  "cc9adf89-f059-b84e-88ba-1d27d3544b3f"],
+ " column, and finally start to decrease again."
+}], "Text",
+ CellChangeTimes->{{3.98485923141733*^9, 3.9848592749894276`*^9}, {
+  3.9849311520288105`*^9, 3.984931155902302*^9}, {3.9849348927637215`*^9, 
+  3.984934953231312*^9}, {3.984934997803549*^9, 3.9849350365256786`*^9}, {
+  3.984994275756439*^9, 
+  3.984994298731903*^9}},ExpressionUUID->"dd52ea06-068d-b946-b67a-\
+6f324cc84ab0"],
+
+Cell[TextData[{
+ "Hypothesis: for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"r", "=", "1"}], ",", "2", ",", "...", ",", "9", ","}], 
+   TraditionalForm]],ExpressionUUID->"31abfd11-ea30-9440-8638-1fe410af3e90"],
+ " for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"s", ">=", "r"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4ad0f0ad-c3a5-3646-99f2-81545f521427"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.984858620994713*^9, 3.9848586313498363`*^9}, {
+  3.98485866255159*^9, 3.984858668438547*^9}, {3.984930083758909*^9, 
+  3.9849301369822216`*^9}, {3.9852053653320503`*^9, 
+  3.985205392198683*^9}},ExpressionUUID->"fd5134e1-c383-5145-80c1-\
+10b3a83087ec"],
+
+Cell[TextData[Cell[BoxData[
+ RowBox[{"(", 
+  RowBox[{"0.", 
+   TagBox[
+    RowBox[{
+     TemplateBox[{
+       OverscriptBox["\[Euro]", "r"], "\"(\"", 
+       RowBox[{"1", ")"}]},
+      "RowDefault"], ")"}],
+    DisplayForm], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"0.", 
+      TagBox[
+       RowBox[{
+        TemplateBox[{
+          OverscriptBox["\[Euro]", "s"], "\"(\"", 
+          RowBox[{"1", ")"}]},
+         "RowDefault"], ")"}],
+       DisplayForm]}], "=", 
+     RowBox[{"0.", 
+      TagBox[
+       RowBox[{
+        TagBox[
+         RowBox[{
+          UnderoverscriptBox["\[Euro]", 
+           RowBox[{"i", "\[DoubleRightTee]", "0"}], 
+           RowBox[{"r", "-", "1"}]], 
+          RowBox[{"(", "i", ")"}], 
+          UnderoverscriptBox["\[Euro]", 
+           RowBox[{"i", "\[DoubleRightTee]", "0"}], 
+           RowBox[{"s", "-", "r"}]], 
+          RowBox[{"(", "r", ")"}]}],
+         DisplayForm], 
+        TagBox[
+         RowBox[{
+          UnderoverscriptBox["\[Euro]", 
+           RowBox[{"i", "\[DoubleRightTee]", "1"}], "k"], 
+          RowBox[{"(", 
+           RowBox[{"k", "-", "i"}], ")"}]}],
+         DisplayForm]}],
+       DisplayForm]}]}]}]}]}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.981425459653042*^9, 3.981425972935837*^9, 3.982353037303913*^9, 
+   3.9823533811696568`*^9, 3.9824188985074387`*^9, 3.982419488565132*^9, 
+   3.982419629319687*^9, 3.9824196887782745`*^9, 3.982419824159094*^9, 
+   3.9824199080238647`*^9, 3.9824199733501415`*^9, 3.982420009257988*^9, 
+   3.9824200917617016`*^9, 3.9824209367935963`*^9, {3.982422511979908*^9, 
+   3.982422520897238*^9}},ExpressionUUID->"4cff4129-e8cb-184f-8bd1-\
+7d692587092e"]], "Text",
+ CellChangeTimes->{{3.984857496298868*^9, 3.9848574976090775`*^9}, {
+  3.984857557145687*^9, 3.9848575822931576`*^9}, {3.984857683112568*^9, 
+  3.9848577787761707`*^9}, {3.9848578179558086`*^9, 3.9848578388545494`*^9}, {
+  3.9848578890414543`*^9, 3.9848578890414543`*^9}, {3.98493015776466*^9, 
+  3.984930178252903*^9}, {3.98493043003524*^9, 3.9849305418945446`*^9}, {
+  3.9852053971370926`*^9, 
+  3.985205470042612*^9}},ExpressionUUID->"b354005c-ebe4-6345-a0d7-\
+dd85cd32c321"],
+
+Cell["\<\
+The first I-Cat climbs the hill, the second gives the peak or mesa at the \
+top, the third climbs back down.\
+\>", "Text",
+ CellChangeTimes->{{3.985205525692137*^9, 
+  3.985205586348774*^9}},ExpressionUUID->"b67e949b-00ae-2e4c-a19e-\
+1b9ba77fc5db"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Defensible explanation", "Subsubsection",
+ CellChangeTimes->{{3.9850276474356956`*^9, 
+  3.9850276759206066`*^9}},ExpressionUUID->"d29dc82b-a55e-1b44-8842-\
+73ae9531a5ae"],
+
+Cell["\<\
+New hypothesis/explanation:  Since each digit 1  in the two factors actually \
+represents a decreasing power of 10, and all of the powers of 10 in one \
+factor have to be multiplied by all of the powers of 10 in the other factor, \
+we\[CloseCurlyQuote]re just adding up all of the \[OpenCurlyDoubleQuote]digit \
+products\[CloseCurlyDoubleQuote], and those on the same diagonal will clearly \
+end up being the same power of 10 and will be added to make that digit of the \
+product! When we run out of digits of one factor, but not the other, the \
+number of terms on the diagonal holds steady, only beginning to decrease \
+after we pass the repeating sections of both factors.\
+\>", "Text",
+ CellChangeTimes->{{3.98485923141733*^9, 3.9848592749894276`*^9}, {
+  3.9849311520288105`*^9, 3.984931155902302*^9}, {3.9849348927637215`*^9, 
+  3.984934953231312*^9}, {3.984934997803549*^9, 3.9849350365256786`*^9}, {
+  3.984994275756439*^9, 
+  3.984994592370735*^9}},ExpressionUUID->"3beb8a41-3b95-2244-8255-\
+98b63da96ee0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Define", " ", "the", " ", "number", " ", "of", " ", "rows", " ", "and", " ",
+     "columns", " ", "based", " ", "on", " ", "the", " ", "repetition", " ", 
+    "lengths"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"1", "+", "8"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m", "=", 
+     RowBox[{"1", "+", "12"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+     "Create", " ", "the", " ", "table", " ", "with", " ", "the", " ", 
+      "desired", " ", "structure"}], ",", " ", 
+     RowBox[{
+     "using", " ", "powers", " ", "of", " ", "10", " ", "for", " ", "the", " ",
+       "first", " ", "row", " ", "and", " ", "column"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"table", "=", 
+     RowBox[{"ConstantArray", "[", 
+      RowBox[{"1", ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "m"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"table", "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ",", "1"}], "]"}], "]"}], "=", "\"\<\[Times]\>\""}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "2"}], ",", 
+      RowBox[{"i", "<=", "n"}], ",", 
+      RowBox[{"i", "++"}], ",", 
+      RowBox[{
+       RowBox[{"table", "[", 
+        RowBox[{"[", 
+         RowBox[{"i", ",", "1"}], "]"}], "]"}], "=", 
+       RowBox[{"Superscript", "[", 
+        RowBox[{"10", ",", 
+         RowBox[{"-", 
+          RowBox[{"(", 
+           RowBox[{"i", "-", "1"}], ")"}]}]}], "]"}]}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"j", "=", "2"}], ",", 
+      RowBox[{"j", "<=", "m"}], ",", 
+      RowBox[{"j", "++"}], ",", 
+      RowBox[{
+       RowBox[{"table", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "j"}], "]"}], "]"}], "=", 
+       RowBox[{"Superscript", "[", 
+        RowBox[{"10", ",", 
+         RowBox[{"-", 
+          RowBox[{"(", 
+           RowBox[{"j", "-", "1"}], ")"}]}]}], "]"}]}]}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Fill", " ", "the", " ", "interior", " ", "with", " ", "the", " ", 
+     "product", " ", "of", " ", "powers", " ", "of", " ", "10", " ", "from", " ",
+      "the", " ", "first", " ", "row", " ", "and", " ", "column"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "2"}], ",", 
+      RowBox[{"i", "<=", "n"}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", "  ", 
+      RowBox[{"For", "[", 
+       RowBox[{
+        RowBox[{"j", "=", "2"}], ",", 
+        RowBox[{"j", "<=", "m"}], ",", 
+        RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", "    ", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"table", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "j"}], "]"}], "]"}], "=", 
+          RowBox[{"Superscript", "[", 
+           RowBox[{"10", ",", 
+            RowBox[{"-", 
+             RowBox[{"(", 
+              RowBox[{"i", "+", "j", "-", "2"}], ")"}]}]}], "]"}]}], ";"}]}], 
+       "\[IndentingNewLine]", "  ", "]"}]}], "\[IndentingNewLine]", "]"}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Function", " ", "to", " ", "generate", " ", "a", " ", "color", " ", 
+     "based", " ", "on", " ", "the", " ", "diagonal", " ", "index"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"colorFunction", "[", 
+     RowBox[{"{", 
+      RowBox[{"i_", ",", "j_"}], "}"}], "]"}], ":=", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"i", "==", "1"}], "||", 
+       RowBox[{"j", "==", "1"}]}], ",", "White", ",", 
+      RowBox[{"Hue", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{
+           RowBox[{"i", "+", "j"}], ",", "n"}], "]"}], "/", "n"}], ",", "0.3",
+         ",", "0.9"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Apply", " ", "the", " ", "color", " ", "function", " ", "to", " ", 
+     "each", " ", "element", " ", "based", " ", "on", " ", "its", " ", 
+     "position"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"coloredTable", "=", 
+     RowBox[{"MapIndexed", "[", "\[IndentingNewLine]", "  ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Item", "[", 
+         RowBox[{"#1", ",", 
+          RowBox[{"Background", "->", 
+           RowBox[{"colorFunction", "[", "#2", "]"}]}]}], "]"}], " ", "&"}], ",",
+        "\[IndentingNewLine]", "  ", "table", ",", 
+       RowBox[{"{", "2", "}"}]}], "\[IndentingNewLine]", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Display", " ", "the", " ", "table", " ", "with", " ", "bold", " ", 
+     "dividers", " ", "and", " ", "colored", " ", "diagonals"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"coloredTable", ",", "\[IndentingNewLine]", "  ", 
+     RowBox[{"Dividers", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"2", "->", "Thick"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"2", "->", "Thick"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", "  ", 
+     RowBox[{"Frame", "->", "All"}], ",", "\[IndentingNewLine]", "  ", 
+     RowBox[{"ItemStyle", "->", 
+      RowBox[{"{", 
+       RowBox[{"Bold", ",", 
+        RowBox[{"{", 
+         RowBox[{"1", "->", "Italic"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", "->", "Italic"}], "}"}]}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.984989919810404*^9, 3.9849899385892487`*^9}, 
+   3.984990331734125*^9},
+ CellTags->
+  "ChatGeneratedCell",ExpressionUUID->"3703f869-83fd-da49-b30c-974796647481"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     ItemBox["\<\"\[Times]\"\>",
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "1"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "2"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "3"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "4"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "5"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "6"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "1"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "2"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "3"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "4"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "5"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "6"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "2"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "3"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "4"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "5"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "6"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "14"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "3"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "4"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "5"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "6"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "14"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "15"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "4"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "5"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "6"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "14"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "15"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "16"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "5"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "6"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "14"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "15"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "16"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "17"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "6"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "14"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "15"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "16"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "17"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "18"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "7"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "14"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "15"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "16"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "17"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "18"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "19"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False]},
+    {
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "8"}]},
+       "Superscript"],
+      Background->GrayLevel[1],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "9"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "10"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "11"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "12"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[5, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "13"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "14"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[7, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "15"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[8, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "16"}]},
+       "Superscript"],
+      Background->Hue[0, 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "17"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "18"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[2, 9], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "19"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[1, 3], 0.3, 0.9],
+      StripOnInput->False], 
+     ItemBox[
+      TemplateBox[{"10", 
+        RowBox[{"-", "20"}]},
+       "Superscript"],
+      Background->Hue[
+        Rational[4, 9], 0.3, 0.9],
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxDividers->{
+    "ColumnsIndexed" -> {2 -> Thickness[Large]}, 
+     "RowsIndexed" -> {2 -> Thickness[Large]}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxItemStyle->{
+    "Columns" -> {{Bold}}, "RowsIndexed" -> {1 -> Italic}, 
+     "ItemsIndexed" -> {1 -> Italic}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.9849898997396603`*^9, 3.9849899398377113`*^9},
+ CellTags->"ChatGeneratedCell",
+ CellLabel->
+  "Out[132]=",ExpressionUUID->"ba71db8a-a5b8-3e4b-bedf-2c2c7bfedf39"]
+}, {2}]],
+
+Cell["Let\[CloseCurlyQuote]s try 9 & 8:", "Text",
+ CellChangeTimes->{{3.98485923141733*^9, 3.9848592749894276`*^9}, {
+   3.9849311520288105`*^9, 3.984931155902302*^9}, 
+   3.9849349104285984`*^9},ExpressionUUID->"459f37e1-095e-0c45-bf49-\
+8b5047971b2e"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"(", 
+   RowBox[{"0.", 
+    TagBox[
+     RowBox[{
+      TemplateBox[{
+        OverscriptBox["\[Euro]", "9"], "\"(\"", 
+        RowBox[{"1", ")"}]},
+       "RowDefault"], ")"}],
+     DisplayForm], 
+    RowBox[{"(", 
+     RowBox[{"0.", 
+      TagBox[
+       RowBox[{
+        TemplateBox[{
+          OverscriptBox["\[Euro]", "8"], "\"(\"", 
+          RowBox[{"1", ")"}]},
+         "RowDefault"], ")"}],
+       DisplayForm]}]}]}]}]], "Output",
+  GeneratedCell->False,
+  CellAutoOverwrite->False,
+  CellChangeTimes->{
+   3.981425459653042*^9, 3.981425972935837*^9, 3.982353037303913*^9, 
+    3.9823533811696568`*^9, 3.9824188985074387`*^9, 3.982419488565132*^9, 
+    3.982419629319687*^9, 3.9824196887782745`*^9, 3.982419824159094*^9, 
+    3.9824199080238647`*^9, 3.9824199733501415`*^9, 3.982420009257988*^9, 
+    3.9824200917617016`*^9, 3.9824209367935963`*^9, {3.982422511979908*^9, 
+    3.982422520897238*^9}},ExpressionUUID->
+  "81466d58-f280-5246-b13c-c61c4d453347"],
+ " :"
+}], "Text",
+ CellChangeTimes->{{3.984857496298868*^9, 3.9848574976090775`*^9}, {
+  3.984857557145687*^9, 3.9848575822931576`*^9}, {3.984857683112568*^9, 
+  3.9848577787761707`*^9}, {3.9848578179558086`*^9, 3.9848578388545494`*^9}, {
+  3.9848578890414543`*^9, 3.9848579145689125`*^9}, {3.98485920287076*^9, 
+  3.9848592028734493`*^9}},ExpressionUUID->"4f227ba6-559b-7d43-9349-\
+970735927394"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       SuperscriptBox["10", 
+        RowBox[{"-", "k"}]], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "1", ",", "9"}], "}"}]}], "]"}], ")"}], 
+    RowBox[{"(", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       SuperscriptBox["10", 
+        RowBox[{"-", "k"}]], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "1", ",", "8"}], "}"}]}], "]"}], ")"}]}], ",", 
+   "20"}], "]"}]], "Input",
+ CellChangeTimes->{{3.983885492423174*^9, 3.983885563467211*^9}, 
+   3.984124216389452*^9, 3.984859206036028*^9},
+ CellLabel->"In[7]:=",ExpressionUUID->"bb386fbb-36f1-bd43-9c0b-f45bf90e6ed3"],
+
+Cell[BoxData["0.01234567887654321`20."], "Output",
+ CellChangeTimes->{3.984126650398386*^9, 3.9848592073444557`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"b6010696-6917-c04c-8a3a-c4593fc4eed0"]
+}, Open  ]],
+
+Cell["\<\
+Now the \[OpenCurlyDoubleQuote]hold\[CloseCurlyDoubleQuote] at the top is \
+only 1, the difference between 8 & 9. How to think of this? The increase \
+continued up to column \[OpenCurlyDoubleQuote]8\[CloseCurlyDoubleQuote], the \
+hold until column \[OpenCurlyDoubleQuote]9\[CloseCurlyDoubleQuote], and after \
+that, the descent.\
+\>", "Text",
+ CellChangeTimes->{{3.9848592813943977`*^9, 
+  3.98485937646698*^9}},ExpressionUUID->"1cdf29c7-92bd-4145-9806-\
+b8740d12d9c6"],
+
+Cell["Try 12 & 10:", "Text",
+ CellChangeTimes->{{3.9848592813943977`*^9, 
+  3.984859384250004*^9}},ExpressionUUID->"84d25ca0-12b5-7a47-b648-\
+41a4c95f1729"],
 
 Cell[CellGroupData[{
 
@@ -125,6 +2795,124 @@ Cell[BoxData["0.0123456790110987654321`22."], "Output",
   "Out[100]=",ExpressionUUID->"2a95a58b-a4ae-fa4d-84d8-8e0f28d26603"]
 }, Open  ]],
 
+Cell["\<\
+That\[CloseCurlyQuote]s a bit more complicated, because of carries!  But the \
+digits are indeed formed as explained above and then propagating carries:\
+\>", "Text",
+ CellChangeTimes->{{3.9848593898454094`*^9, 3.984859429071577*^9}, {
+  3.9849946115080185`*^9, 
+  3.984994663346592*^9}},ExpressionUUID->"35c05611-6af5-3341-b806-\
+810938f5133b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Join", "[", 
+   RowBox[{
+    RowBox[{"Range", "[", 
+     RowBox[{"0", ",", "10"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"10", ",", "10"}], "}"}], ",", 
+    RowBox[{"Range", "[", 
+     RowBox[{"9", ",", "0", ",", 
+      RowBox[{"-", "1"}]}], "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{"%", "//", "PreSuperForm"}]}], "Input",
+ CellChangeTimes->{{3.9849946688509827`*^9, 3.984994735181408*^9}, {
+  3.984994778577524*^9, 3.984994809581892*^9}, {3.9849948821402607`*^9, 
+  3.984994892239828*^9}},
+ CellLabel->
+  "In[152]:=",ExpressionUUID->"da183d26-c7dd-ab4f-ad8b-3cf55b6f633c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",",
+    "8", ",", "9", ",", 
+   RowBox[{
+    SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], ",", 
+   RowBox[{
+    SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], ",", 
+   RowBox[{
+    SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], ",", "9", ",",
+    "8", ",", "7", ",", "6", ",", "5", ",", "4", ",", "3", ",", "2", ",", "1",
+    ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{3.984994893170494*^9},
+ CellLabel->
+  "Out[153]=",ExpressionUUID->"46b1283c-1d22-d944-9dc9-477ded4d9cfa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PreSuperForm", "/@", 
+   RowBox[{"resolveCarryWithLog", "[", 
+    TemplateBox[<|
+     "InUUID" -> "da183d26-c7dd-ab4f-ad8b-3cf55b6f633c", "OutUUID" -> 
+      "a3750827-5567-ea4e-9196-f83971896d64", "InUUIDOffset" -> 0, 
+      "KernelEvalInfoKey" -> {"Global`", 12}, "OutNumber" -> 152, "Status" -> 
+      "PercentReferenceExists_KernelN_InY_OutN", "DisplayCache" -> 
+      TemplateBox[{}, "SmartPercent_List"]|>,
+     "PercentRef"], "]"}]}], "//", "Grid"}]], "Input",
+ CellChangeTimes->{{3.984994739777052*^9, 3.9849947654183655`*^9}, {
+  3.9849948017474422`*^9, 3.984994860833021*^9}},
+ CellLabel->
+  "In[154]:=",ExpressionUUID->"e8b720a1-8c16-e344-a5f8-929bef55f2ee"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
+     RowBox[{
+      SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], 
+     RowBox[{
+      SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], 
+     RowBox[{
+      SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], "9", "8", 
+     "7", "6", "5", "4", "3", "2", "1", "0"},
+    {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
+     RowBox[{
+      SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], 
+     RowBox[{
+      SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "1"}], "0", "9", 
+     "8", "7", "6", "5", "4", "3", "2", "1", "0"},
+    {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
+     RowBox[{
+      SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "1"}], "1", "0", 
+     "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"},
+    {"0", "1", "2", "3", "4", "5", "6", "7", "8", 
+     RowBox[{
+      SuperscriptBox["\[InvisiblePrefixScriptBase]", "1"], "0"}], "1", "1", 
+     "0", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"},
+    {"0", "1", "2", "3", "4", "5", "6", "7", "9", "0", "1", "1", "0", "9", 
+     "8", "7", "6", "5", "4", "3", "2", "1", "0"}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.9849948522962914`*^9, 3.984994861620987*^9}, 
+   3.984994901283354*^9},
+ CellLabel->
+  "Out[154]=",ExpressionUUID->"ccd17e30-83fd-da41-b915-4b4ae3a0a6c9"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Try repeating pairs of \[OpenCurlyDoubleQuote]01\[CloseCurlyDoubleQuote], \
+adding a 1 digit only every other digit:\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.9848593898454094`*^9, 3.984859429071577*^9}, {
+  3.9849946115080185`*^9, 3.984994614924141*^9}, {3.985026762624258*^9, 
+  3.9850267780578556`*^9}},ExpressionUUID->"99fea1e2-067a-1047-9008-\
+33926fa46125"],
+
+Cell["Multiplicand:", "Text",
+ CellChangeTimes->{{3.9850267975547485`*^9, 
+  3.985026823396414*^9}},ExpressionUUID->"6a29094d-e831-c748-ab69-\
+2fb8fb85b836"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -140,40 +2928,17 @@ Cell[BoxData[
   "]"}]], "Input",
  CellChangeTimes->{{3.98412398005167*^9, 3.98412401042836*^9}, {
   3.984124382463827*^9, 3.984124384830927*^9}},
- CellLabel->
-  "In[101]:=",ExpressionUUID->"35153521-4804-7b41-b5aa-5a30726ae2ba"],
+ CellLabel->"In[8]:=",ExpressionUUID->"35153521-4804-7b41-b5aa-5a30726ae2ba"],
 
 Cell[BoxData["0.010101010101010101010101010101`32."], "Output",
- CellChangeTimes->{3.984126650459173*^9},
- CellLabel->
-  "Out[101]=",ExpressionUUID->"3074e23a-f845-a44e-b805-2e01c188770a"]
+ CellChangeTimes->{3.984126650459173*^9, 3.984859432046732*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"2be27de4-6d9b-8343-b437-81aefc8b135a"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"N", "[", 
-  RowBox[{
-   SuperscriptBox[
-    RowBox[{"(", 
-     RowBox[{"Sum", "[", 
-      RowBox[{
-       SuperscriptBox["10", 
-        RowBox[{
-         RowBox[{"-", "2"}], "k"}]], ",", 
-       RowBox[{"{", 
-        RowBox[{"k", ",", "1", ",", "10"}], "}"}]}], "]"}], ")"}], "2"], ",", 
-   "39"}], "]"}]], "Input",
- CellChangeTimes->{{3.983884922487772*^9, 3.9838849887786407`*^9}, {
-  3.9841238622680206`*^9, 3.9841239104423065`*^9}},
- CellLabel->
-  "In[102]:=",ExpressionUUID->"d56a756c-f630-3643-a625-2033b0103f5b"],
-
-Cell[BoxData["0.0001020304050607080910090807060504030201`39."], "Output",
- CellChangeTimes->{3.984126650490715*^9},
- CellLabel->
-  "Out[102]=",ExpressionUUID->"77cfb213-f3e1-e04e-8345-14cf31cbec7a"]
-}, Open  ]],
+Cell["Square it:", "Text",
+ CellChangeTimes->{{3.9850268278043957`*^9, 
+  3.985026830832548*^9}},ExpressionUUID->"83f6b135-e5fc-024f-a135-\
+cc0d144414d5"],
 
 Cell[CellGroupData[{
 
@@ -190,18 +2955,47 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"k", ",", "1", ",", "15"}], "}"}]}], "]"}], ")"}], "2"], ",", 
    "59"}], "]"}]], "Input",
- CellChangeTimes->{{3.983884922487772*^9, 3.983884950061079*^9}, {
-  3.983885217148548*^9, 3.9838852234348392`*^9}, {3.984124359605116*^9, 
-  3.984124395791874*^9}},
+ CellChangeTimes->{{3.983884922487772*^9, 3.9838849887786407`*^9}, {
+   3.9841238622680206`*^9, 3.9841239104423065`*^9}, 3.9848594473668537`*^9, {
+   3.9850099633132935`*^9, 3.985009965692875*^9}},
  CellLabel->
-  "In[103]:=",ExpressionUUID->"c985a4ae-6600-c049-aa7c-5d988de1e8d5"],
+  "In[158]:=",ExpressionUUID->"d56a756c-f630-3643-a625-2033b0103f5b"],
 
 Cell[BoxData["0.000102030405060708091011121314151413121110090807060504030201`\
 59."], "Output",
- CellChangeTimes->{3.9841266505249023`*^9},
+ CellChangeTimes->{3.984126650490715*^9, 3.98485944859363*^9, 
+  3.985009968565321*^9},
  CellLabel->
-  "Out[103]=",ExpressionUUID->"d1c53bbe-9697-f046-b30d-0a5b81298607"]
+  "Out[158]=",ExpressionUUID->"af80bb66-a1bc-d145-a364-cf810405786e"]
 }, Open  ]],
+
+Cell["\<\
+Now the count up continues as expected from 0 to 15 and then immediately back \
+down to 0.\
+\>", "Text",
+ CellChangeTimes->{{3.984859456342188*^9, 3.984859481693327*^9}, 
+   3.9848595239010696`*^9},ExpressionUUID->"a98cc466-1b00-e04d-94a9-\
+a3192239a380"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Other examples", "Subsubsection",
+ CellChangeTimes->{{3.985026867685417*^9, 
+  3.985026871513479*^9}},ExpressionUUID->"a72d8416-e2b6-1242-b53c-\
+0c7dc403d926"],
+
+Cell["Some related examples to drive the thing home:", "Text",
+ CellChangeTimes->{{3.984859456342188*^9, 3.984859481693327*^9}, {
+   3.984859524622774*^9, 3.984859534754347*^9}, 
+   3.985026878742876*^9},ExpressionUUID->"8349da68-0790-cd44-bc3f-\
+dfdfdeb4f3ea"],
+
+Cell["Every other digit, 12 & 8 reps:", "Text",
+ CellChangeTimes->{{3.984859456342188*^9, 3.984859481693327*^9}, {
+  3.984859524622774*^9, 3.984859534754347*^9}, {3.9850273802772274`*^9, 
+  3.9850273933989735`*^9}},ExpressionUUID->"a120390d-6189-0d4d-8abd-\
+b26311b385fb"],
 
 Cell[CellGroupData[{
 
@@ -229,15 +3023,29 @@ Cell[BoxData[
  CellChangeTimes->{{3.983884922487772*^9, 3.983884950061079*^9}, {
   3.983885217148548*^9, 3.983885300574459*^9}, {3.9838853366349125`*^9, 
   3.9838853385055256`*^9}},
- CellLabel->
-  "In[104]:=",ExpressionUUID->"84f2df9d-459d-8949-bf33-a4f4ffe05167"],
+ CellLabel->"In[10]:=",ExpressionUUID->"84f2df9d-459d-8949-bf33-a4f4ffe05167"],
 
 Cell[BoxData["0.0001020304050607080808080807060504030200999999999999999999`39.\
 "], "Output",
- CellChangeTimes->{3.9841266505380135`*^9},
- CellLabel->
-  "Out[104]=",ExpressionUUID->"ea48795b-f1a9-da46-ba2e-4288d01a5810"]
+ CellChangeTimes->{3.9841266505380135`*^9, 3.984859542032284*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"6f2099bd-c723-db43-9532-6a9bcf2358cc"]
 }, Open  ]],
+
+Cell["\<\
+In this product we count up from 00 to 08, hold the 08 until column 12 (4 \
+additional columns), then count back down to 00. No carries to worry about.\
+\>", "Text",
+ CellChangeTimes->{{3.9849299821458015`*^9, 3.984930035463852*^9}, {
+  3.9850274035541096`*^9, 3.9850274241353817`*^9}, {3.9850275235518665`*^9, 
+  3.9850275265981464`*^9}},ExpressionUUID->"b81c9512-e4d0-9740-baae-\
+3595699cc155"],
+
+Cell["Every other digit, 15 & 8 reps:", "Text",
+ CellChangeTimes->{{3.984859456342188*^9, 3.984859481693327*^9}, {
+   3.984859524622774*^9, 3.984859534754347*^9}, {3.9850273802772274`*^9, 
+   3.9850273933989735`*^9}, 
+   3.985027438232643*^9},ExpressionUUID->"d7506698-91cc-6d47-bb48-\
+64394a5c9d24"],
 
 Cell[CellGroupData[{
 
@@ -265,14 +3073,29 @@ Cell[BoxData[
  CellChangeTimes->{{3.983884922487772*^9, 3.983884950061079*^9}, {
   3.983885217148548*^9, 3.983885281041641*^9}, {3.9841244224531097`*^9, 
   3.9841244367781067`*^9}},
- CellLabel->
-  "In[105]:=",ExpressionUUID->"bd0f8971-5566-674e-864e-2eb336cb5499"],
+ CellLabel->"In[11]:=",ExpressionUUID->"bd0f8971-5566-674e-864e-2eb336cb5499"],
 
 Cell[BoxData["0.0001020304050607080808080808080807060504030201`45."], "Output",
- CellChangeTimes->{3.9841266505380135`*^9},
- CellLabel->
-  "Out[105]=",ExpressionUUID->"9f1dc4ea-0da5-f84e-8d92-c042802b339c"]
+ CellChangeTimes->{3.9841266505380135`*^9, 3.9848595421270866`*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"4dbee529-1e18-e14e-b3bb-6d91a80cbe53"]
 }, Open  ]],
+
+Cell["\<\
+Now we count up from 00 to 08, hold the 08 until column 15 (7 additional \
+columns), then count back down to 00. No carries to worry about.\
+\>", "Text",
+ CellChangeTimes->{{3.9849299821458015`*^9, 3.984930035463852*^9}, {
+  3.9850274035541096`*^9, 3.9850274241353817`*^9}, {3.985027459910227*^9, 
+  3.98502746666576*^9}, {3.985027510891924*^9, 
+  3.9850275124678993`*^9}},ExpressionUUID->"1808594a-479f-7042-8afb-\
+0a29e53179d9"],
+
+Cell["Every third digit, 15 & 12 reps:", "Text",
+ CellChangeTimes->{{3.984859456342188*^9, 3.984859481693327*^9}, {
+   3.984859524622774*^9, 3.984859534754347*^9}, {3.9850273802772274`*^9, 
+   3.9850273933989735`*^9}, 3.985027438232643*^9, {3.985027479864105*^9, 
+   3.9850274846898518`*^9}},ExpressionUUID->"3f1b83d7-257e-2a4f-bd9a-\
+79b8208e8c04"],
 
 Cell[CellGroupData[{
 
@@ -288,7 +3111,7 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"-", "3"}], "k"}]], ",", 
         RowBox[{"{", 
-         RowBox[{"k", ",", "1", ",", "12"}], "}"}]}], "]"}], ")"}], 
+         RowBox[{"k", ",", "1", ",", "15"}], "}"}]}], "]"}], ")"}], 
      RowBox[{"(", 
       RowBox[{"Sum", "[", 
        RowBox[{
@@ -296,33 +3119,51 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"-", "3"}], "k"}]], ",", 
         RowBox[{"{", 
-         RowBox[{"k", ",", "1", ",", "8"}], "}"}]}], "]"}], ")"}]}], ",", 
-    "60"}], "]"}]}]], "Input",
+         RowBox[{"k", ",", "1", ",", "12"}], "}"}]}], "]"}], ")"}]}], ",", 
+    "79"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.983884922487772*^9, 3.983884950061079*^9}, {
   3.983885217148548*^9, 3.983885300574459*^9}, {3.9838853366349125`*^9, 
   3.9838854005946846`*^9}, {3.9841240506071587`*^9, 3.9841240512808456`*^9}, {
-  3.9841241011054115`*^9, 3.984124123258257*^9}},
- CellLabel->
-  "In[106]:=",ExpressionUUID->"72901163-7e0d-a240-a373-32b0aafe8c77"],
+  3.9841241011054115`*^9, 3.984124123258257*^9}, {3.9848595544462166`*^9, 
+  3.9848595898665657`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"72901163-7e0d-a240-a373-32b0aafe8c77"],
 
 Cell[BoxData[
  TagBox[
   InterpretationBox[
    StyleBox["\<\"0.\
-00000100200300400500600700800800800800800700600500400300200100000\"\>",
+000001002003004005006007008009010011012012012012011010009008007006005004003002\
+001000\"\>",
     ShowStringCharacters->False],
-   1.002003004005006007008008008008008007006005004003002001`60.*^-6,
+   1.0020030040050060070080090100110120120120120110100090080070060050040030020\
+01`79.*^-6,
    AutoDelete->True],
   DecimalForm]], "Output",
- CellChangeTimes->{3.9841266505792217`*^9},
+ CellChangeTimes->{
+  3.9841266505792217`*^9, {3.984859542174568*^9, 3.984859591151993*^9}},
  CellLabel->
-  "Out[106]//DecimalForm=",ExpressionUUID->"d19f1097-2d18-ab4d-921c-\
-f3e8084d450b"]
+  "Out[17]//DecimalForm=",ExpressionUUID->"1f949ed9-e036-194d-be19-\
+c70b3e8f32e4"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Count up in columns 000 to 012, then we hold steady 3 more columns (to the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["15", "th"], TraditionalForm]],ExpressionUUID->
+  "271fe8b8-baae-2d4f-adb7-9849678c1d71"],
+ "), then count down. No carries to worry about!"
+}], "Text",
+ CellChangeTimes->{{3.984859624341484*^9, 3.984859701388237*^9}, {
+  3.9850274905679207`*^9, 3.9850275041704674`*^9}, {3.985027550466717*^9, 
+  3.985027558062895*^9}},ExpressionUUID->"570acf55-52dc-4a4b-8ccf-\
+c813cb05035f"]
+}, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1116.5, 672},
-WindowMargins->{{Automatic, 0}, {Automatic, 0.5}},
-Magnification:>1.5 Inherited,
+WindowSize->{1113.5, 672},
+WindowMargins->{{0.5, Automatic}, {Automatic, 0.5}},
+Magnification:>2. Inherited,
 FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"9425005b-461c-7049-9d16-ea24ddf9baac"
@@ -331,52 +3172,157 @@ ExpressionUUID->"9425005b-461c-7049-9d16-ea24ddf9baac"
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{}
+CellTagsIndex->{
+ "ChatGeneratedCell"->{
+  Cell[14627, 405, 3560, 93, 854, "Input",ExpressionUUID->"0548dac7-b641-d743-a658-28dec013a709",
+   CellTags->"ChatGeneratedCell"],
+  Cell[18190, 500, 10635, 401, 394, "Output",ExpressionUUID->"2fddc716-d112-1f47-9bd7-491086901ed5",
+   CellTags->"ChatGeneratedCell"],
+  Cell[31895, 995, 3740, 98, 893, "Input",ExpressionUUID->"2f6114ed-8476-7c4a-9379-473182a5640d",
+   CellTags->"ChatGeneratedCell"],
+  Cell[35638, 1095, 12312, 463, 358, "Output",ExpressionUUID->"8cd3e526-939f-294d-bb8b-5d36baf3db0a",
+   CellTags->"ChatGeneratedCell"],
+  Cell[53145, 1699, 6024, 161, 1273, "Input",ExpressionUUID->"3703f869-83fd-da49-b30c-974796647481",
+   CellTags->"ChatGeneratedCell"],
+  Cell[59172, 1862, 20856, 809, 423, "Output",ExpressionUUID->"ba71db8a-a5b8-3e4b-bedf-2c2c7bfedf39",
+   CellTags->"ChatGeneratedCell"]}
+ }
 *)
 (*CellTagsIndex
-CellTagsIndex->{}
+CellTagsIndex->{
+ {"ChatGeneratedCell", 97682, 3175}
+ }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[576, 22, 449, 12, 45, "Input",ExpressionUUID->"7c9ad66e-c089-2543-9b44-5367cbead203"],
-Cell[1028, 36, 166, 2, 48, "Output",ExpressionUUID->"022c6d8f-fb18-3448-b040-e2acb48ef0af"]
+Cell[576, 22, 257, 4, 104, "Subtitle",ExpressionUUID->"c5603109-9f45-3e4e-b129-94286526d05d"],
+Cell[836, 28, 273, 4, 67, "Text",ExpressionUUID->"4fc05387-9584-014f-9edd-5fbc3cbe0979"],
+Cell[1112, 34, 1035, 24, 87, "Text",ExpressionUUID->"27a71153-182f-fb48-a649-7abe06ea9497"],
+Cell[2150, 60, 196, 3, 67, "Text",ExpressionUUID->"96ed67fc-c194-7a4d-a048-29fb74f72898"],
+Cell[2349, 65, 421, 11, 102, "Input",ExpressionUUID->"135c4221-f511-604b-beb9-ab15851171e6"],
+Cell[CellGroupData[{
+Cell[2795, 80, 632, 15, 61, "Input",ExpressionUUID->"7c9ad66e-c089-2543-9b44-5367cbead203"],
+Cell[3430, 97, 264, 4, 64, "Output",ExpressionUUID->"fc6c4a25-d2b7-4f44-893a-622cf3c88d93"]
+}, Open  ]],
+Cell[3709, 104, 158, 3, 67, "Text",ExpressionUUID->"6801ba4f-06ef-b441-8843-0ea64327cebe"],
+Cell[3870, 109, 1164, 29, 87, "Text",ExpressionUUID->"68a1076e-6f3e-5d47-871f-faf481f990c0"],
+Cell[CellGroupData[{
+Cell[5059, 142, 662, 17, 61, "Input",ExpressionUUID->"ce80b804-a5ec-414a-b239-56d908c691a8"],
+Cell[5724, 161, 247, 4, 64, "Output",ExpressionUUID->"1903571c-19b2-9c4d-a632-f0092e1169c7"]
+}, Open  ]],
+Cell[5986, 168, 295, 6, 111, "Text",ExpressionUUID->"76c2520c-8376-9645-a162-2d0daa96f5ce"],
+Cell[6284, 176, 1214, 29, 87, "Text",ExpressionUUID->"a5068d6a-5a5d-c745-9e79-ed9ecaacbad8"],
+Cell[CellGroupData[{
+Cell[7523, 209, 636, 16, 61, "Input",ExpressionUUID->"ec291639-fa22-fe46-af78-de8077a16155"],
+Cell[8162, 227, 241, 3, 64, "Output",ExpressionUUID->"1ece2fda-fc1b-d04e-bed7-9dad31ca9906"]
+}, Open  ]],
+Cell[8418, 233, 277, 4, 67, "Text",ExpressionUUID->"cc974002-2e77-c84f-be71-2e08593b5e54"],
+Cell[8698, 239, 456, 11, 67, "Text",ExpressionUUID->"df6d6df3-7f7d-6b4d-98a6-80b75beb7bf6"],
+Cell[9157, 252, 1717, 45, 88, "Text",ExpressionUUID->"b344329d-3bbc-da43-a4d3-a20620b76416"],
+Cell[10877, 299, 285, 6, 111, "Text",ExpressionUUID->"63eebf13-7038-7d4c-84c0-38a7108fcca2"],
+Cell[11165, 307, 413, 10, 67, "Text",ExpressionUUID->"bbc9869c-3d2c-2e4e-b967-e3c080a49242"],
+Cell[CellGroupData[{
+Cell[11603, 321, 255, 4, 56, "Input",ExpressionUUID->"f6f842d1-34c2-b640-ae09-a1b440f759c4"],
+Cell[11861, 327, 260, 4, 64, "Output",ExpressionUUID->"48be6c8a-e70a-6546-ba22-6b92fb9b06ea"]
+}, Open  ]],
+Cell[12136, 334, 161, 3, 67, "Text",ExpressionUUID->"2447fcf4-2a49-f040-8871-b5d7b23f490f"],
+Cell[12300, 339, 636, 17, 114, "Text",ExpressionUUID->"7aac6f75-00d2-f541-8fee-1140a651d4d7"],
+Cell[12939, 358, 951, 25, 242, "Text",ExpressionUUID->"26505ddf-bbf5-0e45-ac44-9c69a7e3b247"],
+Cell[CellGroupData[{
+Cell[13915, 387, 176, 3, 87, "Subsubsection",ExpressionUUID->"90127101-c321-6b45-a36b-4b1bcf5bd5d8"],
+Cell[14094, 392, 508, 9, 155, "Text",ExpressionUUID->"efa64c20-60e8-ee45-8965-64d0c34527e6"],
+Cell[CellGroupData[{
+Cell[14627, 405, 3560, 93, 854, "Input",ExpressionUUID->"0548dac7-b641-d743-a658-28dec013a709",
+ CellTags->"ChatGeneratedCell"],
+Cell[18190, 500, 10635, 401, 394, "Output",ExpressionUUID->"2fddc716-d112-1f47-9bd7-491086901ed5",
+ CellTags->"ChatGeneratedCell"]
+}, {2}]],
+Cell[28837, 904, 282, 7, 111, "Text",ExpressionUUID->"41bbc0dd-b93b-f045-861e-52b4bc5c6b6d"],
+Cell[29122, 913, 1361, 37, 87, "Text",ExpressionUUID->"5df02d68-0dd7-ef4d-9870-270d2a0d2359"],
+Cell[CellGroupData[{
+Cell[30508, 954, 685, 21, 61, "Input",ExpressionUUID->"e28e80b0-61c5-0640-9262-132b576d551e"],
+Cell[31196, 977, 174, 2, 64, "Output",ExpressionUUID->"67205094-7e0e-c04a-a082-9b42eceffb09"]
+}, Open  ]],
+Cell[31385, 982, 485, 9, 111, "Text",ExpressionUUID->"99c8838f-582e-964f-a875-00719ff29856"],
+Cell[CellGroupData[{
+Cell[31895, 995, 3740, 98, 893, "Input",ExpressionUUID->"2f6114ed-8476-7c4a-9379-473182a5640d",
+ CellTags->"ChatGeneratedCell"],
+Cell[35638, 1095, 12312, 463, 358, "Output",ExpressionUUID->"8cd3e526-939f-294d-bb8b-5d36baf3db0a",
+ CellTags->"ChatGeneratedCell"]
+}, {2}]],
+Cell[47962, 1561, 771, 18, 111, "Text",ExpressionUUID->"dd52ea06-068d-b946-b67a-6f324cc84ab0"],
+Cell[48736, 1581, 687, 19, 67, "Text",ExpressionUUID->"fd5134e1-c383-5145-80c1-10b3a83087ec"],
+Cell[49426, 1602, 2191, 59, 88, "Text",ExpressionUUID->"b354005c-ebe4-6345-a0d7-dd85cd32c321"],
+Cell[51620, 1663, 258, 6, 111, "Text",ExpressionUUID->"b67e949b-00ae-2e4c-a19e-1b9ba77fc5db"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1231, 43, 559, 15, 45, "Input",ExpressionUUID->"ce80b804-a5ec-414a-b239-56d908c691a8"],
-Cell[1793, 60, 170, 2, 48, "Output",ExpressionUUID->"2493c3ae-0f71-e341-b487-8ae31499904f"]
+Cell[51915, 1674, 177, 3, 87, "Subsubsection",ExpressionUUID->"d29dc82b-a55e-1b44-8842-73ae9531a5ae"],
+Cell[52095, 1679, 1025, 16, 417, "Text",ExpressionUUID->"3beb8a41-3b95-2244-8255-98b63da96ee0"],
+Cell[CellGroupData[{
+Cell[53145, 1699, 6024, 161, 1273, "Input",ExpressionUUID->"3703f869-83fd-da49-b30c-974796647481",
+ CellTags->"ChatGeneratedCell"],
+Cell[59172, 1862, 20856, 809, 423, "Output",ExpressionUUID->"ba71db8a-a5b8-3e4b-bedf-2c2c7bfedf39",
+ CellTags->"ChatGeneratedCell"]
+}, {2}]],
+Cell[80040, 2674, 253, 4, 67, "Text",ExpressionUUID->"459f37e1-095e-0c45-bf49-8b5047971b2e"],
+Cell[80296, 2680, 1407, 37, 87, "Text",ExpressionUUID->"4f227ba6-559b-7d43-9349-970735927394"],
+Cell[CellGroupData[{
+Cell[81728, 2721, 705, 21, 61, "Input",ExpressionUUID->"bb386fbb-36f1-bd43-9c0b-f45bf90e6ed3"],
+Cell[82436, 2744, 194, 2, 64, "Output",ExpressionUUID->"b6010696-6917-c04c-8a3a-c4593fc4eed0"]
+}, Open  ]],
+Cell[82645, 2749, 479, 9, 155, "Text",ExpressionUUID->"1cdf29c7-92bd-4145-9806-b8740d12d9c6"],
+Cell[83127, 2760, 156, 3, 67, "Text",ExpressionUUID->"84d25ca0-12b5-7a47-b648-41a4c95f1729"],
+Cell[CellGroupData[{
+Cell[83308, 2767, 717, 22, 61, "Input",ExpressionUUID->"02024fa5-d408-f743-9807-f5972247c219"],
+Cell[84028, 2791, 182, 3, 64, "Output",ExpressionUUID->"2a95a58b-a4ae-fa4d-84d8-8e0f28d26603"]
+}, Open  ]],
+Cell[84225, 2797, 355, 7, 111, "Text",ExpressionUUID->"35c05611-6af5-3341-b806-810938f5133b"],
+Cell[CellGroupData[{
+Cell[84605, 2808, 613, 16, 94, "Input",ExpressionUUID->"da183d26-c7dd-ab4f-ad8b-3cf55b6f633c"],
+Cell[85221, 2826, 639, 15, 68, "Output",ExpressionUUID->"46b1283c-1d22-d944-9dc9-477ded4d9cfa"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2000, 67, 685, 21, 45, "Input",ExpressionUUID->"4da5e82c-1907-e444-bf75-2b74632272fe"],
-Cell[2688, 90, 174, 2, 48, "Output",ExpressionUUID->"29edf03b-1f4e-814b-af2f-2cb47eb6fa19"]
+Cell[85897, 2846, 704, 14, 60, "Input",ExpressionUUID->"e8b720a1-8c16-e344-a5f8-929bef55f2ee"],
+Cell[86604, 2862, 1500, 33, 208, "Output",ExpressionUUID->"ccd17e30-83fd-da41-b915-4b4ae3a0a6c9"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2899, 97, 717, 22, 45, "Input",ExpressionUUID->"02024fa5-d408-f743-9807-f5972247c219"],
-Cell[3619, 121, 182, 3, 48, "Output",ExpressionUUID->"2a95a58b-a4ae-fa4d-84d8-8e0f28d26603"]
+Cell[88153, 2901, 376, 7, 137, "Subsubsection",ExpressionUUID->"99fea1e2-067a-1047-9008-33926fa46125"],
+Cell[88532, 2910, 157, 3, 67, "Text",ExpressionUUID->"6a29094d-e831-c748-ab69-2fb8fb85b836"],
+Cell[CellGroupData[{
+Cell[88714, 2917, 465, 13, 61, "Input",ExpressionUUID->"35153521-4804-7b41-b5aa-5a30726ae2ba"],
+Cell[89182, 2932, 205, 2, 64, "Output",ExpressionUUID->"2be27de4-6d9b-8343-b437-81aefc8b135a"]
+}, Open  ]],
+Cell[89402, 2937, 154, 3, 67, "Text",ExpressionUUID->"83f6b135-e5fc-024f-a135-cc0d144414d5"],
+Cell[CellGroupData[{
+Cell[89581, 2944, 620, 17, 61, "Input",ExpressionUUID->"d56a756c-f630-3643-a625-2033b0103f5b"],
+Cell[90204, 2963, 266, 5, 64, "Output",ExpressionUUID->"af80bb66-a1bc-d145-a364-cf810405786e"]
+}, Open  ]],
+Cell[90485, 2971, 265, 6, 111, "Text",ExpressionUUID->"a98cc466-1b00-e04d-94a9-a3192239a380"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3838, 129, 470, 14, 45, "Input",ExpressionUUID->"35153521-4804-7b41-b5aa-5a30726ae2ba"],
-Cell[4311, 145, 188, 3, 48, "Output",ExpressionUUID->"3074e23a-f845-a44e-b805-2e01c188770a"]
-}, Open  ]],
+Cell[90787, 2982, 165, 3, 87, "Subsubsection",ExpressionUUID->"a72d8416-e2b6-1242-b53c-0c7dc403d926"],
+Cell[90955, 2987, 261, 4, 67, "Text",ExpressionUUID->"8349da68-0790-cd44-bc3f-dfdfdeb4f3ea"],
+Cell[91219, 2993, 272, 4, 67, "Text",ExpressionUUID->"a120390d-6189-0d4d-8abd-b26311b385fb"],
 Cell[CellGroupData[{
-Cell[4536, 153, 543, 16, 45, "Input",ExpressionUUID->"d56a756c-f630-3643-a625-2033b0103f5b"],
-Cell[5082, 171, 198, 3, 48, "Output",ExpressionUUID->"77cfb213-f3e1-e04e-8345-14cf31cbec7a"]
+Cell[91516, 3001, 811, 24, 61, "Input",ExpressionUUID->"84f2df9d-459d-8949-bf33-a4f4ffe05167"],
+Cell[92330, 3027, 238, 3, 64, "Output",ExpressionUUID->"6f2099bd-c723-db43-9532-6a9bcf2358cc"]
 }, Open  ]],
+Cell[92583, 3033, 406, 7, 155, "Text",ExpressionUUID->"b81c9512-e4d0-9740-baae-3595699cc155"],
+Cell[92992, 3042, 300, 5, 67, "Text",ExpressionUUID->"d7506698-91cc-6d47-bb48-64394a5c9d24"],
 Cell[CellGroupData[{
-Cell[5317, 179, 588, 17, 45, "Input",ExpressionUUID->"c985a4ae-6600-c049-aa7c-5d988de1e8d5"],
-Cell[5908, 198, 222, 4, 48, "Output",ExpressionUUID->"d1c53bbe-9697-f046-b30d-0a5b81298607"]
+Cell[93317, 3051, 811, 24, 61, "Input",ExpressionUUID->"bd0f8971-5566-674e-864e-2eb336cb5499"],
+Cell[94131, 3077, 226, 2, 64, "Output",ExpressionUUID->"4dbee529-1e18-e14e-b3bb-6d91a80cbe53"]
 }, Open  ]],
+Cell[94372, 3082, 440, 8, 111, "Text",ExpressionUUID->"1808594a-479f-7042-8afb-0a29e53179d9"],
+Cell[94815, 3092, 349, 5, 67, "Text",ExpressionUUID->"3f1b83d7-257e-2a4f-bd9a-79b8208e8c04"],
 Cell[CellGroupData[{
-Cell[6167, 207, 815, 25, 45, "Input",ExpressionUUID->"84f2df9d-459d-8949-bf33-a4f4ffe05167"],
-Cell[6985, 234, 220, 4, 48, "Output",ExpressionUUID->"ea48795b-f1a9-da46-ba2e-4288d01a5810"]
+Cell[95189, 3101, 1018, 27, 104, "Input",ExpressionUUID->"72901163-7e0d-a240-a373-32b0aafe8c77"],
+Cell[96210, 3130, 522, 15, 130, "Output",ExpressionUUID->"1f949ed9-e036-194d-be19-c70b3e8f32e4"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[7242, 243, 815, 25, 45, "Input",ExpressionUUID->"bd0f8971-5566-674e-864e-2eb336cb5499"],
-Cell[8060, 270, 206, 3, 48, "Output",ExpressionUUID->"9f1dc4ea-0da5-f84e-8d92-c042802b339c"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[8303, 278, 968, 27, 45, "Input",ExpressionUUID->"72901163-7e0d-a240-a373-32b0aafe8c77"],
-Cell[9274, 307, 430, 12, 82, "Output",ExpressionUUID->"d19f1097-2d18-ab4d-921c-f3e8084d450b"]
+Cell[96747, 3148, 517, 11, 111, "Text",ExpressionUUID->"570acf55-52dc-4a4b-8ccf-c813cb05035f"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
