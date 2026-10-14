@@ -1,0 +1,45 @@
+# =========================================================================
+# macOS System Files
+# =========================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two custom spaces or a carriage return to match correctly
+Icon  
+
+# Thumbnails and filesystem metadata
+._*
+.Spotlight-V100
+.Trashes
+*.icloud
+
+# =========================================================================
+# Windows System Files
+# =========================================================================
+# Desktop configuration and thumbnail caches
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+
+# Recycle Bin and system volume logs
+$RECYCLE.BIN/
+System Volume Information/
+
+# =========================================================================
+# Linux System Files
+# =========================================================================
+# Temporary files and hidden system configs
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =========================================================================
+# Office Temporary & Lock Files
+# =========================================================================
+~$*
+.~lock.*
